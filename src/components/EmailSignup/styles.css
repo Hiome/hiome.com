@@ -1,0 +1,17 @@
+#email_signup {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+input#full_name {
+  height: 100;
+  width: 100;
+  display: none;
+}
+
+input#email {
+  padding: 10px;
+  width: 40%;
+  margin: 20px;
+}

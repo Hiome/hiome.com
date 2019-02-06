@@ -51,8 +51,8 @@ const CorePage = () => (
     <object data={clock} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `346px`,
-      height: `257px`,
+      width: `330px`,
+      height: `258px`,
     }}>
       Life is unpredictable.
     </object>
@@ -72,8 +72,8 @@ const CorePage = () => (
     <object data={upload} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `379px`,
-      height: `261px`,
+      width: `376px`,
+      height: `256px`,
     }}>
       Don't upload your data.
     </object>

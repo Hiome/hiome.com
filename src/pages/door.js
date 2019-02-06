@@ -23,9 +23,9 @@ const DoorPage = () => (
     </div>
 
     <p>
-      <strong>Hiome Door</strong> is a whole new type of occupancy sensor that knows exactly how many people are in each room. It uses
+      <strong>Hiome Door</strong> is a new type of occupancy sensor that knows exactly how many people are in each room. It uses
       65 points of data to accurately count how many people have entered and exited a room through each door. All of this engineering
-      has one goal: to keep track of occupancy in a room, even if you haven't moved for hours. No more waving your arms around to turn
+      has one goal: to know if you're in the room or not, even if you haven't moved for hours. No more waving your arms around to turn
       the lights back on.
     </p>
 
@@ -33,6 +33,7 @@ const DoorPage = () => (
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
         backgroundColor: `#ccc`,
+        marginTop: `20px`,
       }}>
         <source
           src={dooraction}
@@ -52,6 +53,7 @@ const DoorPage = () => (
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
         backgroundColor: `#ccc`,
+        marginTop: `20px`,
       }}>
         <source
           src={doorfast}
@@ -62,16 +64,16 @@ const DoorPage = () => (
 
     <h2>Hiome Door is built for privacy.</h2>
     <p>
-      There's no cameras and it can't identify any personal information. Instead, it uses
-      thermal sensors to track changes in heat to know when a person entered or exited. That means you don't have to carry your phone around
-      for your automations to work, and your home just works for your guests too. All this in a device so small, you'll
-      forget it's even there...
+      There's no cameras and it can't identify any personal information. Instead, it tracks changes in heat to know when a person
+      entered or exited. That means you don't have to carry your phone around for your automations to work, and your home works for
+      your guests too. All this in a device so small, you'll forget it's even there...
     </p>
 
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
         backgroundColor: `#ccc`,
+        marginTop: `20px`,
       }}>
         <source
           src={doorinstall}
@@ -83,8 +85,8 @@ const DoorPage = () => (
     <h2>Hiome Door works with Hiome Core.</h2>
     <p>
       Hiome Doors know when you enter or exit through them, but what if your room has multiple
-      doors? <Link to="/core">Hiome Core</Link> seamlessly keeps all of the sensors in your
-      home in sync, even if your wifi coverage is spotty. This allows Hiome to work with multiple
+      doors? <Link to="/core">Hiome Core</Link> seamlessly syncs all of your sensors,
+      even if your wifi coverage is spotty. This allows Hiome to work with multiple
       people too, only turning the lights off when the last person leaves.
     </p>
 
@@ -92,6 +94,7 @@ const DoorPage = () => (
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
         backgroundColor: `#ccc`,
+        marginTop: `20px`,
       }}>
         <source
           src={doormultiple}

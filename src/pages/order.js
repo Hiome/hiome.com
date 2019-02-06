@@ -25,8 +25,9 @@ const OrderPage = () => (
     <p>
       Everything we do is designed to make your life simple, and our reservation system is no different.
       You'll only be charged for 20% of your order today, with the rest of the order processing when it actually ships.
-      If you change your mind before it ships, you can cancel your reservation for a full refund of your deposit
-      (and make the next person in line happy). In other words, there's pretty much no downside.</p>
+      If you change your mind before it ships, you can cancel your reservation for a full refund of your deposit. If you're
+      not happy with Hiome after the beta period, we'll take it back, no questions asked. In other words, there's pretty much no downside.
+    </p>
 
     <p>This is not a Kickstarter or preorder campaign, so you won't be waiting a year for us to figure out how to scale production in China.
       Each Hiome product is assembled in Chicago, and we'll ship products out as we make them, in the order they were reserved.
@@ -36,7 +37,7 @@ const OrderPage = () => (
     <OrderForm />
 
     <h2>Get Notified</h2>
-    <p>Not an early adopter? No problem. Feel free to enter your email below and we'll let you know when we have finished products
+    <p>Don't like to be on the bleeding edge? No problem. Feel free to enter your email below and we'll let you know when we have finished products
       in stock. We promise we won't email you for any other reason. We'll be too busy making other homes smarter <span role="img" aria-label="wink">😉</span></p>
     <EmailSignup />
   </Layout>

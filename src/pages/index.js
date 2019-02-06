@@ -38,23 +38,23 @@ const IndexPage = () => (
     <div style={{
       margin: `40px auto 0 auto`
     }}>
-      <FeatureBox icon={smart_thumb} title="Smart" link="/core">
+      <FeatureBox icon={smart_thumb} title="Autonomous" link="/core#autonomous">
         Automate your home with the same technology that powers self-driving cars.
       </FeatureBox>
-      <FeatureBox icon={easy_thumb} title="Easy" link="/core#autonomous">
+      <FeatureBox icon={easy_thumb} title="Easy" link="/core#setup">
         Enjoy the benefits of advanced automations without any of the headache or setup.
       </FeatureBox>
-      <FeatureBox icon={family_thumb} title="Family Friendly" link="/core#predictive">
+      <FeatureBox icon={family_thumb} title="Family Friendly" link="/core#setup">
         Don't change your behavior. Hiome adapts to you, so there's nothing to learn.
       </FeatureBox>
-      <FeatureBox icon={stateart_thumb} title="State of the Art" link="/door">
+      <FeatureBox icon={stateart_thumb} title="Unparalleled" link="/door">
         Enjoy cutting-edge custom tech designed with one goal: to make your life simpler.
       </FeatureBox>
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.
       </FeatureBox>
-      <FeatureBox icon={powerful_thumb} title="Developer Friendly" link="/core#powerful">
-        Build any customization you can think of with your home's event stream.
+      <FeatureBox icon={powerful_thumb} title="Developer Friendly" link="/core/home-stream">
+        Want more control? Build any customization you can think of with Home Stream.
       </FeatureBox>
     </div>
 

@@ -1,0 +1,222 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117181574-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117181574-1');
+  </script>
+
+  <title>Hiome</title>
+  <link rel="icon" type="image/png" href="/guide/favicon.png" />
+</head>
+<body>
+  <style>
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: rgb(0, 142, 226);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  #logo {
+    margin-top: 70px;
+  }
+  #logo object {
+    width: 34px;
+    height: 57px;
+  }
+  #content {
+    width: 100%;
+    min-width: 310px;
+    margin: 0;
+  }
+  h1 {
+    margin: 30px 0 40px 0;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
+  #learnmore {
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+  input#full_name {
+    height: 100;
+    width: 100;
+    display: none;
+  }
+  input#email {
+    height: 30px;
+    width: 260px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+  }
+  input#email:focus {
+    outline: none;
+    border-color: #ED9B40;
+  }
+  button#submit {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border: none;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+    bottom: -17px;
+  }
+  button#submit svg path {
+    fill: #ccc;
+  }
+  button#submit:hover svg path, button#submit:focus svg path, input#email:focus ~ button#submit svg path {
+    fill: #ED9B40;
+  }
+  div#footer {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  .slide {
+    padding: 50px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  .slide p, h2 {
+    width: 70%;
+    margin: 10px auto;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .slide ul, .slide ol {
+    width: 70%;
+    margin: 5px auto;
+  }
+  #slide_criteria ul {
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  .slide li {
+    margin: 5px 0;
+  }
+  #slide_criteria ul li:before {
+    content:"\2713\0020";
+    color: green;
+  }
+  sup {
+    vertical-align: super;
+    font-size: smaller;
+  }
+  .footnotes {
+    font-size: 90%;
+    color: #333;
+  }
+  #homekit {
+    margin: 30px auto;
+    text-align: center;
+  }
+  #homekit object {
+    width: 276px;
+    height: 70px;
+  }
+  </style>
+  <div id="content">
+    <div id="logo">
+      <object data="/guide/logo.svg" type="image/svg+xml">
+        HIOME
+      </object>
+    </div>
+    <h1>HIOME</h1>
+    <h2>Getting Started With Your Smart Home</h2>
+
+    <div class="slide" id="slide_intro">
+      <p><strong>There's no place like home.</strong> That's why there's nothing like having your home anticipate your needs and do things for you, so you always come home to the perfect temperature, lights exactly how you like them, or blinds at the right position depending on time of day and year. Smart homes make this vision a reality, but where to get started? Follow this simple step-by-step guide to make your home work for you.</p>
+    </div>
+    <div class="slide" id="slide_criteria">
+      <h2>0. Goals</h2>
+
+      <p>If you ask 5 people for home automation help, you'll get 6 different recommendations. Homes are highly personal and home automation setups are no different. Like choosing furniture, there's not one correct way to design your home. With that in mind, here's our goals with this guide:</p>
+      <ul>
+        <li><strong>Easy to Use</strong> - the best smart homes don't even seem smart at first, they're just enchanted. Everything is invisible and seamlessly works to make your life better without you thinking about it.</li>
+        <li><strong>Reliable</strong> - nobody wants to be frustrated with broken tech when they come home. Your house should be rock solid and work like clockwork.</li>
+        <li><strong>Local</strong> - many smart home products require an internet connection to run. Usually this is done to sell your privacy, but it also means your home stops working if your internet goes out or if their server crashes.</li>
+        <li><strong>Private by Design</strong> - privacy is a big deal. Your data is precious and you should own it, not some tech giant who is selling you out to advertisers.</li>
+        <li><strong>Beginner Friendly</strong> - this guide assumes no technical experience and skips over common open source options that start with "setup your Raspberry Pi..."</li>
+      </ul>
+      <p>Of course, it's possible to buy cheaper or more open products than what's recommended below, but they will cost you in other ways like time, hair loss, and/or personal data. &#x1f609;</p>
+    </div>
+    <div class="slide" id="slide_platform">
+      <h2>1. Platform</h2>
+      <p>Your smart home will be made of a variety of different connected devices. In order to work together, they need to speak a common language. That language is determined by the platform you choose.</p>
+      <p>Three popular choices are Apple HomeKit, Samsung SmartThings, or Amazon Alexa. We strongly recommend choosing <a href="https://www.apple.com/ios/home/" target="_blank">HomeKit</a>. Although there are fewer devices available overall on HomeKit, their quality is generally much higher and the platform is growing quickly. Everything runs locally on your network, keeping your home private and immune to internet outages. Most importantly, HomeKit is super easy to setup with the built-in Home app on any Apple device. If you have an iPhone, iPad, or Mac, there's no reason not to choose HomeKit.<sup id="fnref:1">1</sup> Just look for the following logo on any products you buy:</p>
+
+      <div id="homekit">
+        <object data="/guide/homekit-badge.svg" type="image/svg+xml">
+          Works with Apple HomeKit
+        </object>
+      </div>
+
+      <div class="footnotes">
+        <ol>
+          <li id="fn:1">
+            If you don't have any modern Apple device (iPhone, iPad, iPod Touch, or Mac), we recommend getting an entry-level iPad dedicated for home automation. A dedicated iPad makes a great remote control to monitor your home. If you'd still really prefer to stick with Android, <a href="mailto:contact@hiome.com?subject=Android Home Automation Guide&body=Hi, what do you recommend for automating my home without iOS?">let us know</a> that you're waiting for an Android guide!
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="slide" id="slide_lights">
+      <h2>2. Lights</h2>
+      <p>Now for the fun part... it's time to start upgrading your home with super powers! Let's start with the lights.</p>
+      <p>Again, there are 2 choices here. You can either upgrade your light bulbs to be connected or you can replace the light switches in your wall. Light bulbs are easy to install and can even give you control over the color of the light, but you can't use your wall switches anymore! If you accidentally turn the light off using the switch, your new bulb will stop working. That's why we actually recommend upgrading your light switch instead. It requires some minor electrical wiring work (you can do it yourself in about 20 minutes), but will reliably work and likely be cheaper depending on if you control multiple bulbs with a single switch.</p>
+      <p>For light switches, we strongly recommend <a href="https://www.amazon.com/gp/product/B00MXCRAX8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00MXCRAX8&linkCode=as2&tag=hiome-20&linkId=be70c03549e2de6864790638347eb962" target="_blank">Lutron Caseta dimmer switches</a>. These are very high quality and have never failed us! If you still want connected light bulbs instead, your best bet is <a href="https://www.amazon.com/gp/product/B07351P1JK/ref=as_li_tl?ie=UTF8&tag=hiome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07351P1JK&linkId=3d8a225c3e7d85e7699f6f2bfeb0249e" target="_blank">Philips Hue bulbs</a>.</p>
+      <p>Note: you don't want to upgrade <em>both</em> your switches and bulbs because turning them on will require both devices to be turned on, and you get the worst of both worlds.</p>
+    </div>
+    <div class="slide" id="slide_thermostat">
+      <h2>3. Thermostat</h2>
+      <p>A smart thermostat is amazing for both comfort and cost-savings, since it optimizes your indoor climate to always be perfect without wasting energy. <a href="https://www.amazon.com/gp/product/B00ZIRV39M/ref=as_li_tl?ie=UTF8&tag=hiome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00ZIRV39M&linkId=3c3bfaceb4b7b2c7954991dd8f7abe32" target="_blank">EcoBee</a> makes the best HomeKit-compatible thermostats. It will keep track of any motion in the room to know when to warm or cool the home, can monitor temperatures in different rooms, and set different rules depending on if you're home, away, or sleeping.</p>
+      <p>Tip: check with your energy company, many will provide discounts for upgrading to a smart thermostat because it is so energy efficient.</p>
+    </div>
+    <div class="slide" id="slide_door">
+      <h2>4. Door Locks</h2>
+      <p>It's a great feeling not having to fish for your keys when you come home. Instead, the door unlocks just as you approach and then locks itself again. You can even remotely let any guests if you're not there. Smart locks are pretty handy and there's a wide variety of options if you want to upgrade your entire lock. However, we recommend getting the <a href="https://www.amazon.com/gp/product/B0752V8D8D/ref=as_li_tl?ie=UTF8&tag=hiome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0752V8D8D&linkId=b6e837a6017a6123a3185e2e3be9ff22" target="_blank">August Smart Lock Pro</a> instead. This clever device goes over your existing deadbolt (another quick 15 minute installation) and adds smartness without having to change everything. August locks are also one of the few that reliably auto-unlock when you approach the door.</p>
+      <p>Note: in an unfortunate move, August has 2 distinct, but similarly named products: the August Smart Lock and the August Smart Lock Pro. For HomeKit compatibility, you must get the Pro!</p>
+    </div>
+    <div class="slide" id="slide_blinds">
+      <h2>5. Window Shades</h2>
+      <p>Wouldn't it be great if your window shades opened before your alarm clock went off every morning to gently wake you up? Smart blinds have a lot of appeal, and once again, Lutron is the leader here. Their <a href="https://www.serenashades.com" target="_blank">Serena Shades</a> line is incredibly quiet and reliable, but you will have to completely replace your existing shades, which can by a pricey proposition.</p>
+    </div>
+    <div class="slide" id="slide_smart">
+      <h2>6. Putting the <em>Smart</em> in Smart Home</h2>
+      <p>Now that you have all these connected devices, how will you control them? Like any intelligent being, a smart home needs to be able to do 3 things:</p>
+      <ol>
+        <li><strong>See</strong></li>
+        <li><strong>Think</strong></li>
+        <li><strong>React</strong></li>
+      </ol>
+      <p>For example, the home might <em>see</em> when you enter the room, <em>think</em> about what to do, and then <em>react</em> by turning on your lights.
+
+      <p>One option for controlling your home is to use a voice assistant. In this case, you do the seeing and thinking yourself and then ask your devices to turn on or off accordingly. It's not exactly <em>smart</em>, but it is a great way to start experiencing a connected home quickly. It's a lot of fun to be able to make things happen by just commanding it!</p>
+      <p>Assuming you're still exclusively using HomeKit devices, Siri via <a href="https://www.apple.com/homepod/" target="_blank">HomePod</a>, your phone, or computer will provide the most seamless experience with zero extra setup. <a href="https://www.amazon.com/gp/product/B0792KTHKJ/ref=as_li_tl?ie=UTF8&tag=hiome-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0792KTHKJ&linkId=cbec407adb835a9ca59a35f6a1e7415f" target="_blank">Amazon Alexa</a> is the most popular assistant, but will require setting up all your devices twice and sacrificing more privacy, so we don't recommend it.</p>
+      <p>Eventually, you'll get tired of asking Siri to do the same thing every day. At this point, you could use the Automation tab in the Home app to define some basic rules, like "when the sun sets, turn the porch lights on." To get more advanced, you'd also need to buy some motion sensors for HomeKit to <em>see</em> what's happening in your home and then you could program what it should think. However, programming every possible situation is going to be rather difficult, so what else can you do?</p>
+      <p>What if you didn't have to do anything to make your home smarter? Like a butler, what if your home just learned your habits and then started turning the lights on and off just as you enter or leave a room for you?</p>
+    </div>
+
+    <div id="footer">
+      <p>by <a href="/">Hiome</a></p>
+    </div>
+  </div>
+</body>
+</html>

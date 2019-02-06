@@ -127,6 +127,16 @@ const DoorPage = () => (
       Hiome Door counts entries and exits using thermal signatures to accurately know if a room is occupied, whether or not you're moving.
     </p>
 
+    <h4>Can I use Hiome Door without Core?</h4>
+    <p>
+      Hiome Door relies on <Link to="/core">Hiome Core</Link> to collate the occupancy state of each room. Without Core, a Door sensor
+      would quickly lose track of a room's occupancy count if another door was feeding into the same room. Core also keeps your Door
+      sensors off of your wifi network, so that they don't saturate your network with constant data pings, making both the sensors and
+      your wifi more reliable. Hiome Door uses 900mhz radios with almost 1 mile (1.5km) range, which should be more than enough to cover
+      your house. If it's not, please <a href="mailto:investor@hiome.com">get in touch</a> because we might be looking for
+      investors <span role="img" aria-label="wink">😉</span>
+    </p>
+
     <h4>Is there a battery in the sensor?</h4>
     <p>
       No, there are no batteries to replace! Instead, each Door sensor comes with a 20 foot (6 meter) white microUSB cable

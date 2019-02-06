@@ -178,6 +178,15 @@ const CorePage = () => (
       and <Link to="/door">Hiome Door</Link> was born.
     </p>
 
+    <h4>How does it learn?</h4>
+    <p>
+      Hiome Core learns in much the same way as a small child or pet: it tries something and then sees how you react to it. Out of the box, it
+      will make more mistakes as it learns your preferences. For example, Hiome might try turning a light off in a certain situation. If you
+      correct it by turning the light back on, it will make a note that turning that light off was not the right thing to do. That means
+      teaching Hiome is as easy as just turning your lights on and off like you already do! In both psychology and computer science, this
+      idea is referred to as reinforcement learning.
+    </p>
+
     {/*eslint-disable-next-line*/}
     <a name="homekit"></a>
     <h4>What's the deal with HomeKit?</h4>

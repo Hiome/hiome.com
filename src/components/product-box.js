@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'gatsby'
 
 const ProductBox = ({icon, title, link, children}) => (
   <div style={{
@@ -14,7 +15,7 @@ const ProductBox = ({icon, title, link, children}) => (
     <div><a href={link}>{icon}</a></div>
     <strong>{title}</strong>
     <div>
-      {children}
+      {children} <Link to={link}>Learn more</Link>
     </div>
   </div>
 )

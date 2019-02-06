@@ -36,8 +36,8 @@ const OrderPage = () => (
     <OrderForm />
 
     <h2>Get Notified</h2>
-    <p>Don't feel like making a reservation? No problem. Feel free to enter your email below and we'll let you know when we have products
-      back in stock. We promise we won't email you for any other reason. We'll be too busy making other homes smarter <span role="img" aria-label="wink">😉</span></p>
+    <p>Not an early adopter? No problem. Feel free to enter your email below and we'll let you know when we have finished products
+      in stock. We promise we won't email you for any other reason. We'll be too busy making other homes smarter <span role="img" aria-label="wink">😉</span></p>
     <EmailSignup />
   </Layout>
 )

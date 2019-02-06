@@ -1,33 +1,22 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
-import LogoBlack from './images/logo-black'
+import LogoMark from './images/LogoMark'
+import LogoText from './images/LogoText'
 
 const Header = () => (
   <div
     style={{
       background: `#fff`,
-      marginBottom: `1.45rem`,
+      margin: `2.5rem auto 5rem auto`,
+      maxWidth: 960,
+      textAlign: `center`
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        textAlign: `center`
-      }}
-    >
-      <h1 style={{ margin: 0, fontWeight: 200, lineHeight: `1.5em` }}>
-        <Link
-          to="/"
-          style={{ color: `#000`, textDecoration: `none` }}
-        >
-          <LogoBlack /><br/>
-          Hiome
-        </Link>
-      </h1>
-    </div>
+    <Link to="/" className="nottext">
+      <LogoMark /><br/>
+      <LogoText style={{marginTop: `1rem`}} />
+    </Link>
   </div>
 )
 

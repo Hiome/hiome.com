@@ -6,7 +6,7 @@ const CoreThumb = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "core_sq.png" }) {
+        placeholderImage: file(relativePath: { eq: "core.png" }) {
           childImageSharp {
             fixed(width: 300, height: 300) {
               ...GatsbyImageSharpFixed

@@ -6,7 +6,7 @@ const DoorThumb = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "door2.png" }) {
+        placeholderImage: file(relativePath: { eq: "door.png" }) {
           childImageSharp {
             fixed(width: 300, height: 300) {
               ...GatsbyImageSharpFixed

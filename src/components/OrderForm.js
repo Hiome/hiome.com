@@ -39,7 +39,7 @@ class OrderForm extends Component {
     })
 
     if (error) {
-      console.warn("Error:", error)
+      console.error("Error:", error)
     }
   }
 
@@ -110,7 +110,7 @@ class OrderForm extends Component {
           lineHeight: `1.5em`,
           marginTop: `-15px`,
         }}>
-          Count all doors that separate distinct rooms, including your front door. <Link to="/door/compatibility">Check compatibility</Link>
+          Count all doors that separate distinct rooms, including your front door. <Link to="/door#compatibility">Check compatibility</Link>
         </p>
         {this.renderError()}
         <table>

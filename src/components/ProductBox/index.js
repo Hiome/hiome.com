@@ -2,16 +2,10 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
 
+import './styles.css'
+
 const ProductBox = ({icon, title, link, children}) => (
-  <div style={{
-    display: `inline-block`,
-    width: `50%`,
-    minWidth: `350px`,
-    textAlign: `center`,
-    padding: `10px 50px`,
-    marginBottom: `20px`,
-    verticalAlign: `top`,
-  }}>
+  <div className="ProductBox">
     <div><a href={link}>{icon}</a></div>
     <strong>{title}</strong>
     <div>

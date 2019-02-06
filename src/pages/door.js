@@ -31,6 +31,7 @@ const DoorPage = () => (
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
+        backgroundColor: `#ccc`,
       }}>
         <source
           src={dooraction}
@@ -49,6 +50,7 @@ const DoorPage = () => (
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
+        backgroundColor: `#ccc`,
       }}>
         <source
           src={doorfast}
@@ -68,6 +70,7 @@ const DoorPage = () => (
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
+        backgroundColor: `#ccc`,
       }}>
         <source
           src={doorinstall}
@@ -87,6 +90,7 @@ const DoorPage = () => (
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
+        backgroundColor: `#ccc`,
       }}>
         <source
           src={doormultiple}

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import FeatureBox from '../components/feature-box'
-import ProductBox from '../components/product-box'
+import FeatureBox from '../components/FeatureBox'
+import ProductBox from '../components/ProductBox'
 import SEO from '../components/seo'
 import Video from '../components/video'
 

@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import HeroLayout from '../components/HeroLayout'
 import SEO from '../components/seo'
-import HowTo from '../components/how-to'
+import HowTo from '../components/HowTo'
 
 import CoreHero from '../components/images/CoreHero'
 
@@ -95,7 +95,7 @@ const CorePage = () => (
     {/*eslint-disable-next-line*/}
     <a name="setup"></a>
     <h2>Hiome is simple.</h2>
-    <div style={{margin: `0 auto`, width: `90%`}}>
+    <div style={{margin: `0 auto`}}>
       <HowTo stepCount={1}>Plug in Hiome Core</HowTo>
       <HowTo stepCount={2}>Invite Hiome to <a href="#homekit">HomeKit</a></HowTo>
       <HowTo stepCount={3}>Plug in <Link to="/door">Hiome Door</Link> sensors</HowTo>

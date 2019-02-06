@@ -1,0 +1,24 @@
+.FeatureBox {
+  display: inline-block;
+  width: 33%;
+  min-width: 220px;
+  height: 250px;
+  text-align: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+.FeatureBox-svg {
+  display: block;
+  margin: 10px auto;
+  width: 70px;
+  height: 70px;
+  top: 0;
+}
+
+@media only screen and (max-width: 695px) {
+  .FeatureBox {
+    width: 50%;
+  }
+}

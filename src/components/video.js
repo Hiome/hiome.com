@@ -19,7 +19,8 @@ const Video = () => (
     render={data => (
       <video controls width="100%" preload="auto" poster={data.placeholderImage.childImageSharp.fixed.src} style={{
         boxShadow: `2px 2px 15px #ccc`,
-        marginBottom: `2rem`
+        marginBottom: `2rem`,
+        backgroundColor: `#ccc`,
       }}>
         <source
           src={media}

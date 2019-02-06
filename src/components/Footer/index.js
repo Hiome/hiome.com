@@ -4,22 +4,13 @@ import React from 'react'
 import FooterLinks from './links'
 import LogoMark from '../images/LogoMark'
 
+import './styles.css'
+
 const Footer = () => (
   <>
     <hr style={{marginTop: `1.5rem`}} />
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.5rem 1rem 2.5rem 1rem`,
-        verticalAlign: `top`,
-      }}
-    >
-      <div style={{
-        width: `40%`,
-        minWidth: `180px`,
-        display: `inline-block`,
-      }}>
+    <footer>
+      <div id="FooterLegal">
         <Link to="/" className="nottext"><LogoMark width="17px" height="28px" /></Link>
         <br/><br/>
         <p>&copy; {new Date().getFullYear()} Hiome Inc.</p>
@@ -50,7 +41,7 @@ const Footer = () => (
         Chicago, IL 60605<br/>
         (312) 624-6245<br/>
       </FooterLinks>
-    </div>
+    </footer>
   </>
 )
 

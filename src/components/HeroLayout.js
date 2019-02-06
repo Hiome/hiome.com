@@ -12,7 +12,7 @@ const HeroLayout = ({ hero, title, children }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1rem 1.0875rem 1.45rem`,
+        padding: `1rem 1rem 1.45rem`,
       }}
     >
       {children}

@@ -2,24 +2,11 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
 
+import './styles.css'
+
 const FeatureBox = ({icon, title, link, children}) => (
-  <div style={{
-    display: `inline-block`,
-    width: `33%`,
-    minWidth: `220px`,
-    height: `250px`,
-    textAlign: `center`,
-    padding: `10px 20px`,
-    marginBottom: `20px`,
-    verticalAlign: `top`,
-  }}>
-    <object data={icon} type="image/svg+xml" style={{
-      display: `block`,
-      margin: `10px auto`,
-      width: `70px`,
-      height: `70px`,
-      top: 0
-    }}>
+  <div className="FeatureBox">
+    <object data={icon} type="image/svg+xml" className="FeatureBox-svg">
       {title}
     </object>
     <strong>{title}</strong>

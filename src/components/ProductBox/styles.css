@@ -1,0 +1,17 @@
+.ProductBox {
+  display: inline-block;
+  width: 50%;
+  min-width: 350px;
+  text-align: center;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 735px) {
+  .ProductBox {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+}

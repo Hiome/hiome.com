@@ -2,12 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const FooterLinks = ({title, children}) => (
-  <div style={{
-    width: `20%`,
-    minWidth: `80px`,
-    display: `inline-block`,
-    verticalAlign: `top`,
-  }}>
+  <div className='FooterLinks'>
     <strong style={{
       fontSize: `0.8em`,
       textTransform: `uppercase`,

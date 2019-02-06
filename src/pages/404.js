@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -21,7 +22,7 @@ const NotFoundPage = () => (
     <h2>Well, this is awkward.</h2>
     <p style={{textAlign: `center`, marginTop: `-30px`, lineHeight: `1.8em`}}>
       We can't find the page you're looking for.<br/>
-      Try our <Link to="/">home page</Link> or <a href="mailto:support@hiome.com?subject=Something%20broke" title="Let us know what you were looking for">get in touch</a>.</p>
+      Try our <Link to="/">home page</Link> or <OutboundLink href="mailto:support@hiome.com?subject=Something%20broke" title="Let us know what you were looking for">get in touch</OutboundLink>.</p>
   </Layout>
 )
 

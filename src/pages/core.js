@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import HeroLayout from '../components/HeroLayout'
 import SEO from '../components/seo'
@@ -97,7 +98,7 @@ const CorePage = () => (
     <h2>Hiome is simple.</h2>
     <div style={{margin: `0 auto`}}>
       <HowTo stepCount={1}>Plug in Hiome Core</HowTo>
-      <HowTo stepCount={2}>Invite Hiome to <a href="#homekit">HomeKit</a></HowTo>
+      <HowTo stepCount={2}>Invite Hiome to <OutboundLink href="#homekit">HomeKit</OutboundLink></HowTo>
       <HowTo stepCount={3}>Plug in <Link to="/door">Hiome Door</Link> sensors</HowTo>
       <div style={{clear: `both`}}></div>
     </div>
@@ -119,7 +120,7 @@ const CorePage = () => (
       width: `352px`,
       height: `258px`,
     }}>
-      Don't upload your data.
+      Have ultimate control over your home.
     </object>
     <p>
       To accomplish all this, we've packed a lot of technology inside a single appliance. In fact, Hiome is powered by the same advanced
@@ -129,7 +130,7 @@ const CorePage = () => (
     </p>
     <p>
       Well, in order to orchestrate your home, we needed a way to control all of your devices. We could have made yet another
-      proprietary platform to lock in your data, but since <a href="#privacy">we don't even want your data</a>, that didn't make
+      proprietary platform to lock in your data, but since <OutboundLink href="#privacy">we don't even want your data</OutboundLink>, that didn't make
       any sense. Instead, we built an entire event stream layer for your home on top of open protocols like MQTT.
     </p>
     <p>
@@ -192,7 +193,7 @@ const CorePage = () => (
     <h4>What's the deal with HomeKit?</h4>
     <p>
       Hiome controls any device that works with
-      the <a href="https://apple.com/homekit" rel="noopener noreferrer" target="_blank">Apple HomeKit</a> platform. Each Core comes
+      the <OutboundLink href="https://apple.com/homekit" rel="noopener noreferrer" target="_blank">Apple HomeKit</OutboundLink> platform. Each Core comes
       with a unique email address that you can use to invite Hiome to control your home in HomeKit, just like you would with a family
       member or roommate. Only your Core will be able to access your local HomeKit setup. Hiome assumes that you already
       have your devices and rooms properly configured in HomeKit, so it speeds up its learning by using that as a starting point. Note
@@ -200,7 +201,7 @@ const CorePage = () => (
     </p>
     <p>
       Don't use HomeKit? Support for other platforms is
-      planned. <a href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</a> which platform you use.
+      planned. <OutboundLink href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</OutboundLink> which platform you use.
     </p>
   </HeroLayout>
 )

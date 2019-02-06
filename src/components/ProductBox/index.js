@@ -6,7 +6,7 @@ import './styles.css'
 
 const ProductBox = ({icon, title, link, children}) => (
   <div className="ProductBox">
-    <div><a href={link}>{icon}</a></div>
+    <div><Link to={link}>{icon}</Link></div>
     <strong>{title}</strong>
     <div>
       {children} <Link to={link}>Learn more</Link>

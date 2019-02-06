@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -59,7 +60,7 @@ const AboutPage = () => (
 
     <p>
     If you're in Chicago and interested in meeting up, find us at
-    the <a href="https://www.meetup.com/Chicago-Home-Automation/" rel="noopener noreferrer" target="_blank">Chicago Home Automation</a> meetups!
+    the <OutboundLink href="https://www.meetup.com/Chicago-Home-Automation/" rel="noopener noreferrer" target="_blank">Chicago Home Automation</OutboundLink> meetups!
     </p>
 
   </Layout>

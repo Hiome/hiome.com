@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import HeroLayout from '../components/HeroLayout'
 import SEO from '../components/seo'
@@ -114,13 +115,13 @@ const DoorPage = () => (
     <p>
       Most likely. Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep to be able
       to support Hiome Door's base, and at most 40" (1 meter) wide. We don't currently support extra-wide or double doors, but we're
-      working on it! <a href="mailto:support@hiome.com?subject=Double%20door%20support">Let us know</a> if you're waiting for double
+      working on it! <OutboundLink href="mailto:support@hiome.com?subject=Double%20door%20support">Let us know</OutboundLink> if you're waiting for double
       door support.
     </p>
 
     <p>
-      If you have any doubts, feel free to <a href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">send us a picture
-      of your door frame</a> and we'll let you know.
+      If you have any doubts, feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">send us a picture
+      of your door frame</OutboundLink> and we'll let you know.
     </p>
 
     <h4>How does this differ from my motion sensors?</h4>
@@ -135,8 +136,8 @@ const DoorPage = () => (
     <p>
       Hiome Door talks directly with <Link to="/core">Hiome Core</Link>, so there's no extra steps involved and it doesn't saturate your wifi
       network with constant data pings. This makes both your sensors and your wifi more reliable. Door uses a 900mhz radio with a
-      1 mile (1.5km) range, which should be more than enough to cover your house. If it's not, please <a href="mailto:investor@hiome.com">get
-      in touch</a> because we might be looking for investors <span role="img" aria-label="wink">😉</span>
+      1 mile (1.5km) range, which should be more than enough to cover your house. If it's not, please <OutboundLink href="mailto:investor@hiome.com">get
+      in touch</OutboundLink> because we might be looking for investors <span role="img" aria-label="wink">😉</span>
     </p>
 
     <h4>Can I use Hiome Door without Core?</h4>

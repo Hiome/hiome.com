@@ -20,7 +20,6 @@ const NavLink = props => (
 const HeroHeader = ({ hero, title }) => (
   <div
     style={{
-      background: `#fff`,
       marginBottom: `1.45rem`,
     }}
   >

@@ -7,7 +7,6 @@ import LogoText from './images/LogoText'
 const Header = () => (
   <div
     style={{
-      background: `#fff`,
       margin: `2.5rem auto 5rem auto`,
       maxWidth: 960,
       textAlign: `center`

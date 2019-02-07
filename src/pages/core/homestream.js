@@ -36,9 +36,8 @@ const HomeStreamPage = () => (
     <p>
       That means everything that happens in your home, whether you turn on a light, enter a room, or change the
       temperature on the thermostat, is published as an event that you can easily subscribe to. We use these events to train
-      Hiome and monitor your home. If you're a developer, you can extend Hiome's functionality to build anything you want with the same
-      level of access and control that we have in just a few lines of code. This level of infrastructure is generally reserved for large,
-      distributed services, but we've made it accessible for your home.
+      Hiome and monitor your home's status. If you're a developer, you can use the same events to build anything you want
+      in just a few lines of code.
     </p>
 
     <object data={stream} type="image/svg+xml" style={{
@@ -52,6 +51,7 @@ const HomeStreamPage = () => (
     </object>
 
     <p>
+      This level of infrastructure is typically reserved for large, distributed services, but we've made it accessible for your home.
       To get started, you can use any standard MQTT client library in your preferred language to connect to your Hiome Core.
       Each device in your home gets its own topic, so you can subscribe to updates for just one device, a subset, or all of them.
       To turn something on or off, you just publish an event to that device's topic. Hiome handles all the work of translating to

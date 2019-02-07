@@ -119,8 +119,8 @@ const CorePage = () => (
     <p>
       To accomplish all this, we packed a lot of technology inside. In fact, Hiome is powered by the same advanced
       machine learning that controls self-driving cars. Hiome Core contains a cluster of 5 discrete processors, basically making it your
-      own private data center dedicated to one task: making sure your home runs smoothly. <Link to="/core/homestream">Learn more</Link> about what you can do with all that
-      power.
+      own private data center dedicated to one task: making sure your home runs smoothly. If you're a developer, we think you're going to
+      love <Link to="/core/homestream">what's under the hood</Link>.
     </p>
 
     <div style={{

@@ -42,8 +42,8 @@ const CorePage = () => (
     </object>
     <p>
       You shouldn't have to configure your home, let alone talk to it every time you enter a room. Hiome learns your habits and
-      configures itself, redefining what it means to be "plug and play." If your habits change over time, Hiome will adjust accordingly, making your home
-      feel like it's alive and responding to you.
+      configures itself, redefining what it means to be "plug and play." If your habits change over time, Hiome will adjust accordingly,
+      making your home feel like it's alive and responding to you.
     </p>
 
     {/*eslint-disable-next-line*/}
@@ -119,7 +119,7 @@ const CorePage = () => (
     <p>
       To accomplish all this, we packed a lot of technology inside. In fact, Hiome is powered by the same advanced
       machine learning that controls self-driving cars. Hiome Core contains a cluster of 5 discrete processors, basically making it your
-      own private data center dedicated to one task: making sure your home runs smoothly. <Link to="/core/home-stream">Learn more</Link> about what you can do with all that
+      own private data center dedicated to one task: making sure your home runs smoothly. <Link to="/core/homestream">Learn more</Link> about what you can do with all that
       power.
     </p>
 

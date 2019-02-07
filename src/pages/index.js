@@ -41,7 +41,7 @@ const IndexPage = () => (
       margin: `40px auto 0 auto`
     }}>
       <FeatureBox icon={smart_thumb} title="Autonomous" link="/core#autonomous">
-        Automate your home with the same technology that powers self-driving cars.
+        Your home manages itself with the same technology that powers self-driving cars.
       </FeatureBox>
       <FeatureBox icon={easy_thumb} title="Easy" link="/core#setup">
         Enjoy the benefits of advanced automations without any of the headache or setup.
@@ -55,8 +55,8 @@ const IndexPage = () => (
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.
       </FeatureBox>
-      <FeatureBox icon={powerful_thumb} title="Developer Friendly" link="/core/home-stream">
-        Want more control? Build any customization you can think of with Home Stream.
+      <FeatureBox icon={powerful_thumb} title="Developer Friendly" link="/core/homestream">
+        Want more control? Build any customization you can think of with HomeStream.
       </FeatureBox>
     </div>
 

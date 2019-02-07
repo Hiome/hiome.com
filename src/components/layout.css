@@ -716,3 +716,11 @@ pre tt:after {
     opacity: 1;
   }
 }
+
+.tm {
+  color: hsla(0, 0%, 0%, 0.5);
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.6em;
+  vertical-align: top;
+}

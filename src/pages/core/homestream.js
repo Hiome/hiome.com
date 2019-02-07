@@ -26,14 +26,18 @@ const HomeStreamPage = () => (
     <p>
       In order to orchestrate your home, we needed a way to talk to all of your devices. We could have made yet another
       proprietary platform to lock in your data, but since <Link to="/core#privacy">we don't even want your data</Link>, that didn't make
-      much sense. Instead, <strong>we built an entire event stream layer for your home</strong> on top of open protocols
+      much sense. Instead, we built the tools we wish existed when we started Hiome...
+    </p>
+    <p>
+      <strong>HomeStream</strong><span className="tm">&#8482;</span> is a complete event streaming layer
+      for your home, built on top of open protocols
       like <OutboundLink href="https://en.wikipedia.org/wiki/MQTT" rel="noopener noreferrer" target="_blank">MQTT</OutboundLink>.
     </p>
     <p>
       That means everything that happens in your home, whether you turn on a light, enter a room, or change the
       temperature on the thermostat, is published as an event that you can easily subscribe to. We use these events to train
       Hiome and monitor your home. If you're a developer, you can extend Hiome's functionality to build anything you want with the same
-      level of access and control that we have in just a few lines of code. This kind of architecture is generally reserved for large,
+      level of access and control that we have in just a few lines of code. This level of infrastructure is generally reserved for large,
       distributed services, but we've made it accessible for your home.
     </p>
 

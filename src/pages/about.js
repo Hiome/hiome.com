@@ -53,9 +53,8 @@ const AboutPage = () => (
     <h4>Technology should delight us.</h4>
     <p>
       In order to delight, technology must anticipate our needs and dynamically adapt to us, not the other way around. The best technologies
-      augment our lives without requiring major changes in our behavior. The internet of things will drastically impact the way we work and
-      live. If we're not careful as a society, it could make us slaves to our own technology. At Hiome, we're working hard to make sure that
-      technology feels enchanted instead.
+      augment our lives without requiring major changes in our behavior. At Hiome, we're working hard to make new technologies and workflows
+      that feel enchanted at first and obvious in hindsight.
     </p>
 
     <p>

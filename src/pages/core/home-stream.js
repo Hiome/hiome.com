@@ -23,7 +23,7 @@ const HomeStreamPage = () => (
     </object>
 
     <p>
-      In order to orchestrate your home, we needed a way to control all of your devices. We could have made yet another
+      In order to orchestrate your home, we needed a way to talk to all of your devices. We could have made yet another
       proprietary platform to lock in your data, but since <Link to="/core#privacy">we don't even want your data</Link>, that didn't make
       much sense. Instead, <strong>we built an entire event stream layer for your home</strong> on top of open protocols
       like <OutboundLink href="https://en.wikipedia.org/wiki/MQTT" rel="noopener noreferrer" target="_blank">MQTT</OutboundLink>.

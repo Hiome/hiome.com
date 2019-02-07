@@ -62,7 +62,7 @@ class Video extends Component {
   renderButton() {
     if (this.state.playing) {
       return (
-        <svg className="fadeIn clickable" style={{marginTop: `-26px`, marginBottom: `20px`}} onClick={this.scroll} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g style={{fill:`#000000`}}><svg fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><title>Scroll Down</title><path d="M50,58.62h0A2.23,2.23,0,0,1,48.43,58L35.64,45.18A2.23,2.23,0,0,1,38.79,42L50,53.25,61.21,42a2.23,2.23,0,0,1,3.15,3.15L51.57,58A2.23,2.23,0,0,1,50,58.62Z"></path></svg></g></g></svg>
+        <svg className="fadeIn clickable" style={{marginTop: `-26px`, marginBottom: `20px`}} onClick={this.scroll} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g style={{fill:`hsla(0, 0%, 0%, 0.2)`}}><svg fill="hsla(0, 0%, 0%, 0.2)" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><title>Scroll Down</title><path d="M50,58.62h0A2.23,2.23,0,0,1,48.43,58L35.64,45.18A2.23,2.23,0,0,1,38.79,42L50,53.25,61.21,42a2.23,2.23,0,0,1,3.15,3.15L51.57,58A2.23,2.23,0,0,1,50,58.62Z"></path></svg></g></g></svg>
       )
     } else {
       return (

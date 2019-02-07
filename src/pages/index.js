@@ -65,10 +65,10 @@ const IndexPage = () => (
       margin: `40px auto 0 auto`,
     }}>
       <ProductBox icon={<DoorThumb />} title="Hiome Door" link="/door">
-        True occupancy detection that's unbelievably accurate thanks to our custom thermal sensors.
+        Unbelievably accurate occupancy detection made possible with custom thermal sensors.
       </ProductBox>
       <ProductBox icon={<CoreThumb />} title="Hiome Core" link="/core">
-        The brains of your home, constantly processing what's going on and telling HomeKit what to do.
+        Fast, intelligent home automations made possible with advanced machine learning.
       </ProductBox>
 
       <p style={{textAlign: `center`, paddingTop: `30px`, width: `80%`, margin: `20px auto`}}>

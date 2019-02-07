@@ -15,7 +15,7 @@ import DoorThumb from '../components/images/door-thumb'
 import smart_thumb from '../images/features/smart.svg'
 import easy_thumb from '../images/features/easy.svg'
 import family_thumb from '../images/features/family.svg'
-import stateart_thumb from '../images/features/stateart.svg'
+import precise_thumb from '../images/features/precise.svg'
 import privacy_thumb from '../images/features/privacy.svg'
 import powerful_thumb from '../images/features/powerful.svg'
 
@@ -49,8 +49,8 @@ const IndexPage = () => (
       <FeatureBox icon={family_thumb} title="Family Friendly" link="/core#setup">
         Don't change your behavior. Hiome adapts to you, so there's nothing to learn.
       </FeatureBox>
-      <FeatureBox icon={stateart_thumb} title="Unparalleled" link="/door">
-        Enjoy cutting-edge custom tech designed with one goal: to make your life simpler.
+      <FeatureBox icon={precise_thumb} title="Precisely Engineered" link="/door">
+        Experience unparalleled accuracy with cutting-edge occupancy sensors.
       </FeatureBox>
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.

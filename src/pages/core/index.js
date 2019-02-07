@@ -24,7 +24,7 @@ const CorePage = () => (
     </p>
     <p>
       <strong>Hiome Core</strong> manages your home, so you don't have to. It sits on top of your existing setup, learns your preferences,
-      and directs your devices to proactively react to you as you go about your life. That means you never see or think about it, you just
+      and directs your lights to proactively react to you as you go about your life. That means you never see or think about it, you just
       get to enjoy the benefits of a responsive home.
     </p>
 
@@ -59,7 +59,7 @@ const CorePage = () => (
       Life is unpredictable.
     </object>
     <p>
-      Other home automation systems rely heavily on specific timing to trigger rules, like turning on the coffee machine at 6am. But real life
+      Other home automation systems rely heavily on specific timing to trigger rules. But real life
       is unpredictable, and your home should adapt to that. Hiome reacts to your actions (like leaving a room), rather than guessing what you
       want based on a clock, so it does exactly what you want at just the right time, even if that time is different every day.
     </p>
@@ -132,7 +132,7 @@ const CorePage = () => (
 
     <h2>Frequently Asked Questions</h2>
 
-    <h4>Does it control more than lights?</h4>
+    <h4>Can it control more than lights?</h4>
     <p>
       We're intentionally focusing on just lights for now while we perfect the learning logic before opening it up to control
       other types of devices. Eventually, Hiome will be able to control your whole home.
@@ -163,18 +163,19 @@ const CorePage = () => (
 
     {/*eslint-disable-next-line*/}
     <a name="homekit"></a>
-    <h4>What does it integrate with?</h4>
+    <h4>What devices does it work with?</h4>
     <p>
-      Hiome controls any device that works with
-      the <OutboundLink href="https://apple.com/homekit" rel="noopener noreferrer" target="_blank">Apple HomeKit</OutboundLink> platform. Each Core comes
-      with a unique email address that you can use to invite Hiome to control your home in HomeKit, just like you would with a family
-      member or roommate. Only your Core will be able to access your local HomeKit setup. Hiome assumes that you already
-      have your devices and rooms properly configured in HomeKit, so it speeds up its learning by using that as a starting point. Note
-      that Hiome controls your HomeKit setup, it does not appear in HomeKit itself.
+      Hiome integrates with any light switches or bulbs that work with
+      the <OutboundLink href="https://apple.com/homekit" rel="noopener noreferrer" target="_blank">Apple HomeKit</OutboundLink> platform.
+      Each Core comes with a unique email address that you can use to invite Hiome to manage your home via HomeKit, just like you would with
+      a family member or roommate. Only your local Core will be able to access your HomeKit setup. Hiome assumes that you already
+      have your devices and rooms setup in HomeKit, so it speeds up its learning by using that as a starting point. Hiome only uses HomeKit
+      to control your devices, it does not appear in HomeKit itself.
     </p>
     <p>
       Don't use HomeKit? Support for other platforms is
-      planned. <OutboundLink href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</OutboundLink> which platform you use.
+      planned. <OutboundLink href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</OutboundLink> which platform
+      you use.
     </p>
   </HeroLayout>
 )

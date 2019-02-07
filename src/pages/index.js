@@ -72,7 +72,7 @@ const IndexPage = () => (
       </ProductBox>
 
       <p style={{textAlign: `center`, paddingTop: `30px`, width: `80%`, margin: `20px auto`}}>
-        Hiome controls your HomeKit devices, so you also need those. <Link to="/core#homekit">Learn more</Link>
+        Hiome controls your lights with HomeKit, so you also need that. <Link to="/core#homekit">Learn more</Link>
       </p>
     </div>
 

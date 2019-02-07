@@ -23,7 +23,7 @@ const CorePage = () => (
       letting you forget it's even there.
     </p>
     <p>
-      <strong>Hiome Core</strong> manages your home, so you don't have to. It sits on top of your existing setup, learns your preferences,
+      <strong>Hiome Core</strong> manages your home, so you don't have to. It integrates with your existing setup, learns your preferences,
       and directs your lights to proactively react to you as you go about your life. That means you never see or think about it, you just
       get to enjoy the benefits of a responsive home.
     </p>

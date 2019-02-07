@@ -673,18 +673,47 @@ pre tt:after {
   border-radius: 30px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
-.secondary:hover:enabled {
+.secondary:hover {
   background-color: #FC4A1A;
   border-color: #FC4A1A;
   cursor: pointer;
   text-decoration: none;
   color: #fff;
 }
-.secondary:disabled:hover {
-  color: #ccc;
-  border-color: #ccc;
-}
 
 .error {
   color: #CA330A;
+}
+
+.fadeOutable {
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s linear;
+  animation: fadeIn 1s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

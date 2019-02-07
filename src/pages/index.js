@@ -27,6 +27,8 @@ const IndexPage = () => (
 
     <Video />
 
+    {/*eslint-disable-next-line*/}
+    <a id="welcome"></a>
     <h2>Welcome Hiome.</h2>
 
     <p>

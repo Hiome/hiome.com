@@ -25,7 +25,8 @@ const HomeStreamPage = () => (
     <p>
       In order to orchestrate your home, we needed a way to control all of your devices. We could have made yet another
       proprietary platform to lock in your data, but since <Link to="/core#privacy">we don't even want your data</Link>, that didn't make
-      much sense. Instead, <strong>we built an entire event stream layer for your home</strong> on top of open protocols like MQTT.
+      much sense. Instead, <strong>we built an entire event stream layer for your home</strong> on top of open protocols
+      like <OutboundLink href="https://en.wikipedia.org/wiki/MQTT" rel="noopener noreferrer" target="_blank">MQTT</OutboundLink>.
     </p>
     <p>
       That means everything that happens in your home, whether you turn on a light, enter a room, or change the
@@ -45,10 +46,11 @@ const HomeStreamPage = () => (
     </object>
 
     <p>
-      To get started, you can use any standard MQTT client library in your preferred language to connect to your Hiome Core's broker
-      at <code>hiome.local:1883</code>. Each device in your home gets its own topic, so you can subscribe to updates from just one
-      device, a subset, or all of them. To make changes in your home, you just publish an event to that device's topic. We handle all
-      the work of translating that to HomeKit's APIs for you. It's never been easier to gain control over your home!
+      To get started, you can use any standard MQTT client library in your preferred language to connect to your Hiome Core.
+      Each device in your home gets its own topic, so you can subscribe to updates for just one device, a subset, or all of them.
+      To turn something on or off, you just publish an event to that device's topic. Hiome handles all the work of translating to
+      and from HomeKit's APIs for you, as well as managing uptime, error reporting, and more. It's never been easier to gain
+      control over your home!
     </p>
 
     <p>More information and documentation coming soon. We're really excited to see what you'll build with this new super power.</p>

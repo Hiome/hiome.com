@@ -50,7 +50,7 @@ const IndexPage = () => (
         Don't change your behavior. Hiome adapts to you, so there's nothing to learn.
       </FeatureBox>
       <FeatureBox icon={precise_thumb} title="Precisely Engineered" link="/door">
-        Experience unparalleled accuracy with cutting-edge occupancy sensors.
+        Experience unparalleled accuracy with a new class of occupancy sensors.
       </FeatureBox>
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.

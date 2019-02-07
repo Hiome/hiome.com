@@ -7,7 +7,7 @@ module.exports = {
       core: 375,
       door: 120
     },
-    stripe_key: `pk_test_ard5KaDPJfEbkzoTrrXWgPsA`,
+    stripe_key: `pk_live_GGLAckmkxax3TR04QeipRU7G`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

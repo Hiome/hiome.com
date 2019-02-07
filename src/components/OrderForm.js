@@ -31,8 +31,8 @@ class OrderForm extends Component {
     event.preventDefault()
     const { error } = await this.state.stripe.redirectToCheckout({
       items: [
-        { sku: "sku_ERMY5d8oont2Pd", quantity: 1 },
-        { sku: "sku_ERMYouF0pNxIwM", quantity: this.state.doorCount }
+        { sku: "sku_EU4g5jomWWVCQ8", quantity: 1 },
+        { sku: "sku_EU4sF9iIfSKscu", quantity: this.state.doorCount }
       ],
       successUrl: 'https://hiome.com/success',
       cancelUrl: 'https://hiome.com/order',

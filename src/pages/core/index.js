@@ -134,8 +134,8 @@ const CorePage = () => (
 
     <h4>Can it control more than lights?</h4>
     <p>
-      We're intentionally focusing on just lights for now while we perfect the learning logic before opening it up to control
-      other types of devices. Eventually, Hiome will be able to control your whole home.
+      We're intentionally focusing on just lights for now while we develop Hiome's learning skills before opening it up to control
+      other types of devices. Eventually, Hiome will be able to mange your whole home.
     </p>
 
     <h4>Why not just use a voice assistant?</h4>

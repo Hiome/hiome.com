@@ -34,7 +34,8 @@ const CorePage = () => (
     <object data={settings} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `381px`,
+      width: `90%`,
+      maxWidth: `381px`,
       height: `233px`,
     }}>
       Don't configure your home.
@@ -51,7 +52,8 @@ const CorePage = () => (
     <object data={clock} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `330px`,
+      width: `90%`,
+      maxWidth: `330px`,
       height: `258px`,
     }}>
       Life is unpredictable.
@@ -68,7 +70,8 @@ const CorePage = () => (
     <object data={upload} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `376px`,
+      width: `90%`,
+      maxWidth: `376px`,
       height: `256px`,
     }}>
       Don't upload your data.
@@ -107,7 +110,8 @@ const CorePage = () => (
     <object data={database} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
-      width: `352px`,
+      width: `90%`,
+      maxWidth: `352px`,
       height: `258px`,
     }}>
       Have ultimate control over your home.

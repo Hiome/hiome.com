@@ -13,7 +13,8 @@ const NotFoundPage = () => (
     <object data={startled} type="image/svg+xml" style={{
       display: `block`,
       margin: `10px auto`,
-      width: `372px`,
+      width: `90%`,
+      maxWidth: `372px`,
       height: `275px`,
       top: 0,
     }}>

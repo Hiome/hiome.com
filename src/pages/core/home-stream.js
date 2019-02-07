@@ -16,7 +16,8 @@ const HomeStreamPage = () => (
     <object data={developer} type="image/svg+xml" style={{
       display: `block`,
       margin: `2rem auto`,
-      width: `381px`,
+      width: `90%`,
+      maxWidth: `381px`,
       height: `206px`,
     }}>
       Have ultimate control over your home.
@@ -39,7 +40,8 @@ const HomeStreamPage = () => (
     <object data={stream} type="image/svg+xml" style={{
       display: `block`,
       margin: `2rem auto`,
-      width: `293px`,
+      width: `90%`,
+      maxWidth: `293px`,
       height: `236px`,
     }}>
       Have ultimate control over your home.

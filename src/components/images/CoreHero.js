@@ -2,6 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import './CoreHero.css'
+
 const CoreHero = () => (
   <StaticQuery
     query={graphql`
@@ -15,7 +17,7 @@ const CoreHero = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{borderRadius: `10px`}} alt="Hiome Core" />}
+    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} className="CoreHero" alt="Hiome Core" />}
   />
 )
 export default CoreHero

@@ -31,13 +31,13 @@ const OrderPage = () => (
 
     <p>This is not a Kickstarter or preorder campaign, so you won't be waiting a year for us to figure out how to scale production in China.
       Each Hiome product is assembled in Chicago, and we'll ship products out as we make them, in the order they were reserved.
-      The current estimated delivery date, based on number of orders in line so far, is May 2019.</p>
+    </p>
 
     <h2>Reserve Hiome</h2>
     <OrderForm />
 
     <h2>Get Notified</h2>
-    <p>Don't like to be on the bleeding edge? No problem. Feel free to enter your email below and we'll let you know when we have finished products
+    <p>Don't like to be on the bleeding edge? No problem. Enter your email below and we'll let you know when we have finished products
       in stock. We promise we won't email you for any other reason. We'll be too busy making other homes smarter <span role="img" aria-label="wink">😉</span></p>
     <EmailSignup />
   </Layout>

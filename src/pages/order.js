@@ -9,13 +9,14 @@ const OrderPage = () => (
   <Layout>
     <SEO title="Order Hiome" />
     <p><span role="img" aria-label="wave">👋</span> Hey there,</p>
-    <p>First, let's start with the bad news: we're sold out of our current batch. I know, it sucks. But all hope is not lost...</p>
+    <p>First, let's start with the bad news: we're sold out of our current batch. But all hope is not lost...</p>
     <p>
-      We've been diligently testing Hiome in different homes for the last year, refining the features and working out the kinks.
-      Now we're producing the next revision and want to prioritize giving it to the people who are most excited about it.
+      We've been diligently testing Hiome for the last year, refining the features and working out the kinks.
+      Now we're producing the next major revision and want to prioritize giving it to the people who are most excited about it.
       Early users have an outsized impact on the roadmap of a product, so we want to make sure we're working with great people!
       We'll be honest - there may be some rough edges still that are quickly being polished away, but you'll get early access,
-      priority support from the team, and the opportunity to strongly shape the direction of Hiome.</p>
+      priority support from the team, and the opportunity to strongly shape the direction of Hiome.
+    </p>
 
     <p>
       If that sounds enticing, <strong>here's the deal</strong>: you can reserve an order below to join our beta testing program

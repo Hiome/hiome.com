@@ -50,7 +50,7 @@ const IndexPage = () => (
         Keep doing what you're doing. Hiome adapts to you, not the other way around.
       </FeatureBox>
       <FeatureBox icon={fast_thumb} title="Fast" link="/door">
-        Get spoiled by how quickly your home reacts to you. You'll forget it's not actually alive.
+        Get spoiled by how quickly your home reacts to you. You'll think it's actually alive.
       </FeatureBox>
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.
@@ -64,15 +64,15 @@ const IndexPage = () => (
     <div style={{
       margin: `40px auto 0 auto`,
     }}>
-      <ProductBox icon={<DoorThumb />} title="Hiome Door" link="/door">
-        Unbelievably accurate occupancy detection, made possible with custom thermal sensors.
-      </ProductBox>
       <ProductBox icon={<CoreThumb />} title="Hiome Core" link="/core">
         Intelligent automations specific to your home, powered by reinforcement learning.
       </ProductBox>
+      <ProductBox icon={<DoorThumb />} title="Hiome Door" link="/door">
+        Unbelievably accurate occupancy detection, made possible with custom thermal sensors.
+      </ProductBox>
 
       <p style={{textAlign: `center`, paddingTop: `30px`, width: `80%`, margin: `20px auto`}}>
-        Hiome controls your lights with HomeKit, so you also need that. <Link to="/core#homekit">Learn more</Link>
+        Hiome Core controls your lights with HomeKit, so you also need that. <Link to="/core#homekit">Learn more</Link>
       </p>
     </div>
 

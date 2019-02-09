@@ -14,24 +14,14 @@ const AboutPage = () => (
       We're a team of engineers based in Chicago, IL who enjoy smart homes, great tech, and long walks on the beach.
     </p>
     <p>
-      We believe that smart homes are inevitable, but they need to be easier first. Ultimately, making something "smart" should always be
-      additive to your experience, and never make your life harder. Sadly, that's not typically been the case. We got tired of seeing people
+      We believe that smart homes are inevitable, but they need to be easier first. Ultimately, making something "smart" should be
+      additive to your experience, not make your life harder. Sadly, that's not always been the case. We got tired of seeing people
       struggle with bathroom lights turning off while they were showering or bedroom lights turning on when they moved in their sleep.
+      So we built <Link to="/core">Hiome Core</Link> and <Link to="/door">Hiome Door</Link>.
     </p>
     <p>
-      So we experimented with unique machine learning models to automate smart home setup, making reliable automations accessible to
-      everybody. This research eventually become <Link to="/core">Hiome Core</Link>. However, we quickly hit the problem that machine
-      learning is only as good as its input. In order for our algorithm to learn correctly, it needed to know if a room was occupied or not.
-      We started testing all of the solutions on the market: motion sensors, BLE beacons, geolocation, cameras, ultrasonic, and even
-      LIDAR sensors, but they all came up short for one reason or another.
+      There are a few principles that are core to our beliefs and have guided how we design our products.
     </p>
-    <p>
-      Eventually, we gave in and started building our own solution to occupancy detection. After 50 prototypes, we learned that this is a
-      much harder problem than we expected. Hundreds of prototypes later, we finally cracked the nut with a reliable, discrete thermal
-      sensor: <Link to="/door">Hiome Door</Link>!
-    </p>
-    <p>Throughout the whole process, there's a few principles that are core to our beliefs and have impacted how we design
-    our products...</p>
 
     <h4>Technology should be invisible.</h4>
     <p>

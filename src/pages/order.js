@@ -19,7 +19,8 @@ const OrderPage = () => (
 
     <p>
       If that sounds enticing, <strong>here's the deal</strong>: you can reserve an order below to join our beta testing program
-      and get Hiome at a <em>significant</em> discount. In exchange, we'll periodically ask for feedback about your experience.
+      and get Hiome at a <em>significant</em> discount. In exchange, we'll periodically ask for feedback about your experience
+      and collect anonymized diagnostic data from your home during the beta period.
     </p>
 
     <p>

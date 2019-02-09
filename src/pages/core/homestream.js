@@ -26,7 +26,7 @@ const HomeStreamPage = () => (
     <p>
       In order to orchestrate your home, we needed a way to talk to all of your devices. We could have made yet another
       proprietary platform to lock in your data, but since <Link to="/core#privacy">we don't even want your data</Link>, that didn't make
-      much sense. Instead, we built the tools we wish existed when we started Hiome...
+      much sense. Instead, we built the tools we wish existed when we started Hiome.
     </p>
     <p>
       <strong>HomeStream</strong><span className="tm">&#8482;</span> is a complete event streaming layer
@@ -54,7 +54,7 @@ const HomeStreamPage = () => (
       This level of infrastructure is typically reserved for large, distributed services, but we've made it accessible for your home.
       To get started, you can use any standard MQTT client library in your preferred language to connect to your Hiome Core.
       Each device in your home gets its own topic, so you can subscribe to updates for just one device, a subset, or all of them.
-      To turn something on or off, you just publish an event to that device's topic. Hiome handles all the work of translating to
+      To turn something on or off, you just publish an event to that device's topic. Hiome Core handles all the work of translating to
       and from HomeKit's APIs for you, as well as managing uptime, error reporting, and more. It's never been easier to gain
       control over your home!
     </p>

@@ -18,9 +18,9 @@ const CorePage = () => (
     <SEO title="Hiome Core" />
 
     <p>
-      A smart home anticipates your needs and proactively makes your life easier. But more importantly, it's a <em>home</em> that welcomes
-      you and your loved ones. It adapts to you, not the other way around. In fact, the technology should be completely invisible,
-      letting you forget it's even there.
+      <strong>Hiome Core</strong> redefines what a smart home is capable of. Every detail has been carefully engineered to anticipate your needs and
+      make your life easier. But it doesn't just make your home smarter, it makes it more delightful for you and your loved ones.
+      It's unlike anything you've experienced.
     </p>
 
     {/*eslint-disable-next-line*/}
@@ -36,8 +36,8 @@ const CorePage = () => (
       Don't configure your home.
     </object>
     <p>
-      <strong>Hiome Core</strong> uses reinforcement learning to automate your home based on your habits. That means your smart home thinks
-      for itself, so you don't have to manage it. As it learns, Hiome builds an algorithm specifically for your home.
+      Hiome Core uses reinforcement learning to automate your home based on your habits. That means your smart home thinks
+      for itself, so you don't have to manage it. As it learns, Hiome Core builds a plan specifically for your home.
       If your habits change over time, Hiome will adjust, so your home grows with you.
     </p>
 
@@ -54,9 +54,9 @@ const CorePage = () => (
       Life is unpredictable.
     </object>
     <p>
-      Hiome controls your lights for you, so you don't have to do anything. It reacts to you, not preset times,
-      because life is unpredictable. If you want to change things up, just use your lights like before and Hiome
-      will take note. That means everybody, including grandma, will love Hiome, without having to be told how to use it.
+      Hiome controls your lights for you, so you don't have to do anything. It reacts to you, not at preset times,
+      because life is unpredictable. If you want to change something, just manually control your lights like before and Hiome
+      will take note. That means everybody, including grandpa, will love Hiome, without having to be told how to use it.
     </p>
 
     {/*eslint-disable-next-line*/}
@@ -88,12 +88,9 @@ const CorePage = () => (
       Don't upload your data.
     </object>
     <p>
-      We built Hiome from the ground up with privacy in mind. Your data is stored 100% locally and never leaves your home because
-      we don't want it. Storing and processing data is expensive, so unless we're going to sell it, it doesn't make sense for us
-      to even collect it. What you do in your home is your business.
-    </p>
-    <p>
-      That also means your automations are insanely fast and reliable, because your home isn't dependent
+      We built Hiome from the ground up with privacy in mind. 100% of your data is stored locally and never leaves your home because
+      we don't want it. What happens in your home stays in your home.
+      That also means your automations are incredibly fast and reliable, because your home isn't dependent
       on our servers or even a working internet connection to keep running.
     </p>
 
@@ -128,7 +125,7 @@ const CorePage = () => (
 
     <h4>Can it control more than lights?</h4>
     <p>
-      We're intentionally focusing on just lights for now while we develop Hiome's learning skills before opening it up to control
+      We're intentionally focusing on just lights for now while we polish Hiome's learning skills before opening it up to control
       other types of devices. Eventually, Hiome will be able to mange your whole home.
     </p>
 
@@ -136,38 +133,33 @@ const CorePage = () => (
     <p>
       Controlling your home with your voice feels magical at first, but it quickly becomes tiring and repetitive. As the number of
       connected devices in your home grows, the complexity of remembering every name and command becomes overwhelming, making it
-      feel like a command-line interface. Grandma shouldn't have to remember what you named the pendant lights in the living room.
+      feel like a command-line interface. Grandpa shouldn't have to remember what you named the pendant lights in the living room.
     </p>
 
-    <h4>Can I use Core without the Door sensors?</h4>
+    <h4>Can I use Hiome Core without Hiome Door sensors?</h4>
     <p>
       No, Hiome Core relies on the accuracy of <Link to="/door">Hiome Door</Link> sensors to be able to learn your habits.
-      Other sensors use attributes like motion or phone proximity as a heuristic to guess whether a room is occupied, but
-      that isn't very accurate. It'd be like trying to learn a foreign language using only your music collection:
-      you might learn some words, but it's not going to be very effective.
+      Other sensors use motion or phone proximity to guess whether a room is occupied, but
+      that's just not accurate enough.
     </p>
 
     <h4>How does it learn?</h4>
     <p>
       Hiome Core learns in much the same way as a small child or pet: it tries something and then sees how you react to it.
-      If you have to change your lights, it learns that it did something wrong and takes that into account next time.
-      That means teaching Hiome is as easy as just turning your lights on and off like you already do!
+      If you're not happy, it learns that it did something wrong and takes that into account next time.
     </p>
 
     {/*eslint-disable-next-line*/}
     <a name="homekit"></a>
     <h4>What devices does it work with?</h4>
     <p>
-      Hiome integrates with any light switches or bulbs that work with
+      Hiome Core integrates with any light switches or bulbs that work with
       the <OutboundLink href="https://apple.com/homekit" rel="noopener noreferrer" target="_blank">Apple HomeKit</OutboundLink> platform.
-      Each Core comes with a unique email address that you can use to invite Hiome to manage your home via HomeKit, just like you would with
-      a family member or roommate. Only your local Core will be able to access your HomeKit setup. Hiome assumes that you already
-      have your devices and rooms setup in HomeKit, so it speeds up its learning by using that as a starting point. Hiome only uses HomeKit
-      to control your devices, it does not appear in HomeKit itself.
+      You just invite your Hiome Core to HomeKit, like you would a family member or roommate. Only your Hiome Core is able
+      to access your HomeKit setup. It only uses HomeKit to control your devices; it does not appear in HomeKit itself.
     </p>
     <p>
-      Don't use HomeKit? Support for other platforms is
-      planned. <OutboundLink href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</OutboundLink> which platform
+      Don't use HomeKit? <OutboundLink href="mailto:support@hiome.com?subject=I%20don%27t%20use%20HomeKit">Let us know</OutboundLink> which platform
       you use.
     </p>
   </HeroLayout>

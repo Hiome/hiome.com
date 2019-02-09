@@ -15,7 +15,7 @@ import DoorThumb from '../components/images/door-thumb'
 import smart_thumb from '../images/features/smart.svg'
 import easy_thumb from '../images/features/easy.svg'
 import family_thumb from '../images/features/family.svg'
-import precise_thumb from '../images/features/precise.svg'
+import fast_thumb from '../images/features/fast.svg'
 import privacy_thumb from '../images/features/privacy.svg'
 import powerful_thumb from '../images/features/powerful.svg'
 
@@ -32,25 +32,25 @@ const IndexPage = () => (
     <h2>Welcome Hiome.</h2>
 
     <p>
-      Hiome learns your habits and proactively controls your connected home just like you would. Lights turn on when you enter a room,
-      and immediately turn off when you leave. It instantly reacts to your needs without any programming or manual commands. In
-      other words, it's exactly how you'd expect a smart home to behave.
+      Hiome learns your habits and controls your home just like you. The right lights turn on when you enter a room,
+      and immediately turn off when you leave. It instantly responds to your needs without any programming or manual commands.
+      In other words, it's exactly how you'd expect a smart home to behave.
     </p>
 
     <div style={{
-      margin: `40px auto 0 auto`
+      margin: `50px auto 0 auto`
     }}>
-      <FeatureBox icon={smart_thumb} title="Autonomous" link="/core#autonomous">
-        Your home manages itself with the same technology that powers self-driving cars.
+      <FeatureBox icon={smart_thumb} title="Personalized" link="/core#learning">
+        Every home is unique, so Hiome ships as a blank slate and learns what you like.
       </FeatureBox>
       <FeatureBox icon={easy_thumb} title="Easy" link="/core#setup">
-        Enjoy the benefits of advanced automations without any of the headache or setup.
+        Just plug it in and forget about it. There's not even an app to download.
       </FeatureBox>
-      <FeatureBox icon={family_thumb} title="Family Friendly" link="/core#setup">
-        Don't change your behavior. Hiome adapts to you, so there's nothing to learn.
+      <FeatureBox icon={family_thumb} title="Family Friendly" link="/core#adaptive">
+        Keep doing what you're doing. Hiome adapts to you, not the other way around.
       </FeatureBox>
-      <FeatureBox icon={precise_thumb} title="Precisely Engineered" link="/door">
-        Experience unparalleled accuracy with a new class of occupancy sensors.
+      <FeatureBox icon={fast_thumb} title="Fast" link="/door">
+        Get spoiled by how quickly your home reacts to you. You'll forget it's not actually alive.
       </FeatureBox>
       <FeatureBox icon={privacy_thumb} title="Private By Design" link="/core#privacy">
         Your data never leaves your home for the best privacy and security.
@@ -65,10 +65,10 @@ const IndexPage = () => (
       margin: `40px auto 0 auto`,
     }}>
       <ProductBox icon={<DoorThumb />} title="Hiome Door" link="/door">
-        Unbelievably accurate occupancy detection made possible with custom thermal sensors.
+        Unbelievably accurate occupancy detection, made possible with custom thermal sensors.
       </ProductBox>
       <ProductBox icon={<CoreThumb />} title="Hiome Core" link="/core">
-        Fast, intelligent home automations made possible with advanced machine learning.
+        Intelligent automations specific to your home, powered by reinforcement learning.
       </ProductBox>
 
       <p style={{textAlign: `center`, paddingTop: `30px`, width: `80%`, margin: `20px auto`}}>

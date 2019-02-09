@@ -22,15 +22,10 @@ const CorePage = () => (
       you and your loved ones. It adapts to you, not the other way around. In fact, the technology should be completely invisible,
       letting you forget it's even there.
     </p>
-    <p>
-      <strong>Hiome Core</strong> manages your home, so you don't have to. It integrates with your existing setup, learns your preferences,
-      and directs your lights to proactively react to you as you go about your life. That means you never see or think about it, you just
-      get to enjoy the benefits of a responsive home.
-    </p>
 
     {/*eslint-disable-next-line*/}
-    <a name="autonomous"></a>
-    <h2>Hiome is autonomous.</h2>
+    <a name="learning"></a>
+    <h2>Hiome learns what you like.</h2>
     <object data={settings} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
@@ -41,14 +36,14 @@ const CorePage = () => (
       Don't configure your home.
     </object>
     <p>
-      You shouldn't have to configure your home, let alone talk to it every time you enter a room. Hiome learns your habits and
-      configures itself, redefining what it means to be "plug and play." If your habits change over time, Hiome will adjust accordingly,
-      making your home feel like it's alive and responding to you.
+      <strong>Hiome Core</strong> uses reinforcement learning to automate your home based on your habits. That means your smart home thinks
+      for itself, so you don't have to manage it. As it learns, Hiome builds an algorithm specifically for your home.
+      If your habits change over time, Hiome will adjust, so your home grows with you.
     </p>
 
     {/*eslint-disable-next-line*/}
-    <a name="responsive"></a>
-    <h2>Hiome is responsive.</h2>
+    <a name="adaptive"></a>
+    <h2>Hiome adapts to you.</h2>
     <object data={clock} type="image/svg+xml" style={{
       display: `block`,
       margin: `0 auto 2rem auto`,
@@ -59,9 +54,25 @@ const CorePage = () => (
       Life is unpredictable.
     </object>
     <p>
-      Other home automation systems rely heavily on specific timing to trigger rules. But real life
-      is unpredictable, and your home should adapt to that. Hiome reacts to your actions (like leaving a room), rather than guessing what you
-      want based on a clock, so it does exactly what you want at just the right time, even if that time is different every day.
+      Hiome controls your lights for you, so you don't have to do anything. It reacts to you, not preset times,
+      because life is unpredictable. If you want to change things up, just use your lights like before and Hiome
+      will take note. That means everybody, including grandma, will love Hiome, without having to be told how to use it.
+    </p>
+
+    {/*eslint-disable-next-line*/}
+    <a name="setup"></a>
+    <h2>Hiome is "plug and forget" simple.</h2>
+    <div style={{margin: `0 auto`}}>
+      <HowTo stepCount={1}>Plug in Hiome Core</HowTo>
+      <HowTo stepCount={2}>Invite Hiome to HomeKit</HowTo>
+      <HowTo stepCount={3}>Plug in <Link to="/door">Hiome Door</Link> sensors</HowTo>
+      <div style={{clear: `both`}}></div>
+    </div>
+
+    <p>
+      That's it! There's no app to download or rules to program. Hiome immediately starts learning how you use your home,
+      so you won't think about your lights or Hiome again (until you visit a home that doesn't have it). We'd call it magical,
+      but it's just damn good engineering.
     </p>
 
     {/*eslint-disable-next-line*/}
@@ -77,32 +88,14 @@ const CorePage = () => (
       Don't upload your data.
     </object>
     <p>
-      We've built Hiome from the ground up with privacy in mind. Your data never leaves your home because we don't want it. Storing and
-      processing data is expensive, so unless we're going to sell it, it doesn't make sense for us to even collect it. What you do in your
-      home is your business and privacy is a fundamental human right.
+      We built Hiome from the ground up with privacy in mind. Your data is stored 100% locally and never leaves your home because
+      we don't want it. Storing and processing data is expensive, so unless we're going to sell it, it doesn't make sense for us
+      to even collect it. What you do in your home is your business.
     </p>
     <p>
-      This approach also happens to have the benefit that your automations are insanely fast and reliable, because your home isn't dependent
+      That also means your automations are insanely fast and reliable, because your home isn't dependent
       on our servers or even a working internet connection to keep running.
     </p>
-
-    {/*eslint-disable-next-line*/}
-    <a name="setup"></a>
-    <h2>Hiome is simple.</h2>
-    <div style={{margin: `0 auto`}}>
-      <HowTo stepCount={1}>Plug in Hiome Core</HowTo>
-      <HowTo stepCount={2}>Invite Hiome to HomeKit</HowTo>
-      <HowTo stepCount={3}>Plug in <Link to="/door">Hiome Door</Link> sensors</HowTo>
-      <div style={{clear: `both`}}></div>
-    </div>
-
-    <p>
-      That's it! There's no app to download or rules to program. Hiome will immediately start learning which lights you like to use.
-      Within a couple days, your lights will follow you from room to room.
-      You'll never think about your lights or Hiome again (until you visit a home that doesn't have it).
-    </p>
-
-    <p>We'd call it magical, but it's just damn good engineering.</p>
 
     {/*eslint-disable-next-line*/}
     <a name="powerful"></a>
@@ -117,9 +110,10 @@ const CorePage = () => (
       Have ultimate control over your home.
     </object>
     <p>
-      To accomplish all this, we packed a lot of technology inside. In fact, Hiome is powered by the same advanced
-      machine learning that controls self-driving cars. Hiome Core contains a cluster of 5 discrete processors, basically making it your
-      own private data center dedicated to one task: making sure your home runs smoothly. If you're a developer, we think you're going to
+      Hiome Core is packed with technology designed to make your home intuitive as possible.
+      A cluster of 5 discrete processors are dedicated to one task: making sure your home runs smoothly.
+      They power finely-tuned machine learning algorithms that enable Hiome to quickly understand your preferences
+      and manage all of your devices. If you're a developer, we think you're going to
       love <Link to="/core/homestream">what's under the hood</Link>.
     </p>
 
@@ -155,10 +149,9 @@ const CorePage = () => (
 
     <h4>How does it learn?</h4>
     <p>
-      Hiome Core learns in much the same way as a small child or pet: it tries something and then sees how you react to it. Out of the box, it
-      might make some mistakes as it learns your preferences. For example, Hiome might try turning a light off in a certain situation. If you
-      turn the light on, it will learn that it was wrong. That means teaching Hiome is as easy as just turning your lights on and off like
-      you already do! In both psychology and computer science, this idea is referred to as reinforcement learning.
+      Hiome Core learns in much the same way as a small child or pet: it tries something and then sees how you react to it.
+      If you have to change your lights, it learns that it did something wrong and takes that into account next time.
+      That means teaching Hiome is as easy as just turning your lights on and off like you already do!
     </p>
 
     {/*eslint-disable-next-line*/}

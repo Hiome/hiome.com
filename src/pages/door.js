@@ -23,7 +23,7 @@ const DoorPage = () => (
     </div>
 
     <p>
-      <strong>Hiome Door</strong> is a new type of occupancy sensor that knows exactly how many people are in each room. It uses
+      <strong>Hiome Door</strong> is a new type of occupancy sensor that knows exactly how many people are in each room. It looks at
       65 points of data to accurately count how many people have entered and exited a room through each door. All of this engineering
       has one goal: to know if you're in the room or not, even if you haven't moved for hours. No more waving your arms around to turn
       the lights back on.
@@ -44,9 +44,9 @@ const DoorPage = () => (
 
     <h2>Hiome Door is fast.</h2>
 
-    <p>Like insanely fast. It lets your home to react to your movement instantly. In addition to making for a more delightful
-    home, it saves you money by making sure your home is running as efficient as possible. You'll never find forgotten lights burning
-    electricity in an empty room again.
+    <p>Like insanely fast. It lets your home to react to your movement instantly. In addition to making your automations more
+    accurate, it saves you money by making sure your home is running as efficiently as possible. You'll never find lights burning
+    electricity for an empty room again.
     </p>
 
     <div style={{textAlign: `center`}}>
@@ -64,9 +64,9 @@ const DoorPage = () => (
 
     <h2>Hiome Door is built for privacy.</h2>
     <p>
-      There's no cameras and it can't identify any personal information. Instead, it tracks changes in heat to know when a person
-      entered or exited. That means you don't have to carry your phone around for your automations to work, and your home works for
-      your guests too. All this in a device so small, you'll forget it's even there...
+      There's no cameras and it can't identify any personal information. Instead, it tracks changes in heat to know when you
+      entered or exited. That means you don't have to carry your phone for your automations to work, and your home works for
+      your guests too. All this in a device so small, you'll forget it's even there.
     </p>
 
     <div style={{textAlign: `center`}}>
@@ -131,8 +131,9 @@ const DoorPage = () => (
     <p>
       As the name implies, motion sensors use motion as a heuristic for occupancy. More specifically, they start a timer when motion is
       detected. If you move again, the timer is reset. When the timer runs out, the sensor assumes the room is no longer occupied.
-      This works for knowing when you enter a room, but fails at knowing if you're actually still in the room or when you left.
-      Hiome Door counts entries and exits using thermal signatures to accurately know if a room is occupied, whether or not you're moving.
+      That's good enough for knowing when you enter a room, but can't really tell if you're still there or when you left, creating false
+      negatives and signficant delays in your automations. Hiome Door counts entries and exits using thermal signatures to accurately
+      know if a room is occupied, whether or not you're moving.
     </p>
 
     <h4>How does Hiome Door connect to my network?</h4>
@@ -146,7 +147,7 @@ const DoorPage = () => (
     <h4>Can I use Hiome Door without Core?</h4>
     <p>
       In addition to connectivity, Hiome Door relies on <Link to="/core">Hiome Core</Link> to collate the occupancy state of each room.
-      Without Core, a Door sensor would quickly lose track of a room's occupancy count if another door was feeding into the same room.
+      Without Core, a Door sensor would quickly lose track of a room's occupancy count if another sensor was updating it too.
       Hiome Core is, well, <em>core</em> to the whole system.
     </p>
 

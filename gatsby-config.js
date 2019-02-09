@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hiome`,
-    description: `Put your smart home on autopilot with a brain that learns your habits and proactively controls your home for you.`,
+    description: `Put your smart home on autopilot. Hiome learns your habits and controls your home just like you.`,
     author: `Hiome Inc`,
     prices: {
       core: 375,

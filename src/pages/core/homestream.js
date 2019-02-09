@@ -59,7 +59,7 @@ const HomeStreamPage = () => (
       control over your home!
     </p>
 
-    <p>More information and documentation coming soon. We're really excited to see what you'll build with this new super power.</p>
+    <p>We're really excited to see what you'll build with this new super power.</p>
   </HeroLayout>
 )
 

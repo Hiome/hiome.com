@@ -56,7 +56,7 @@ const IndexPage = () => (
         Your data never leaves your home for the best privacy and security.
       </FeatureBox>
       <FeatureBox icon={powerful_thumb} title="Developer Friendly" link="/core/homestream">
-        Want more control? Change your home however you want with a few lines of code.
+        Want more control? Customize your home however you want in a few lines of code.
       </FeatureBox>
     </div>
 

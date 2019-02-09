@@ -6,7 +6,6 @@ const FooterLinks = ({title, children}) => (
     <strong style={{
       fontSize: `0.8em`,
       textTransform: `uppercase`,
-      fontFamily: `sans-serif`,
       marginBottom: `5px`,
       display: `block`,
     }}>{title}</strong>

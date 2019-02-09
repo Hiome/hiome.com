@@ -128,7 +128,7 @@ class OrderForm extends Component {
             </tr>
             <tr>
               <td>{this.state.doorCount}</td>
-              <td><Link to="/door">Hiome Doors</Link></td>
+              <td><Link to="/door">Hiome Door</Link></td>
               <td>${this.doorPrice()}</td>
             </tr>
             <tr style={{borderTop: `1px solid hsla(0, 0%, 0%, 0.12)`}}>

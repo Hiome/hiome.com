@@ -477,14 +477,10 @@ form {
   margin-bottom: 1.45rem;
 }
 noscript {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  text-align: center;
+  display: block;
+  color: #CA330A;
+  margin-bottom: 2.5rem;
 }
 iframe {
   margin-left: 0;

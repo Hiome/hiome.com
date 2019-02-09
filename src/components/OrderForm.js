@@ -98,6 +98,7 @@ class OrderForm extends Component {
   render() {
     return (
       <div>
+        <noscript>Please <a href="http://activatejavascript.org/en/instructions/" rel="noopener noreferrer" target="_blank">enable JavaScript</a> to use this form.</noscript>
         <p>
           <strong>How many doors are in your home?</strong>
           <input type="number" defaultValue={this.state.doorCount} min="2" max="20" onChange={this.updateCount} style={{

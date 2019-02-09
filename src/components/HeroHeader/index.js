@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import LogoMark from './images/LogoMark'
-import LogoText from './images/LogoText'
+import LogoMark from '../images/LogoMark'
+import LogoText from '../images/LogoText'
+
+import './styles.css'
 
 const isPartiallyActive = ({ isPartiallyCurrent }) => {
   return isPartiallyCurrent
@@ -23,20 +25,14 @@ const HeroHeader = ({ hero, title }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.5rem 1rem`,
-      }}
-    >
-      <div style={{float: `right`, paddingTop: `22px`}}>
+    <div className="header-container">
+      <Link to="/" className="nottext"><LogoMark /> <LogoText style={{paddingLeft: `5px`}} width="110px" height="40px" /></Link>
+      <div className="navlink-container">
         <NavLink to="/core">Core</NavLink>
-        <span style={{marginRight: `10px`, marginLeft: `-10px`, color: `#ccc`}}>&</span>
+        <span className="navlink-divider">&</span>
         <NavLink to="/door">Door</NavLink>
         <Link to="/order" className="primary">Order Now</Link>
       </div>
-      <Link to="/" className="nottext"><LogoMark /> <LogoText style={{paddingLeft: `5px`}} width="110px" height="40px" /></Link>
     </div>
 
     <div style={{
@@ -44,7 +40,14 @@ const HeroHeader = ({ hero, title }) => (
       margin: `0 auto`,
       textAlign: `center`,
     }}>
-      <h1 style={{position: `absolute`, zIndex: `10`, margin: `3% auto`, width: `100%`, maxWidth: 960}}>{title}</h1>
+      <h1 style={{
+        position: `absolute`,
+        zIndex: `10`,
+        margin: `3% auto`,
+        width: `100%`,
+        minWidth: 300,
+        maxWidth: 960,
+      }}>{title}</h1>
       {hero}
     </div>
   </div>

@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  min-width: 300px;
 }
 article,
 aside,
@@ -53,22 +54,6 @@ a:hover {
 a.nottext:hover {
   text-decoration: none;
 }
-a.navlink {
-  margin-right: 25px;
-  padding: 2px;
-}
-a.navlink:hover {
-  text-decoration: none;
-  color: #0074D9;
-  border-bottom: 2px solid #0074D9;
-}
-a.navlink-active, a.navlink-active:hover {
-  outline-width: 0;
-  text-decoration: none;
-  border-bottom: 2px solid hsla(0, 0%, 0%, 0.8);
-  color: hsla(0, 0%, 0%, 0.8);
-}
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

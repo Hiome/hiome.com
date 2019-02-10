@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import config from '../../gatsby-config'
 
 import Loader from './Loader'
 
 class OrderForm extends Component {
   state = {
-    doorCount: 8,
+    doorCount: 7,
     error: null,
     stripe: null,
   }
@@ -21,7 +20,7 @@ class OrderForm extends Component {
 
   loadStripe = () => {
     this.setState({
-      stripe: window.Stripe(config.siteMetadata.stripe_key, {
+      stripe: window.Stripe('pk_live_GGLAckmkxax3TR04QeipRU7G', {
         betas: ["checkout_beta_4"],
       })
     })
@@ -56,7 +55,7 @@ class OrderForm extends Component {
   }
 
   subtotal() {
-    return this.state.doorCount * 90 + 120
+    return this.state.doorCount * 80 + 120
   }
 
   deposit() {

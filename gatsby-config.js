@@ -3,10 +3,6 @@ module.exports = {
     title: `Hiome`,
     description: `Put your smart home on autopilot. Hiome learns your habits and controls your home just like you.`,
     author: `Hiome Inc`,
-    prices: {
-      core: 375,
-      door: 120
-    },
     stripe_key: `pk_live_GGLAckmkxax3TR04QeipRU7G`,
   },
   plugins: [

@@ -6,7 +6,7 @@ import Loader from './Loader'
 
 class OrderForm extends Component {
   state = {
-    doorCount: 6,
+    doorCount: 8,
     error: null,
     stripe: null,
   }
@@ -47,30 +47,20 @@ class OrderForm extends Component {
     const c = parseInt(e.target.value)
     if (isNaN(c)) return
 
-    if (c < 2) {
-      this.setState({error: "Sorry, your house must have at least 2 doors."})
+    if (c < 1) {
+      this.setState({error: "It's going to be hard to use Hiome without any doors."})
+    } else if (c < 2) {
+      this.setState({error: "Just one door? You should have at least a front door and a bathroom door."})
     } else
       this.setState({doorCount: c, error: null})
   }
 
-  doorPrice() {
-    return this.state.doorCount * config.siteMetadata.prices.door
-  }
-
   subtotal() {
-    return this.doorPrice() + config.siteMetadata.prices.core
-  }
-
-  discount() {
-    return this.subtotal()/3
-  }
-
-  total() {
-    return this.subtotal() - this.discount()
+    return this.state.doorCount * 90 + 120
   }
 
   deposit() {
-    return this.total() * 0.2
+    return this.subtotal() * 0.2
   }
 
   renderError() {
@@ -114,41 +104,10 @@ class OrderForm extends Component {
           Count all doors that separate distinct rooms, including your front door. <Link to="/door#compatibility">Check compatibility</Link>
         </p>
         {this.renderError()}
-        <table>
-          <tbody>
-            <tr>
-              <th style={{width: `50px`}}></th>
-              <th>Item</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td><Link to="/core">Hiome Core</Link></td>
-              <td>${config.siteMetadata.prices.core}</td>
-            </tr>
-            <tr>
-              <td>{this.state.doorCount}</td>
-              <td><Link to="/door">Hiome Door</Link></td>
-              <td>${this.doorPrice()}</td>
-            </tr>
-            <tr style={{borderTop: `1px solid hsla(0, 0%, 0%, 0.12)`}}>
-              <td colSpan="2" style={{textAlign: `right`}}>Subtotal</td>
-              <td>${this.subtotal()}</td>
-            </tr>
-            <tr>
-              <td colSpan="2" style={{textAlign: `right`, paddingTop: `0`}}>Beta Testing Discount</td>
-              <td style={{color: `green`, paddingTop: `0`}}>-${this.discount()}</td>
-            </tr>
-            <tr>
-              <td colSpan="2" style={{textAlign: `right`, paddingTop: `0`}}>Total (USD)</td>
-              <td style={{paddingTop: `0`}}>${this.total()}</td>
-            </tr>
-            <tr>
-              <td colSpan="2" style={{textAlign: `right`, fontWeight: `bold`, paddingTop: `0`}}>20% Deposit To Reserve Today</td>
-              <td style={{paddingTop: `0`, fontWeight: `bold`}}>${this.deposit()}</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>
+          <Link to="/core">Hiome Core</Link> with {this.state.doorCount} <Link to="/door">Hiome Door</Link> sensors is
+          ${this.subtotal()} for your whole home. Reserve your order now with a ${this.deposit()} deposit.
+        </p>
 
         {this.renderStripe()}
       </div>

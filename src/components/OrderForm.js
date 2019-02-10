@@ -49,7 +49,7 @@ class OrderForm extends Component {
     if (c < 1) {
       this.setState({error: "It's going to be hard to use Hiome without any doors."})
     } else if (c < 2) {
-      this.setState({error: "Just one door? You should have at least a front door and a bathroom door."})
+      this.setState({error: "Just one door? We're assuming you've got at least a front door and a bathroom door."})
     } else
       this.setState({doorCount: c, error: null})
   }
@@ -100,12 +100,12 @@ class OrderForm extends Component {
           lineHeight: `1.5em`,
           marginTop: `-15px`,
         }}>
-          Count all doors that separate distinct rooms, including your front door. <Link to="/door#compatibility">Check compatibility</Link>
+          Hiome learns best when it can sense your whole home. Count all doors that separate distinct rooms, including your front door. <Link to="/door#compatibility">Check compatibility</Link>
         </p>
         {this.renderError()}
         <p>
           <Link to="/core">Hiome Core</Link> with {this.state.doorCount} <Link to="/door">Hiome Door</Link> sensors is
-          ${this.subtotal()} for your whole home. Reserve your order now with a ${this.deposit()} deposit.
+          ${this.subtotal()} for your whole home. Estimated delivery is currently April 2019. Reserve your order now with a ${this.deposit()} deposit.
         </p>
 
         {this.renderStripe()}

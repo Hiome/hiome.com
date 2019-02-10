@@ -8,31 +8,29 @@ import SEO from '../components/seo'
 const OrderPage = () => (
   <Layout>
     <SEO title="Order Hiome" />
-    <p><span role="img" aria-label="wave">👋</span> Hey there,</p>
-    <p>First, let's start with the bad news: we're sold out of our current batch. But there's good news too!</p>
     <p>
-      We've been diligently testing Hiome for the last year, refining the features and working out the kinks.
-      Now we're producing the next major revision and want to prioritize giving it to the people who are most excited about it.
+      We've been diligently testing Hiome for almost two years, refining the features and working out the kinks.
+      Now we want to prioritize giving it to the people who are most excited about smart homes.
       Early users have an outsized impact on the roadmap of a product, so we want to make sure we're working with great people!
       We'll be honest - there may be some rough edges still that are quickly being polished away, but you'll get early access,
-      priority support from the team, and the opportunity to strongly shape the direction of Hiome.
+      a direct line to the team, and the opportunity to strongly shape the direction of Hiome.
     </p>
 
     <p>
-      If that sounds enticing, <strong>here's the deal</strong>: you can reserve an order below to join our beta testing program
-      and get Hiome at a significant discount. In exchange, we'll periodically ask for feedback about your experience
-      and collect anonymized diagnostic data from your home during the beta period.
+      If that sounds enticing, you can reserve Hiome below to join our beta testing program.
+      In exchange, we'll periodically ask for feedback and collect anonymized diagnostic data from your home during the beta period.
     </p>
 
     <p>
       Everything we do is designed to make your life simple, and our reservation system is no different.
-      You'll only be charged for 20% of your order today, with the rest of the order processing when it actually ships.
-      If you change your mind before it ships, you can cancel your reservation for a full refund of your deposit. If you're
-      not happy with Hiome after the beta period, we'll take it back, no questions asked. In other words, there's no downside.
+      New reservations are currently estimated to ship in April. You only need a $150 deposit to reserve today,
+      with the rest of your order processing when it ships. If you change your mind, you can cancel your
+      reservation for a full refund of your deposit. We're confident you'll love Hiome, so if you're not happy for any reason
+      after the beta period, we'll take it back, no questions asked. We're committed to being as fair and transparent as possible.
     </p>
 
     <p>
-      Each Hiome product is assembled in Chicago, and we'll ship products out as we make them, in the order they were reserved.
+      Each Hiome system is assembled in Chicago, and we'll ship products out as we make them, in the order they were reserved.
     </p>
 
     <h2>Reserve Hiome</h2>

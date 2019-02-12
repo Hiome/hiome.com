@@ -32,9 +32,7 @@ const IndexPage = () => (
     <h2>Welcome Hiome.</h2>
 
     <p>
-      Hiome learns your habits and controls your home just like you. The right lights turn on when you enter a room,
-      and immediately turn off when you leave. It instantly responds to your needs without any programming or manual commands.
-      In other words, it's exactly how you'd expect a smart home to behave.
+      Hiome learns your habits and controls your home <em>just like you</em>. It knows which lights you use, turning them on when you enter a room and immediately turning them off when you leave. It instantly responds to you without any programming or manual commands. In other words, it's exactly how you'd expect a smart home to behave.
     </p>
 
     <div style={{

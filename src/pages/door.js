@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import HeroLayout from '../components/HeroLayout'
@@ -81,6 +82,36 @@ const DoorPage = () => (
       </video>
     </div>
 
+    <h2>Hiome Door is gorgeous.</h2>
+    <p>
+      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to worry about replacing
+      or recharging. Instead, we include a generous 20 foot (6 meter) usb cable and slim power adapter to make it easy to
+      power your sensors. We also give you a roll of gaffer tape, the premium cotton tape that Hollywood uses to hide wires on movie sets.
+      Just like the rest of Hiome, you'll be surprised how invisible and convenient the setup ends up being.
+    </p>
+
+    <div style={{textAlign: `center`}}>
+      <StaticQuery
+        query={graphql`
+          query {
+            placeholderImage: file(relativePath: { eq: "wiring.jpeg" }) {
+              childImageSharp {
+                fluid(maxWidth: 720) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        `}
+        render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="Hiome Door wiring" style={{
+          boxShadow: `2px 2px 15px #ccc`,
+          backgroundColor: `#ccc`,
+          width: `75%`,
+          margin: `20px auto 0 auto`,
+        }} />}
+      />
+    </div>
+
     <h2>Hiome Door works with Hiome Core.</h2>
     <p>
       Hiome Door knows when you enter or exit a room, but what if the room has multiple
@@ -146,12 +177,6 @@ const DoorPage = () => (
       No. In addition to connectivity, Hiome Door relies on <Link to="/core">Hiome Core</Link> to maintain occupancy state for each room.
       Without Hiome Core, a door sensor would quickly lose track of a room's occupancy count if another sensor was updating it too.
       Hiome Core is, well, <em>core</em> to the whole system.
-    </p>
-
-    <h4>Is there a battery in the sensor?</h4>
-    <p>
-      No, there are no batteries to replace! Each Hiome Door comes with a generous 20 foot (6 meter) microUSB cable and
-      slim power adapter.
     </p>
   </HeroLayout>
 )

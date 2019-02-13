@@ -169,7 +169,7 @@ const DoorPage = () => (
     <p>
       Hiome Door talks directly with <Link to="/core">Hiome Core</Link>, so there's no extra steps involved and it doesn't saturate your wifi
       network with constant chatter. This makes both your sensors and your wifi more reliable. Hiome Door has a
-      1 mile (1.5km) range, which should be more than enough to cover your house.
+      0.2 mile (350m) range, which should be more than enough to cover your house.
     </p>
 
     <h4>Can I use Hiome Door without Hiome Core?</h4>

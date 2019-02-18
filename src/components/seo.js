@@ -10,6 +10,8 @@ function SEO({ description, lang, meta, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const metaKeywords =
+          keywords.concat(data.site.siteMetadata.keywords)
         return (
           <Helmet
             htmlAttributes={{
@@ -51,10 +53,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
             ]
               .concat(
-                keywords.length > 0
+                metaKeywords.length > 0
                   ? {
                       name: `keywords`,
-                      content: keywords.join(`, `),
+                      content: metaKeywords.join(`, `),
                     }
                   : []
               )
@@ -69,7 +71,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: [`smart home`, `home automation`, `HomeKit`, `occupancy sensor`],
+  keywords: [],
 }
 
 SEO.propTypes = {
@@ -88,6 +90,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
+        keywords
         author
       }
     }

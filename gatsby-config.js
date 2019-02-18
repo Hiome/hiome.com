@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Hiome`,
     description: `Put your smart home on autopilot. Hiome learns your habits and controls your home just like you.`,
+    keywords: [`occupancy sensor`, `presence detection`, `smart home`, `home automation`],
     author: `Hiome Inc`,
   },
   plugins: [

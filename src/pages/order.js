@@ -32,8 +32,8 @@ const OrderPage = () => (
       We're currently running a private beta program while we iron out any issues and get certified for HomeKit and SmartThings. In the meantime,
       we're looking for more people who are passionate about their smart home, excited about Hiome, and enjoy being on the bleeding edge
       to get early access to Hiome and help us find any remaining rough edges. If that sounds like
-      you, <OutboundLink href="">apply for our beta program</OutboundLink>! If selected, you'll get your Hiome
-      pre-order as early as April, a direct line to the team, and an extra Hiome Door sensor as a thank you.
+      you, <OutboundLink href="https://docs.google.com/forms/d/e/1FAIpQLScg3MXNWBfSrjHNZo2nojIE68YqElBf_6kvNnEHZBtdvMuNfw/viewform?usp=sf_link" rel="noopener noreferrer" target="_blank">apply for our beta program</OutboundLink>! If
+      selected, you'll get your Hiome pre-order as early as April, a direct line to the team, and an extra Hiome Door sensor as a thank you.
     </p>
 
     <h2>Frequently Asked Questions</h2>

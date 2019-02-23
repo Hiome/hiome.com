@@ -20,10 +20,10 @@ const ThanksPage = () => (
     }}>
       New Email
     </object>
-    <h2>Got it! We'll be in touch.</h2>
+    <h1>We'll be in touch!</h1>
     <p style={{textAlign: `center`, marginTop: `-30px`}}>
-      What's next? You can <OutboundLink href="https://twitter.com/hiomeai">follow us on Twitter</OutboundLink> for more updates
-      or <Link to="/order">reserve your order</Link> to get it sooner.</p>
+      What's next? <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">Follow us on Twitter</OutboundLink> or <Link to="/order">order your Hiome Starter Kit</Link>.
+    </p>
   </Layout>
 )
 

@@ -20,20 +20,20 @@ const Footer = () => (
           lineHeight: `1.5em`,
           marginTop: `-15px`,
         }}>
-          Patents pending. HomeKit is a registered trademark of Apple Inc.
+          All rights reserved. Patents pending.
         </p>
       </div>
 
-      <FooterLinks title="Products">
-        <Link to="/core/" title="The brain for your home">Core</Link><br/>
-        <Link to="/door/" title="The most accurate home occupancy sensor">Door</Link><br/>
-        <Link to="/order/" title="Join the club!">Order Now</Link><br/>
+      <FooterLinks title="Product">
+        <Link to="/">Home</Link><br/>
+        <Link to="/faq">FAQ</Link><br/>
+        <Link to="/order">Order</Link><br/>
       </FooterLinks>
 
       <FooterLinks title="Company">
-        <Link to="/about/">About</Link><br/>
+        <Link to="/about">About</Link><br/>
+        <OutboundLink href="mailto:support@hiome.com" title="Say hello!">Support</OutboundLink><br/>
         <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank" title="Follow @hiomeai on Twitter">Twitter</OutboundLink><br/>
-        <OutboundLink href="mailto:support@hiome.com" title="Say hello!">Email</OutboundLink><br/>
       </FooterLinks>
 
       <FooterLinks title="Contact">

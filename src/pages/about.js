@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 
+import EmailSignup from '../components/EmailSignup'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About Hiome" />
-    <h2>About Us</h2>
+    <h1>About Us</h1>
 
     <p>
       We're a team of engineers based in Chicago, IL who enjoy smart homes, great tech, and long walks on the beach.
@@ -17,7 +18,7 @@ const AboutPage = () => (
       We believe that smart homes are inevitable, but they need to be easier first. Ultimately, making something "smart" should be
       additive to your experience, not make your life harder. Sadly, that's not always been the case. We got tired of seeing people
       struggle with bathroom lights turning off while they were showering or bedroom lights turning on when they moved in their sleep.
-      So we built <Link to="/core">Hiome Core</Link> and <Link to="/door">Hiome Door</Link>.
+      So we built Hiome Door.
     </p>
     <p>
       There are a few principles that are core to our beliefs and have guided how we design our products.
@@ -52,6 +53,12 @@ const AboutPage = () => (
     the <OutboundLink href="https://www.meetup.com/Chicago-Home-Automation/" rel="noopener noreferrer" target="_blank">Chicago Home Automation</OutboundLink> meetups!
     </p>
 
+    <p>
+      Want to stay in the loop on what we're up to? Sign up for email updates below
+      or <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">follow us on Twitter</OutboundLink>!
+    </p>
+
+    <EmailSignup />
   </Layout>
 )
 

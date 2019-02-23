@@ -19,13 +19,8 @@
 
 @media only screen and (max-width: 695px) {
   .FeatureBox {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 475px) {
-  .FeatureBox {
     width: 100%;
+    padding: 10px 20%;
     height: auto;
   }
 }

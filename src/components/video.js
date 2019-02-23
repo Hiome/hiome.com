@@ -9,7 +9,7 @@ class Video extends Component {
   }
 
   getElementY(query) {
-    return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top
+    return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top - 40
   }
 
   doScrolling(element, duration) {

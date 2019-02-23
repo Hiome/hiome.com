@@ -1,44 +1,70 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
-import EmailSignup from '../components/EmailSignup'
 import OrderForm from '../components/OrderForm'
+import ProductBox from '../components/ProductBox'
 import SEO from '../components/seo'
+
+// Product pictures
+import CoreThumb from '../components/images/CoreThumb'
+import DoorThumb from '../components/images/DoorThumb'
+import GafferThumb from '../components/images/GafferThumb'
 
 const OrderPage = () => (
   <Layout>
     <SEO title="Order Hiome" />
-    <p>
-      We've been diligently testing Hiome for almost two years, refining the features and working out the kinks.
-      Now we want to prioritize giving it to the people who are most excited about smart homes.
-      Early users have an outsized impact on the roadmap of a product, so we want to make sure we're working with great people!
-      We'll be honest - there may be some rough edges still that are quickly being polished away, but you'll get early access,
-      a direct line to the team, and the opportunity to strongly shape the direction of Hiome.
-    </p>
 
-    <p>
-      If that sounds enticing, you can reserve Hiome below to join our beta testing program.
-      In exchange, we'll periodically ask for feedback and collect anonymized diagnostic data from your home during the beta period.
-    </p>
+    <h1 style={{lineHeight: `2em`}}>Hiome Starter Kit <span className="blackLabel">Pre-Order</span></h1>
+    <div style={{
+      margin: `0 auto 20px auto`,
+    }}>
+      <ProductBox icon={<CoreThumb />} title="Hiome Core" />
+      <ProductBox icon={<DoorThumb />} title="Hiome Door" />
+      <ProductBox icon={<GafferThumb />} title="Gaffer Tape" />
+    </div>
 
-    <p>
-      Everything we do is designed to make your life simple, and our reservation system is no different.
-      New reservations are currently estimated to ship in April. You only need a $150 deposit to reserve today,
-      with the rest of your order processing when it ships. If you change your mind, you can cancel your
-      reservation for a full refund of your deposit. We're confident you'll love Hiome, so if you're not happy for any reason
-      after the beta period, we'll take it back, no questions asked. We're committed to being as fair and transparent as possible.
-    </p>
-
-    <p>
-      Each Hiome system is assembled in Chicago, and we'll ship products out as we make them, in the order they were reserved.
-    </p>
-
-    <h2>Reserve Hiome</h2>
     <OrderForm />
 
-    <h2>Get Notified</h2>
-    <p>Don't like to be on the bleeding edge? No problem. Enter your email below and we'll let you know when Hiome graduates from beta status. We promise we won't email you for any other reason. We'll be too busy making other homes smarter <span role="img" aria-label="wink">😉</span></p>
-    <EmailSignup />
+    <h2>Early Beta Access</h2>
+    <p>
+      We're currently running a private beta program while we iron out any issues and get certified for HomeKit and SmartThings. In the meantime,
+      we're looking for more people who are passionate about their smart home, excited about Hiome, and enjoy being on the bleeding edge
+      to get early access to Hiome and help us find any remaining rough edges. If that sounds like
+      you, <OutboundLink href="">apply for our beta program</OutboundLink>! If selected, you'll get your Hiome
+      pre-order as early as April, a direct line to the team, and an extra Hiome Door sensor as a thank you.
+    </p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h4>Will Hiome Door fit on my door?</h4>
+    <p>
+      Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep and at most 40" (1 meter)
+      wide. <OutboundLink href="mailto:support@hiome.com?subject=Double%20door%20support">Let us know</OutboundLink> if you have
+      extra-wide or double doors.
+    </p>
+    <p>
+      If you have any questions, feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">send us a picture
+      of your door frame</OutboundLink> and we'll let you know.
+    </p>
+
+    <h4>How many Hiome Door sensors do I need?</h4>
+    <p>
+      You can get started with just one, but Hiome works better with more sensors. As you connect more doors, your lights will be able
+      to follow you from room to room.
+    </p>
+
+    <h4>Can I buy more Hiome Door sensors later?</h4>
+    <p>
+      Of course! Once we have fulfilled all pre-orders, we'll open up orders for additional sensors without the Starter Kit.
+    </p>
+
+    <p style={{
+      textAlign: `center`,
+      marginTop: `2rem`,
+      fontWeight: `bold`,
+    }}><Link to="/faq">More questions &#x2192;</Link></p>
   </Layout>
 )
 

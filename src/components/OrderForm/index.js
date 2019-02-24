@@ -84,9 +84,9 @@ class OrderForm extends Component {
           <li>Ships to US and Canada</li>
           <li>Estimated delivery: August 2019</li>
           <li style={{fontWeight: `bold`}}>
-            Include <select onChange={this.updateCount} style={{marginLeft: `5px`, marginRight: `5px`}}>
+            Includes Hiome Core, <select onChange={this.updateCount} style={{marginLeft: `5px`, marginRight: `5px`}}>
               {this.renderOptions()}
-            </select> Hiome Door sensor{this.state.doorCount > 1 ? 's' : ''}
+            </select> Hiome Door sensor{this.state.doorCount > 1 ? 's' : ''}, and 180ft (55m) of gaffer tape
           </li>
         </ul>
 

@@ -48,6 +48,13 @@ const IndexPage = () => (
       </FeatureBox>
     </div>
 
+    <h2>Precision engineered for accuracy.</h2>
+    <p>
+      Hiome Door looks at 65 points of data to reliably detect you and what direction you're moving, letting it keep count of
+      every entry and exit through a door to know how many people are still in each room. It also detects if your door is open
+      or closed, letting it replace your door contact sensor too.
+    </p>
+
     <div style={{textAlign: `center`}}>
       <video autoPlay muted loop playsInline width="75%" style={{
         boxShadow: `2px 2px 15px #ccc`,
@@ -84,9 +91,9 @@ const IndexPage = () => (
 
     <h2>Built for privacy.</h2>
     <p>
-      There are no cameras or microphones. In fact, it can't identify any personal information. Instead, Hiome Door detects body heat to know when somebody
-      enters or exits. It doesn't depend on your phone, so there's nothing to carry and your home works for your guests too.
-      All this in a device so small, you'll forget it's even there.
+      There are no cameras or microphones. In fact, it can't identify any personal information. Instead, Hiome Door detects body heat
+      to know when somebody enters or exits. It doesn't depend on your phone, so there's nothing to carry and your home works for your
+      guests too. All this in a device so small, you'll forget it's even there.
     </p>
 
     <div style={{textAlign: `center`}}>

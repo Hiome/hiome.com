@@ -76,10 +76,11 @@ small {
 }
 sub,
 sup {
-  font-size: 75%;
+  font-size: 60%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
+  color: hsla(0, 0%, 0%, 0.5);
 }
 sub {
   bottom: -0.25em;
@@ -188,7 +189,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 118%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -235,13 +236,14 @@ h1, h2 {
   padding-top: 0;
   margin-bottom: 4rem;
   color: inherit;
-  font-weight: bold;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
+  font-size: 2.5em;
+  line-height: 1.2;
 }
 h2 {
   margin-top: 9rem;
+  font-size: 2em;
 }
 h3 {
   margin-left: 0;
@@ -253,10 +255,10 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-weight: bold;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
-  line-height: 1.1;
+  font-size: 1.7em;
+  line-height: 1.5;
   text-align: center;
 }
 h4 {
@@ -599,8 +601,9 @@ pre tt:after {
 }
 
 .primary {
+  font-variant-caps: all-small-caps;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   padding: 12px 30px;
   background-color: #FC4A1A;
   border: 1px solid #FC4A1A;
@@ -618,8 +621,9 @@ pre tt:after {
   color: #fff;
 }
 .secondary {
+  font-variant-caps: all-small-caps;
   color: #FC4A1A;
-  font-weight: bold;
+  font-weight: 600;
   padding: 8px 25px;
   background-color: #fff;
   border: 2px solid #FC4A1A;
@@ -632,6 +636,16 @@ pre tt:after {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+}
+.secondary.disabled {
+  color: #ccc;
+  border-color: #ccc;
+}
+.secondary.disabled:hover {
+  color: #ccc;
+  background-color: #fff;
+  border-color: #ccc;
+  cursor: auto;
 }
 
 .error {
@@ -681,13 +695,35 @@ pre tt:after {
 .blackLabel {
   margin-left: 20px;
   margin-top: -10px;
-  line-height: 2em;
+  line-height: 1.5em;
   font-variant-caps: all-small-caps;
   display: inline-block;
   font-size: 0.5em;
   vertical-align: middle;
   background-color: #000;
   color: #fff;
-  font-weight: 100;
-  padding: 0 10px 2px 10px;
+  font-weight: 300;
+  padding: 0 12px 2px 12px;
+}
+
+.legal {
+  font-size: 0.8em;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.videoLoop {
+  box-shadow: 2px 2px 15px #ccc;
+  background-color: #ccc;
+  margin-top: 20px;
+  width: 75%;
+}
+@media only screen and (max-width: 700px) {
+  .videoLoop {
+    width: 100%;
+  }
+}
+
+.emph {
+  font-weight: 500;
+  color: #000;
 }

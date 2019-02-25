@@ -4,7 +4,7 @@ import React from 'react'
 const FooterLinks = ({title, children}) => (
   <div className='FooterLinks'>
     <strong style={{
-      fontSize: `0.8em`,
+      fontSize: `0.9em`,
       textTransform: `uppercase`,
       marginBottom: `5px`,
       display: `block`,

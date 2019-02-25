@@ -68,7 +68,7 @@ class OrderForm extends Component {
 
   renderOptions() {
     const rows = []
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 1; i <= 40; i++) {
       rows.push(<option key={`qty${i}`} value={i}>{i}</option>)
     }
     return rows
@@ -78,15 +78,15 @@ class OrderForm extends Component {
     return (
       <div>
         <ul className="OrderForm__Features">
-          <li>Responsive occupancy sensing that will <span role="img" aria-label="blow your mind">🤯</span></li>
-          <li>Works with HomeKit, SmartThings, and MQTT</li>
+          <li>True occupancy sensing that will <span role="img" aria-label="blow your mind">🤯</span> and door open/close detection</li>
+          <li>Works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT</li>
           <li>90 day money back guarantee, no questions asked</li>
           <li>Ships to US and Canada</li>
           <li>Estimated delivery: August 2019</li>
           <li style={{fontWeight: `bold`}}>
             Includes Hiome Core, <select onChange={this.updateCount} style={{marginLeft: `5px`, marginRight: `5px`}}>
               {this.renderOptions()}
-            </select> Hiome Door sensor{this.state.doorCount > 1 ? 's' : ''}, and 180ft (55m) of gaffer tape
+            </select> Hiome Door sensor{this.state.doorCount > 1 ? 's' : ''}, and {Math.ceil(this.state.doorCount/8) * 180}ft ({Math.ceil(this.state.doorCount/8) * 55}m) of gaffer tape
           </li>
         </ul>
 
@@ -99,6 +99,8 @@ class OrderForm extends Component {
 
         <noscript>Please <a href="http://activatejavascript.org/en/instructions/" rel="noopener noreferrer" target="_blank">enable JavaScript</a> to checkout.</noscript>
         {this.renderStripe()}
+
+        <p className="legal"><sup>1</sup> HomeKit and SmartThings support pending certification from Apple and Samsung, respectively.</p>
       </div>
     )
   }

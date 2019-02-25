@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import EmailSignup from '../components/EmailSignup'

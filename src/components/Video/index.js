@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 
-import media from '../media/HiomeDemo.mp4'
+import './styles.css'
+
+import media from '../../media/HiomeDemo.mp4'
 
 class Video extends Component {
-  state = {
-    playing: false
-  }
-
-  getElementY(query) {
-    return window.pageYOffset + document.querySelector(query).getBoundingClientRect().top - 40
+  getElementY(element) {
+    const el = element.getBoundingClientRect()
+    // center video in screen
+    return window.pageYOffset + el.top + (el.bottom - el.top)/2 - window.innerHeight/2
   }
 
   doScrolling(element, duration) {
@@ -44,32 +45,30 @@ class Video extends Component {
   }
 
   play = () => {
-    document.getElementById("heroVid").play()
-    this.playing()
+    const vid = document.getElementById("heroVid")
+    vid.play()
+    this.doScrolling(vid, 1000)
   }
+
   playing = () => {
-    if (!this.state.playing) {
-      document.getElementById("watch").style.opacity = 0
-      setTimeout(() => {
-        this.setState({playing: true})
-      }, 1000)
-    }
-  }
-  scroll = () => {
-    this.doScrolling("#welcome", 1000)
+    const watchBtn = document.getElementById('watch')
+    watchBtn.style.transition = "background-color 1s ease-in-out, color 1s ease-in-out, border-color 1s ease-in-out"
+    watchBtn.classList.add('disabled')
   }
 
   renderButton() {
-    if (this.state.playing) {
-      return (
-        <svg className="fadeIn clickable" style={{marginTop: `-26px`, marginBottom: `20px`}} onClick={this.scroll} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100"><g><g style={{fill:`hsla(0, 0%, 0%, 0.2)`}}><svg fill="hsla(0, 0%, 0%, 0.2)" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><title>Scroll Down</title><path d="M50,58.62h0A2.23,2.23,0,0,1,48.43,58L35.64,45.18A2.23,2.23,0,0,1,38.79,42L50,53.25,61.21,42a2.23,2.23,0,0,1,3.15,3.15L51.57,58A2.23,2.23,0,0,1,50,58.62Z"></path></svg></g></g></svg>
-      )
-    } else {
-      return (
-        <button id="watch" className="secondary fadeOutable" style={{marginBottom: `3rem`}} onClick={this.play}>Watch Video</button>
-      )
-    }
+    return (
+      <div className="VideoButtons">
+        <span>
+          <button id="watch" className="secondary" onClick={this.play}>Watch Video</button>
+        </span>
+        <span>
+          <Link className="primary" to="/order">Order Now</Link>
+        </span>
+      </div>
+    )
   }
+
   render() {
     return (
       <StaticQuery
@@ -86,6 +85,7 @@ class Video extends Component {
         `}
         render={data => (
           <>
+            {this.renderButton()}
             <video controls width="100%" preload="auto" poster={data.placeholderImage.childImageSharp.fixed.src} style={{
               boxShadow: `2px 2px 15px #ccc`,
               marginBottom: `2rem`,
@@ -99,9 +99,6 @@ class Video extends Component {
                 type="video/mp4" />
               Sorry, your browser doesn't support embedded videos.
             </video>
-            <div style={{textAlign: `center`}}>
-              {this.renderButton()}
-            </div>
           </>
         )}
       />

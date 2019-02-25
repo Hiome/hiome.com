@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import FeatureBox from '../components/FeatureBox'
 import SEO from '../components/seo'
-import Video from '../components/video'
+import Video from '../components/Video'
 
 // Feature icons
 import smart_thumb from '../images/features/smart.svg'
@@ -16,12 +16,15 @@ import doorfast from '../media/doorfast.mp4'
 import doorinstall from '../media/doorinstall.mp4'
 import dooraccurate from '../media/dooraccurate.mp4'
 import doorprivacy from '../media/doorprivacy.mp4'
+import doorstats from '../media/doorstats.mp4'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Hiome" />
 
-    <h1>Meet the future of your smart home.</h1>
+    <h1>Unlock the full power of your smart home.</h1>
+
+    <h3>Supercharge your automations <strong>with true occupancy sensing</strong>. Make your home respond to you, not the other way around.</h3>
 
     <Video />
 
@@ -30,7 +33,6 @@ const IndexPage = () => (
     <p>
       <strong>Hiome Door</strong> is a small sensor for your door, a giant leap for presence detection.
       It knows exactly how many people are in each room, even if you haven't moved for hours.
-      Hiome Door processes 65 points of data every 100 milliseconds to accurately and instantly react to you.
       No more waving your arms around to turn the lights back on.
     </p>
 
@@ -48,19 +50,8 @@ const IndexPage = () => (
       </FeatureBox>
     </div>
 
-    <h2>Precision engineered for accuracy.</h2>
-    <p>
-      Hiome Door looks at 65 points of data to reliably detect you and what direction you're moving, letting it keep count of
-      every entry and exit through a door to know how many people are still in each room. It also detects if your door is open
-      or closed, letting it replace your door contact sensor too.
-    </p>
-
     <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline width="75%" style={{
-        boxShadow: `2px 2px 15px #ccc`,
-        backgroundColor: `#ccc`,
-        marginTop: `20px`,
-      }}>
+      <video autoPlay muted loop playsInline className="videoLoop">
         <source
           src={doorsummary}
           type="video/mp4" />
@@ -68,20 +59,31 @@ const IndexPage = () => (
       </video>
     </div>
 
+    <h2>Precision engineered for accuracy.</h2>
+    <p>
+      Hiome Door has 65 sensing points to reliably detect you. It's smart enough know what direction you're moving, so it
+      can count every entry and exit to know how many people are still in each room. It can also tell you if your door is open or
+      closed.
+    </p>
+
+    <div style={{textAlign: `center`}}>
+      <video autoPlay muted loop playsInline className="videoLoop">
+        <source
+          src={doorstats}
+          type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </div>
+
     <h2>Faster than the blink of an eye.</h2>
 
-    <p>Hiome Door continuously looks for changes in occupancy every 100 milliseconds. To put that in perspective, the human eye takes
-    up to 400ms to blink.
+    <p>Hiome Door looks for changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
     In addition to making your automations more accurate, it saves you money by making sure your home is running as efficiently as possible.
     Don't leave lights burning electricity for an empty room again.
     </p>
 
     <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline width="75%" style={{
-        boxShadow: `2px 2px 15px #ccc`,
-        backgroundColor: `#ccc`,
-        marginTop: `20px`,
-      }}>
+      <video autoPlay muted loop playsInline className="videoLoop">
         <source
           src={doorfast}
           type="video/mp4" />
@@ -91,17 +93,13 @@ const IndexPage = () => (
 
     <h2>Built for privacy.</h2>
     <p>
-      There are no cameras or microphones. In fact, it can't identify any personal information. Instead, Hiome Door detects body heat
-      to know when somebody enters or exits. It doesn't depend on your phone, so there's nothing to carry and your home works for your
-      guests too. All this in a device so small, you'll forget it's even there.
+      There are no cameras or microphones. In fact, Hiome Door can't see in your room at all. Instead, it detects body heat near the door
+      to know when somebody enters or exits. There's nothing to carry, so your home works for your guests too. All this in a device so
+      small, you'll forget it's even there.
     </p>
 
     <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline width="75%" style={{
-        boxShadow: `2px 2px 15px #ccc`,
-        backgroundColor: `#ccc`,
-        marginTop: `20px`,
-      }}>
+      <video autoPlay muted loop playsInline className="videoLoop">
         <source
           src={doorprivacy}
           type="video/mp4" />
@@ -111,18 +109,13 @@ const IndexPage = () => (
 
     <h2>Simple to install.</h2>
     <p>
-      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to worry about replacing
-      or recharging. Instead, we include a generous 20 foot (6 meter) USB cable and slim power adapter to make it easy to
-      power your sensors. We also give you a roll of gaffer tape, the premium cotton tape that Hollywood uses to hide wires on movie sets.
-      You'll be surprised how invisible everything is.
+      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to replace.
+      Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
+      that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
     </p>
 
     <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline width="75%" style={{
-        boxShadow: `2px 2px 15px #ccc`,
-        backgroundColor: `#ccc`,
-        marginTop: `20px`,
-      }}>
+      <video autoPlay muted loop playsInline className="videoLoop">
         <source
           src={doorinstall}
           type="video/mp4" />
@@ -132,17 +125,13 @@ const IndexPage = () => (
 
     <h2>Smarter together.</h2>
     <p>
-      Hiome Door talks to Hiome Core to count how many people entered and how many exited. That means it always knows
-      if the room is occupied or not, so the lights only turn off when the last person leaves. Hiome Core also
-      seamlessly syncs all of your sensors, so your automations keep working even if your room has multiple doors.
+      Hiome Door talks to Hiome Core, the brains of the Hiome system, to seamlessly sync all of your sensors. Your automations
+      keep working even if your room has multiple doors, and Hiome always knows if the room is occupied or not, so the lights
+      only turn off when the last person leaves.
     </p>
 
     <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline width="75%" style={{
-        boxShadow: `2px 2px 15px #ccc`,
-        backgroundColor: `#ccc`,
-        marginTop: `20px`,
-      }}>
+      <video autoPlay muted loop playsInline className="videoLoop">
         <source
           src={dooraccurate}
           type="video/mp4" />
@@ -151,9 +140,9 @@ const IndexPage = () => (
     </div>
 
     <h2>Rethink what your home can do.</h2>
-    <p>
-      Hiome Door works with HomeKit, SmartThings, and MQTT, so you can build any automation you can think of.
-    </p>
+    <h3>
+      Hiome Door works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT, so you can make any automation you can think of.
+    </h3>
 
     <div style={{
       textAlign: `center`,
@@ -166,31 +155,24 @@ const IndexPage = () => (
 
     <h4>How does Hiome Door differ from motion sensors?</h4>
     <p>
-      As the name implies, motion sensors detect motion, not occupancy. More specifically, they start a timer when motion is
-      detected. If you move again, the timer is reset. When the timer runs out, the sensor assumes the room is no longer occupied.
-      That's good enough for knowing when you enter a room, but can't really tell if you're still there or when you left, creating false
-      negatives and delays in your automations. Hiome Door counts entries and exits using thermal signatures to accurately
-      know if a room is occupied, whether or not you're moving.
+      Ever had to wave your arms to turn the lights back on, or wait for them to turn off after you leave?
+      That’s because motion sensors detect motion, not occupancy. They can try to guess at occupancy based on when they last
+      saw motion, but that creates false negatives and delays in your automations. Hiome Door detects actual occupancy,
+      whether or not you're moving.
     </p>
 
-    <h4>How does Hiome Door connect to my network?</h4>
+    <h4>Why not just use a voice assistant?</h4>
     <p>
-      Hiome Door talks directly with Hiome Core, so there's no extra setup involved and it doesn't saturate your wifi
-      network with constant chatter. This makes both your sensors and your wifi more reliable.
-    </p>
-
-    <h4>Can I use Hiome Door without Hiome Core?</h4>
-    <p>
-      No. In addition to connectivity, Hiome Door relies on Hiome Core to maintain occupancy state for each room.
-      Without Hiome Core, a door sensor would quickly lose track of a room's occupancy count if another sensor was updating it too.
-      Hiome Core is, well, <em>core</em> to the whole system.
+      Controlling your home with your voice feels magical at first, but it quickly becomes tiring and repetitive. As the number
+      of connected devices in your home grows, the complexity of remembering every name and command becomes overwhelming, making
+      it feel like a command-line interface. Grandpa shouldn't have to remember what you named the pendant lights in the living room.
     </p>
 
     <h4>Is the tape removable?</h4>
     <p>
       Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
-      without any risk of damage to your walls or mouldings. Hiome Door uses standard double-sided 3M tape, which is also easily removed
-      and replaceable.
+      without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
+      which is also easily removed and replaceable.
     </p>
 
     <p style={{
@@ -198,6 +180,8 @@ const IndexPage = () => (
       marginTop: `2rem`,
       fontWeight: `bold`,
     }}><Link to="/faq">More questions &#x2192;</Link></p>
+
+    <p style={{marginTop: `4em`}} className="legal"><sup>1</sup> HomeKit and SmartThings support pending certification from Apple and Samsung, respectively.</p>
   </Layout>
 )
 

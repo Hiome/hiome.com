@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
@@ -12,11 +11,29 @@ const FaqPage = () => (
     
     <h4>How does Hiome Door differ from motion sensors?</h4>
     <p>
-      As the name implies, motion sensors detect motion, not occupancy. More specifically, they start a timer when motion is
-      detected. If you move again, the timer is reset. When the timer runs out, the sensor assumes the room is no longer occupied.
-      That's good enough for knowing when you enter a room, but can't really tell if you're still there or when you left, creating false
-      negatives and delays in your automations. Hiome Door counts entries and exits using thermal signatures to accurately
-      know if a room is occupied, whether or not you're moving.
+      Ever had to wave your arms to turn the lights back on, or wait for them to turn off after you leave?
+      That’s because motion sensors detect motion, not occupancy. They can try to guess at occupancy based on when they last
+      saw motion, but that creates false negatives and delays in your automations. Hiome Door detects actual occupancy,
+      whether or not you're moving.
+    </p>
+
+    <h4>Why not just use a voice assistant?</h4>
+    <p>
+      Controlling your home with your voice feels magical at first, but it quickly becomes tiring and repetitive. As the number
+      of connected devices in your home grows, the complexity of remembering every name and command becomes overwhelming, making
+      it feel like a command-line interface. Grandpa shouldn't have to remember what you named the pendant lights in the living room.
+    </p>
+
+    <h4>Is the tape removable?</h4>
+    <p>
+      Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
+      without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
+      which is also easily removed and replaceable.
+    </p>
+
+    <h4>What if my wall isn't white?</h4>
+    <p>
+      Hiome Door uses standard parts as much as possible, so it's easy to replace the microUSB power cable or gaffer tape with another color!
     </p>
 
     <h4>How does Hiome Door connect to my network?</h4>
@@ -30,18 +47,6 @@ const FaqPage = () => (
       No. In addition to connectivity, Hiome Door relies on Hiome Core to maintain occupancy state for each room.
       Without Hiome Core, a door sensor would quickly lose track of a room's occupancy count if another sensor was updating it too.
       Hiome Core is, well, <em>core</em> to the whole system.
-    </p>
-
-    <h4>Is the tape removable?</h4>
-    <p>
-      Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
-      without any risk of damage to your walls or mouldings. Hiome Door uses standard double-sided 3M tape, which is also easily removed
-      and replaceable.
-    </p>
-
-    <h4>What if my wall isn't white?</h4>
-    <p>
-      Hiome Door uses standard parts as much as possible, so it's easy to replace the microUSB power cable or gaffer tape with another color!
     </p>
 
     <h4>Will Hiome Door fit on my door?</h4>

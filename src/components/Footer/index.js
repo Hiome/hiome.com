@@ -17,8 +17,8 @@ const Footer = () => (
         <p>&copy; {new Date().getFullYear()} Hiome Inc.</p>
         <p style={{
           fontSize: `0.5em`,
-          lineHeight: `1.5em`,
-          marginTop: `-15px`,
+          lineHeight: `1em`,
+          marginTop: `-20px`,
         }}>
           All rights reserved. Patents pending.
         </p>

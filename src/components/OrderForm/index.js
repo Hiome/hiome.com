@@ -78,7 +78,7 @@ class OrderForm extends Component {
     return (
       <div>
         <ul className="OrderForm__Features">
-          <li>True occupancy sensing that will <span role="img" aria-label="blow your mind">🤯</span> and door open/close detection</li>
+          <li>True occupancy detection & door open/close sensing</li>
           <li>Works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT</li>
           <li>90 day money back guarantee, no questions asked</li>
           <li>Ships to US and Canada</li>

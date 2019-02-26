@@ -599,7 +599,7 @@ pre tt:after {
   font-variant-caps: all-small-caps;
   color: #fff;
   font-weight: 600;
-  padding: 12px 30px;
+  padding: 12px 30px 15px 30px;
   background-color: #FC4A1A;
   border: 1px solid #FC4A1A;
   border-radius: 30px;
@@ -619,7 +619,7 @@ pre tt:after {
   font-variant-caps: all-small-caps;
   color: #FC4A1A;
   font-weight: 600;
-  padding: 8px 25px;
+  padding: 8px 25px 10px 25px;
   background-color: #fff;
   border: 2px solid #FC4A1A;
   border-radius: 30px;
@@ -645,46 +645,6 @@ pre tt:after {
 
 .error {
   color: #CA330A;
-}
-
-.fadeOutable {
-  opacity: 1;
-  -webkit-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-}
-
-.clickable:hover {
-  cursor: pointer;
-}
-
-.fadeIn {
-  -webkit-animation: fadeIn 1s linear;
-  animation: fadeIn 1s linear;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.tm {
-  color: hsla(0, 0%, 0%, 0.5);
-  font-weight: 100;
-  font-size: 0.6em;
-  vertical-align: top;
 }
 
 .blackLabel {

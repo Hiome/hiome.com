@@ -61,9 +61,9 @@ const IndexPage = () => (
 
     <h2>Precision engineered for accuracy.</h2>
     <p>
-      Hiome Door has 65 sensing points to reliably detect you. It's smart enough know what direction you're moving, so it
-      can count every entry and exit to know how many people are still in each room. It can also tell you if your door is open or
-      closed.
+      Hiome Door has 65 sensing points to reliably detect which direction you're moving. It sits in your door frame to count
+      entries and exits, so it doesn't matter how big your room is. It also doubles as a door contact sensor, telling you
+      if your door is open or closed.
     </p>
 
     <div style={{textAlign: `center`}}>

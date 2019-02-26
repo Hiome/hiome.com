@@ -59,11 +59,6 @@ abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
 dfn {
   font-style: italic;
 }

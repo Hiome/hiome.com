@@ -51,8 +51,8 @@ const OrderPage = () => (
 
     <h4>How many Hiome Door sensors do I need?</h4>
     <p>
-      You can get started with just one, but Hiome works better with more sensors. To make your lights follow you from room to room,
-      you'll need a Hiome Door sensor on every door.
+      You can get started with just one, but Hiome works better with more sensors. Make your lights follow you from room to room
+      by adding a Hiome Door sensor on every door.
     </p>
 
     <h4>Can I buy more Hiome Door sensors later?</h4>

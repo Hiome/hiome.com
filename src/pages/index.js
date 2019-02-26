@@ -77,9 +77,10 @@ const IndexPage = () => (
 
     <h2>Faster than the blink of an eye.</h2>
 
-    <p>Hiome Door looks for changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
-    In addition to making your automations more accurate, it saves you money by making sure your home is running as efficiently as possible.
-    Don't leave lights burning electricity for an empty room again.
+    <p>
+      The human eye takes 300 milliseconds to blink. Hiome Door processes changes every 100ms.
+      In addition to making your automations more accurate, it saves you money by making sure your home is running as efficiently as possible.
+      Don't leave lights burning electricity for an empty room again.
     </p>
 
     <div style={{textAlign: `center`}}>
@@ -125,9 +126,9 @@ const IndexPage = () => (
 
     <h2>Smarter together.</h2>
     <p>
-      Hiome Door talks to Hiome Core, the brains of the Hiome system, to seamlessly sync all of your sensors. Your automations
-      keep working even if your room has multiple doors, and Hiome always knows if the room is occupied or not, so the lights
-      only turn off when the last person leaves.
+      Make your lights follow you from room to room by connecting more doors. Hiome Door talks to Hiome Core, the brains of
+      the Hiome system, to seamlessly sync all of your sensors. Your automations keep working even if your room has multiple
+      doors, and the lights only turn off when the last person leaves.
     </p>
 
     <div style={{textAlign: `center`}}>

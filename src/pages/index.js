@@ -61,7 +61,7 @@ const IndexPage = () => (
 
     <h2>Precision engineered for accuracy.</h2>
     <p>
-      Hiome Door has 65 sensing points to reliably detect which direction you're moving. It sits in your door frame to count
+      Hiome Door has 65 sensing points to reliably detect you. It sits in your door frame to count
       entries and exits, so it doesn't matter how big your room is. It also doubles as a door contact sensor, telling you
       if the door is open or closed.
     </p>

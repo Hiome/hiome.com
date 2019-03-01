@@ -81,8 +81,7 @@ const IndexPage = () => (
 
     <p>
       Hiome Door processes changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
-      We took a simple idea and over-engineered the shit out of it because
-      your home should respond to you, not a motion timer.
+      We took a simple idea and engineered the shit out of it because your home should respond to you, not a motion timer.
     </p>
 
     <div style={{textAlign: `center`}}>

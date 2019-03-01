@@ -5,7 +5,7 @@ import './styles.css'
 
 const expand = (e) => {
   const p = e.target.parentNode.children[1]
-  if (p.style.maxHeight == '500px') {
+  if (p.style.maxHeight === '500px') {
     p.style.transition = "max-height 0.4s ease-in-out"
     p.style.maxHeight = '0px'
   } else {

@@ -41,6 +41,14 @@ const FaqPage = () => (
       </p>
     </FaqItem>
 
+    <FaqItem title="Can you make Hiome Door battery powered?">
+      <p>
+        It seems counterintuitive but a hard-wired sensor actually provides the best user experience. Our first generation sensor was in fact
+        battery-powered, but it was bulky, slower, more expensive, and needed recharging every month. You'll be amazed how invisible the
+        power cable is after applying the included gaffer tape.
+      </p>
+    </FaqItem>
+
     <FaqItem title="How does Hiome Door connect to my network?">
       <p>
         Hiome Door talks directly with Hiome Core, so there's no extra setup involved and it doesn't saturate your wifi

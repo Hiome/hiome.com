@@ -48,6 +48,13 @@ const FaqPage = () => (
       </p>
     </FaqItem>
 
+    <FaqItem title="How does Hiome Core connect to my network?">
+      <p>
+        Hiome Core connects directly to your router with the included ethernet cable. We even built a 5 port ethernet
+        switch into Hiome Core, so you can easily connect all of your smart home hubs without running out of ports.
+      </p>
+    </FaqItem>
+
     <FaqItem title="Can I use Hiome Door without Hiome Core?">
       <p>
         No. In addition to connectivity, Hiome Door relies on Hiome Core to maintain occupancy state for each room.

@@ -32,16 +32,17 @@ const IndexPage = () => (
     <h2 id="welcome">A whole new type of occupancy sensor.</h2>
 
     <p>
-      <strong>Hiome Door</strong> is a small sensor for your door, a giant leap for presence detection.
+      <strong>Hiome Door</strong> is a small sensor for your door, a giant leap for your automations.
       It knows exactly how many people are in each room, even if you haven't moved for hours.
-      No more waving your arms around to turn the lights back on.
+      Your lights stay on while you're in the room, and immediately turn off when you leave.
+      No more waving your arms around in the dark.
     </p>
 
     <div style={{
       margin: `50px auto 0 auto`
     }}>
       <FeatureBox icon={smart_thumb} title="Accurate">
-        Rethink what your smart home can do for you with true occupancy detection.
+        Rethink what your smart home can do with true occupancy detection that just works.
       </FeatureBox>
       <FeatureBox icon={fast_thumb} title="Fast">
         Get spoiled by how quickly your home reacts to you. You'll think it's actually alive.
@@ -62,7 +63,7 @@ const IndexPage = () => (
 
     <h2>Precision engineered for accuracy.</h2>
     <p>
-      Hiome Door has 65 sensing points to reliably detect you. It sits in your door frame to count
+      Hiome Door is a unique thermal sensor with 65 sensing points to reliably detect you. It sits in your door frame to count
       entries and exits, so it doesn't matter how big your room is. It also doubles as a door contact sensor, telling you
       if the door is open or closed.
     </p>
@@ -76,12 +77,12 @@ const IndexPage = () => (
       </video>
     </div>
 
-    <h2>Faster than the blink of an eye.</h2>
+    <h2>Fast. <em>Really</em> fast.</h2>
 
     <p>
-      The human eye takes 300 milliseconds to blink. Hiome Door processes changes every 100ms.
-      In addition to making your automations more accurate, it saves you money by making sure your home is running as efficiently as possible.
-      Don't leave lights burning electricity for an empty room again.
+      Hiome Door processes changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
+      We took a simple idea and over-engineered the shit out of it because
+      your home should respond to you, not a motion timer.
     </p>
 
     <div style={{textAlign: `center`}}>

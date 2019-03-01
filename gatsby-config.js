@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hiome`,
-    description: `Rethink what your smart home can do with unbelievably accurate occupancy sensing.`,
+    description: `Rethink what your smart home can do with true occupancy sensing that just works.`,
     keywords: [`occupancy sensor`, `presence detection`, `smart home`, `home automation`],
     author: `Hiome Inc`,
   },

@@ -1,0 +1,15 @@
+.FaqItem h4 {
+  color: #0074D9;
+  transition: color 0.2s ease-in-out;
+}
+.FaqItem h4:hover {
+  text-decoration: underline;
+  color: #001f3f;
+  cursor: pointer;
+}
+
+.FaqItem div {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}

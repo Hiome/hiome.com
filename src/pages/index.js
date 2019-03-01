@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import FaqItem from '../components/FaqItem'
 import FeatureBox from '../components/FeatureBox'
 import SEO from '../components/seo'
 import Video from '../components/Video'
@@ -152,35 +153,34 @@ const IndexPage = () => (
       <Link to="/order" className="primary">Order Now</Link>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h4 style={{marginTop: `9em`, marginBottom: `3em`}}>Frequently Asked Questions</h4>
 
-    <h4>How does Hiome Door differ from motion sensors?</h4>
-    <p>
-      Ever had to wave your arms to turn the lights back on, or wait for them to turn off after you leave?
-      That’s because motion sensors detect motion, not occupancy. They can try to guess at occupancy based on when they last
-      saw motion, but that creates false negatives and delays in your automations. Hiome Door detects actual occupancy,
-      whether or not you're moving.
-    </p>
+    <FaqItem title="How does Hiome Door differ from motion sensors?">
+      <p>
+        Ever had to wave your arms to turn the lights back on, or wait for them to turn off after you leave?
+        That’s because motion sensors detect motion, not occupancy. They can try to guess at occupancy based on when they last
+        saw motion, but that creates false negatives and delays in your automations. Hiome Door detects actual occupancy,
+        whether or not you're moving.
+      </p>
+    </FaqItem>
 
-    <h4>Why not just use a voice assistant?</h4>
-    <p>
-      Controlling your home with your voice feels magical at first, but it quickly becomes tiring and repetitive. As the number
-      of connected devices in your home grows, the complexity of remembering every name and command becomes overwhelming, making
-      it feel like a command-line interface. Grandpa shouldn't have to remember what you named the pendant lights in the living room.
-    </p>
+    <FaqItem title="Why not just use a voice assistant?">
+      <p>
+        Controlling your home with your voice feels magical at first, but it quickly becomes tiring and repetitive. As the number
+        of connected devices in your home grows, the complexity of remembering every name and command becomes overwhelming, making
+        it feel like a command-line interface. Grandpa shouldn't have to remember what you named the pendant lights in the living room.
+      </p>
+    </FaqItem>
 
-    <h4>Is the tape removable?</h4>
-    <p>
-      Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
-      without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
-      which is also easily removed and replaceable.
-    </p>
+    <FaqItem title="Is the tape removable?">
+      <p>
+        Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
+        without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
+        which is also easily removed and replaceable.
+      </p>
+    </FaqItem>
 
-    <p style={{
-      textAlign: `center`,
-      marginTop: `2rem`,
-      fontWeight: `bold`,
-    }}><Link to="/faq">More questions &#x2192;</Link></p>
+    <p style={{fontWeight: `bold`}}><Link to="/faq">More questions &#x2192;</Link></p>
 
     <p style={{marginTop: `4em`}} className="legal"><sup>1</sup> HomeKit and SmartThings support pending certification from Apple and Samsung, respectively.</p>
   </Layout>

@@ -55,7 +55,7 @@ class OrderForm extends Component {
   renderStripe() {
     if (this.state.stripe) {
       return (
-        <div style={{textAlign: `center`, marginBottom: `100px`}}>
+        <div style={{textAlign: `center`}}>
           <button className="primary" onClick={e => this.redirectToCheckout(e)}>Checkout</button>
         </div>
       )
@@ -99,8 +99,6 @@ class OrderForm extends Component {
 
         <noscript>Please <a href="http://activatejavascript.org/en/instructions/" rel="noopener noreferrer" target="_blank">enable JavaScript</a> to checkout.</noscript>
         {this.renderStripe()}
-
-        <p className="legal"><sup>1</sup> HomeKit and SmartThings support pending certification from Apple and Samsung, respectively.</p>
       </div>
     )
   }

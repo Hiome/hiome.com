@@ -27,15 +27,6 @@ const OrderPage = () => (
 
     <OrderForm />
 
-    <h2>Early Beta Access</h2>
-    <p>
-      We're looking for early adopters who are passionate about their smart home, excited about Hiome, and enjoy being on the bleeding edge
-      to give us feedback while we get certified for HomeKit and SmartThings. If that sounds like
-      you, <OutboundLink href="https://docs.google.com/forms/d/e/1FAIpQLScg3MXNWBfSrjHNZo2nojIE68YqElBf_6kvNnEHZBtdvMuNfw/viewform?usp=sf_link" rel="noopener noreferrer" target="_blank">apply
-      for our private beta program</OutboundLink>! If selected, you'll get your Hiome pre-order as early as April, a direct line to the team,
-      and an extra Hiome Door sensor as a thank you.
-    </p>
-
     <h2>Frequently Asked Questions</h2>
 
     <h4>Will Hiome Door fit on my door?</h4>

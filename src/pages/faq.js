@@ -27,6 +27,14 @@ const FaqPage = () => (
       </p>
     </FaqItem>
 
+    <FaqItem title="How do you install Hiome Door?">
+      <p>
+        Hiome Door is simple to install! Just stick the sensor to the bottom of your door frame and plug it in. There's no batteries to replace.
+        Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
+        that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
+      </p>
+    </FaqItem>
+
     <FaqItem title="Is the tape removable?">
       <p>
         Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed

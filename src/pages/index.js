@@ -125,13 +125,6 @@ const IndexPage = () => (
       </video>
     </div>
 
-    <h2>Simple to install.</h2>
-    <p>
-      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to replace.
-      Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
-      that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
-    </p>
-
     <h2>Rethink what your home can do.</h2>
     <h3>
       Hiome Door works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT, so you can make any automation you can think of.
@@ -163,11 +156,11 @@ const IndexPage = () => (
       </p>
     </FaqItem>
 
-    <FaqItem title="Is the tape removable?">
+    <FaqItem title="How do you install Hiome Door?">
       <p>
-        Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
-        without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
-        which is also easily removed and replaceable.
+        Hiome Door is simple to install! Just stick the sensor to the bottom of your door frame and plug it in. There's no batteries to replace.
+        Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
+        that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
       </p>
     </FaqItem>
 

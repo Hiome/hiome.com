@@ -81,7 +81,7 @@ const IndexPage = () => (
 
     <p>
       Hiome Door processes changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
-      We took a simple idea and engineered the shit out of it because your home should respond to you, not a motion timer.
+      Your home should respond to you, not a motion timer.
     </p>
 
     <div style={{textAlign: `center`}}>
@@ -115,15 +115,6 @@ const IndexPage = () => (
       Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
       that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
     </p>
-
-    <div style={{textAlign: `center`}}>
-      <video autoPlay muted loop playsInline className="videoLoop">
-        <source
-          src={doorinstall}
-          type="video/mp4" />
-        Sorry, your browser doesn't support embedded videos.
-      </video>
-    </div>
 
     <h2>Smarter together.</h2>
     <p>

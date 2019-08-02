@@ -109,13 +109,6 @@ const IndexPage = () => (
       </video>
     </div>
 
-    <h2>Simple to install.</h2>
-    <p>
-      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to replace.
-      Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
-      that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
-    </p>
-
     <h2>Smarter together.</h2>
     <p>
       Make your lights follow you from room to room by connecting more doors. Hiome Door talks to Hiome Core, the brains of
@@ -131,6 +124,13 @@ const IndexPage = () => (
         Sorry, your browser doesn't support embedded videos.
       </video>
     </div>
+
+    <h2>Simple to install.</h2>
+    <p>
+      Hiome Door has a sleek, minimalist design that lets it blend in with any style. There's no batteries to replace.
+      Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
+      that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
+    </p>
 
     <h2>Rethink what your home can do.</h2>
     <h3>

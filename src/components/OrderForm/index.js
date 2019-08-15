@@ -82,7 +82,7 @@ class OrderForm extends Component {
           <li>Works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT</li>
           <li>90 day money back guarantee, no questions asked</li>
           <li>Free shipping to US and Canada</li>
-          <li>Estimated delivery: August 2019</li>
+          <li>Estimated delivery: September 2019</li>
           <li style={{fontWeight: `bold`}}>
             Includes Hiome Core, <select onChange={this.updateCount} style={{marginLeft: `5px`, marginRight: `5px`}}>
               {this.renderOptions()}

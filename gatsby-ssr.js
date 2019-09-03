@@ -13,6 +13,6 @@ export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
     <script key="ackee" async
       src="https://a.hiome.com/tracker.js"
       data-ackee-server="https://a.hiome.com"
-      data-ackee-domain-id="d9b047a7-d3cc-4d28-bdb1-eb16729b382e" />
+      data-ackee-domain-id="9c3148e7-5f47-4e65-a952-afbedd02e0ac" />
   ])
 }

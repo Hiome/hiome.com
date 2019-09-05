@@ -79,7 +79,7 @@ class OrderForm extends Component {
       <div>
         <ul className="OrderForm__Features">
           <li>True occupancy detection & door open/close sensing</li>
-          <li>Works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT</li>
+          <li>Works with Philips Hue, HomeKit<sup>1</sup>, and MQTT</li>
           <li>90 day money back guarantee, no questions asked</li>
           <li>Free shipping to US and Canada</li>
           <li>Estimated delivery: September 2019</li>

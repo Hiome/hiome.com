@@ -127,7 +127,7 @@ const IndexPage = () => (
 
     <h2>Rethink what your home can do.</h2>
     <h3>
-      Hiome Door works with HomeKit<sup>1</sup>, SmartThings<sup>1</sup>, and MQTT, so you can make any automation you can think of.
+      Hiome Door works with Philips Hue, HomeKit<sup>1</sup>, and MQTT, so you can make any automation you can think of.
     </h3>
 
     <div style={{

@@ -166,7 +166,7 @@ const IndexPage = () => (
 
     <p style={{fontWeight: `bold`}}><Link to="/faq">More questions &#x2192;</Link></p>
 
-    <p style={{marginTop: `4em`}} className="legal"><sup>1</sup> HomeKit and SmartThings support pending certification from Apple and Samsung, respectively.</p>
+    <p style={{marginTop: `4em`}} className="legal"><sup>1</sup> HomeKit is uncertified and pending certification from Apple.</p>
   </Layout>
 )
 

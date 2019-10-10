@@ -1,10 +1,10 @@
 .FaqItem h4 {
-  color: #0074D9;
+  color: #6F3CD1;
   transition: color 0.2s ease-in-out;
 }
 .FaqItem h4:hover {
   text-decoration: underline;
-  color: #001f3f;
+  color: #9364de;
   cursor: pointer;
 }
 

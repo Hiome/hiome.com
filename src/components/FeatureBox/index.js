@@ -18,7 +18,7 @@ const FeatureBox = ({icon, title, children}) => (
 FeatureBox.propTypes = {
   children: PropTypes.node.isRequired,
   icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([PropTypes.string.isRequired, PropTypes.node.isRequired])
 }
 
 export default FeatureBox

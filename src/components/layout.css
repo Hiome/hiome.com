@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   min-width: 300px;
+  font-size: 1em !important;
 }
 article,
 aside,
@@ -48,7 +49,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: #001f3f;
 }
 a.nottext:hover {
@@ -224,12 +225,12 @@ h1, h2 {
   text-align: center;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 4rem;
+  margin-top: 4rem !important;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
   color: inherit;
   font-weight: 500;
   text-rendering: optimizeLegibility;
@@ -237,7 +238,7 @@ h1, h2 {
   line-height: 1.2;
 }
 h2 {
-  margin-top: 9rem;
+  margin-top: 9rem !important;
   font-size: 2em;
 }
 h3 {
@@ -248,9 +249,9 @@ h3 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem !important;
   color: inherit;
-  font-weight: 300;
+  font-weight: 300 !important;
   text-rendering: optimizeLegibility;
   font-size: 1.7em;
   line-height: 1.5;
@@ -264,7 +265,7 @@ h4 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem !important;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -475,7 +476,7 @@ b {
   font-weight: bold;
 }
 strong {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 dt {
   font-weight: bold;
@@ -612,7 +613,7 @@ pre tt:after {
   background-color: #CA330A;
   border-color: #CA330A;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #fff;
 }
 .secondary {
@@ -678,7 +679,55 @@ pre tt:after {
   }
 }
 
+.subtitle {
+  text-align: center;
+  color: #a0a0a0;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+}
+
+.subsubtitle {
+  text-align: center;
+  color: #a0a0a0;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  font-size: 0.8em;
+}
+
 .emph {
   font-weight: 500;
   color: #000;
+}
+
+ul.ant-menu-horizontal {
+  text-align: center;
+  margin: 20px auto 40px auto !important;
+}
+
+.ant-result-extra > *, .ant-result-extra > *:last-child {
+  margin: 8px 4px;
+}
+
+.clear {
+  clear: both;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: #6F3CD1 !important;
+}
+
+.ant-carousel .slick-dots li button {
+  background-color: buttonface !important;
+}
+
+.FeatureList {
+  width: 70%;
+  margin: 20px auto 0 auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .FeatureList {
+    width: 100%;
+  }
 }

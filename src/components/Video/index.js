@@ -92,12 +92,12 @@ class Video extends Component {
               backgroundColor: `#ccc`,
             }} id="heroVid" onPlay={this.playing}>
               <source
-                src="https://d2gdvz35a3rzzk.cloudfront.net/Hiome%20Demo4k.mp4.m3u8"
+                src="https://d2gdvz35a3rzzk.cloudfront.net/WelcomeHiome.m3u8"
                 type="video/mp4" />
               <source
                 src={media}
                 type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos.
+              Sorry, your browser doesn't support embedded videos. <a href="https://www.youtube.com/watch?v=PLBdi5frOGA">Watch it on YouTube</a>.
             </video>
           </>
         )}

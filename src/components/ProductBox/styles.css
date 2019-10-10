@@ -1,6 +1,7 @@
 .ProductBox {
   display: inline-block;
-  width: 33%;
+  width: 33.33%;
+  min-width: 200px;
   text-align: center;
   margin-bottom: 20px;
   vertical-align: top;
@@ -12,4 +13,16 @@
 
 .ProductBox p {
   font-weight: 100;
+}
+
+@media only screen and (max-width: 640px) {
+  .ProductBox {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .ProductBox {
+    width: 100%;
+  }
 }

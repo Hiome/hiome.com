@@ -20,9 +20,7 @@ class OrderForm extends Component {
 
   loadStripe = () => {
     this.setState({
-      stripe: window.Stripe('pk_live_GGLAckmkxax3TR04QeipRU7G', {
-        betas: ["checkout_beta_4"],
-      })
+      stripe: window.Stripe('pk_live_GGLAckmkxax3TR04QeipRU7G')
     })
   }
 
@@ -36,6 +34,7 @@ class OrderForm extends Component {
       items: items,
       successUrl: 'https://hiome.com/success',
       cancelUrl: 'https://hiome.com/order',
+      billingAddressCollection: 'required'
     })
 
     if (error) {
@@ -82,7 +81,7 @@ class OrderForm extends Component {
           <li>Works with Philips Hue, HomeKit<sup>1</sup>, and MQTT</li>
           <li>90 day money back guarantee, no questions asked</li>
           <li>Free shipping to US and Canada</li>
-          <li>Estimated delivery: September 2019</li>
+          <li>Estimated delivery: October 2019</li>
           <li style={{fontWeight: `bold`}}>
             Includes Hiome Core, <select onChange={this.updateCount} style={{marginLeft: `5px`, marginRight: `5px`}}>
               {this.renderOptions()}

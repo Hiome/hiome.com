@@ -8,7 +8,6 @@ import SEO from '../components/seo'
 const AboutPage = () => (
   <Layout>
     <SEO title="About Hiome" />
-    <h1>About Us</h1>
 
     <p>
       We're a team of engineers based in Chicago, IL who enjoy smart homes, great tech, and long walks on the beach.
@@ -33,9 +32,8 @@ const AboutPage = () => (
 
     <h4>Technology should protect us.</h4>
     <p>
-      Privacy is a human right. What you do in your home is your business, and it should not be monetized or weaponized. Even if you have
-      nothing to hide, there's enough examples around the world of companies and politicians using our personal data to manipulate us
-      without us even realizing. We should not have to decide whether it's worth trading privacy for convenience. As Ben Franklin said,
+      Privacy is a human right. What you do in your home is your business, and it should not be monetized or weaponized. We should not
+      have to decide whether it's worth trading privacy for convenience. As Ben Franklin said,
       "Those who would give up essential privacy to purchase a smart home, deserve neither privacy nor a smart home," or something like
       that. We won't let you down, Ben.
     </p>
@@ -48,12 +46,12 @@ const AboutPage = () => (
     </p>
 
     <p>
-    If you're in Chicago and interested in meeting up, find us at
+    If you're in Chicago, find us at
     the <OutboundLink href="https://www.meetup.com/Chicago-Home-Automation/" rel="noopener noreferrer" target="_blank">Chicago Home Automation</OutboundLink> meetups!
     </p>
 
     <p>
-      Want to stay in the loop on what we're up to? Sign up for email updates below
+      Want to stay in the loop? Sign up for email updates below
       or <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">follow us on Twitter</OutboundLink>!
     </p>
 

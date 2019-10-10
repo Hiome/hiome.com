@@ -9,7 +9,7 @@ class Confetti extends Component {
     const canvas = document.getElementById("confetti");
     const context = canvas.getContext("2d");
     const maxConfettis = 150;
-    const maxMilliSeconds = 7000;
+    const maxMilliSeconds = 3000;
     const particles = [];
 
     const possibleColors = [

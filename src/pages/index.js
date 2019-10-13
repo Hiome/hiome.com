@@ -25,7 +25,6 @@ import Wired6Img from '../components/images/Wired6Img'
 
 import Recessed1Img from '../components/images/Recessed1Img'
 import Recessed2Img from '../components/images/Recessed2Img'
-import Recessed3Img from '../components/images/Recessed3Img'
 
 import Battery1Img from '../components/images/Battery1Img'
 import Battery2Img from '../components/images/Battery2Img'
@@ -47,7 +46,7 @@ class IndexPage extends Component {
 
   renderRecessedDesign() {
     return <div style={{marginBottom: `50px`}}>
-      <Carousel style={{width: `100%`, height: `260px`, textAlign: `center`}}>
+      <Carousel style={{width: `100%`, height: `260px`, textAlign: `center`}} draggable={true}>
         <div>
           <Recessed1Img />
         </div>
@@ -55,6 +54,7 @@ class IndexPage extends Component {
           <Recessed2Img />
         </div>
       </Carousel>
+      <p style={{fontStyle: `italic`, fontSize: `0.6em`, textAlign: `center`, color: `#a0a0a0`}}>Swipe for more pictures.</p>
       <div className="FeatureList">
         <ul>
           <li>Embed into your door frame for a completely invisible installation.</li>
@@ -68,7 +68,7 @@ class IndexPage extends Component {
 
   renderRetrofitDesign() {
     return <div style={{marginBottom: `50px`}}>
-      <Carousel style={{width: `100%`, height: `300px`, textAlign: `center`}}>
+      <Carousel style={{width: `100%`, height: `300px`, textAlign: `center`}} draggable={true}>
         <div>
           <Wired5Img />
         </div>
@@ -88,6 +88,7 @@ class IndexPage extends Component {
           <Wired1Img />
         </div>
       </Carousel>
+      <p style={{fontStyle: `italic`, fontSize: `0.6em`, textAlign: `center`, color: `#a0a0a0`}}>Swipe for more pictures.</p>
       <div className="FeatureList">
         <ul>
           <li>Easily install on most doors in minutes.</li>
@@ -100,7 +101,7 @@ class IndexPage extends Component {
 
   renderBatteryDesign() {
     return <div style={{marginBottom: `50px`}}>
-      <Carousel style={{width: `100%`, height: `300px`, textAlign: `center`}}>
+      <Carousel style={{width: `100%`, height: `300px`, textAlign: `center`}} draggable={true}>
         <div>
           <Battery1Img />
         </div>
@@ -108,6 +109,7 @@ class IndexPage extends Component {
           <Battery2Img />
         </div>
       </Carousel>
+      <p style={{fontStyle: `italic`, fontSize: `0.6em`, textAlign: `center`, color: `#a0a0a0`}}>Swipe for more pictures.</p>
       <div className="FeatureList">
         <ul>
           <li>Flexible installation for doors without a nearby power outlet.</li>

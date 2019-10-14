@@ -53,8 +53,10 @@ class Confetti extends Component {
       };
     }
 
+    let animating = false;
     let start;
     const Draw = (ts) => {
+      animating = true;
       if (!start) start = ts;
       var progress = ts - start;
       const endLoop = progress > maxMilliSeconds;
@@ -88,6 +90,7 @@ class Confetti extends Component {
       }
 
       if (remainingFlakes > 0) requestAnimationFrame(Draw);
+      else animating = false;
 
       return results;
     }
@@ -112,6 +115,16 @@ class Confetti extends Component {
     canvas.width = W;
     canvas.height = H;
     Draw();
+
+    canvas.addEventListener("confetti", () => {
+      if (animating) return;
+      // Push new confetti objects to `particles[]`
+      for (var i = 0; i < maxConfettis; i++) {
+        particles[i] = new confettiParticle();
+      }
+      start = null
+      Draw();
+    }, false);
   }
 
   render() {

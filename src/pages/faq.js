@@ -7,6 +7,7 @@ import SEO from '../components/seo'
 
 import homekitscreen from '../media/homekitscreen.mp4'
 import doorstats from '../media/doorstats.mp4'
+import doorfast from '../media/doorfast.mp4'
 
 const FaqPage = () => (
   <Layout>
@@ -70,6 +71,20 @@ const FaqPage = () => (
         <video autoPlay muted loop playsInline className="videoLoop">
           <source
             src={homekitscreen}
+            type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </p>
+    </FaqItem>
+
+    <FaqItem title="How responsive is Hiome?">
+      <p>
+        Hiome Door processes changes in occupancy every 100 milliseconds. For comparison, the human eye takes 300ms to blink.
+      </p>
+      <p style={{textAlign: `center`, marginBottom: `40px`}}>
+        <video autoPlay muted loop playsInline className="videoLoop">
+          <source
+            src={doorfast}
             type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>

@@ -322,13 +322,10 @@ class OrderPage extends Component {
 
       <FaqItem title="Will Hiome Door fit on my door?">
         <p>
-          Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep and at most 40" (1 meter)
-          wide. <OutboundLink href="mailto:support@hiome.com?subject=Double%20door%20support">Let us know</OutboundLink> if you have
-          extra-wide or double doors.
-        </p>
-        <p>
-          If you have any questions, feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">send us a picture
-          of your door frame</OutboundLink> and we'll let you know.
+          Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep, at most 80" (2 meters)
+          wide, and between 6-12ft (1.8-3.6 meters) tall. An actual door is not required, just the doorway is important. If you're not sure,
+          feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">email us
+          a picture of your door frame</OutboundLink> and we'll let you know!
         </p>
       </FaqItem>
 

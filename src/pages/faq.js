@@ -5,6 +5,9 @@ import Layout from '../components/layout'
 import FaqItem from '../components/FaqItem'
 import SEO from '../components/seo'
 
+import homekitscreen from '../media/homekitscreen.mp4'
+import doorstats from '../media/doorstats.mp4'
+
 const FaqPage = () => (
   <Layout>
     <SEO title="Frequently Asked Questions" />
@@ -27,33 +30,57 @@ const FaqPage = () => (
       </p>
     </FaqItem>
 
-    <FaqItem title="How do you install Hiome Door?">
+    <FaqItem title="How does Hiome Door work?">
       <p>
-        Hiome Door is simple to install! Just stick the sensor to the bottom of your door frame and plug it in. There's no batteries to replace.
-        Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
-        that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
+        Hiome Door is an advanced thermal sensor that sits in your doorway and detects when somebody is entering or leaving the room. It
+        knows what direction you're moving, so it can keep count of how many people are in the room to know if the room is still
+        occupied. Hiome Door cannot see inside your room, so it doesn't matter how big the room is.
+      </p>
+      <p style={{textAlign: `center`, marginBottom: `40px`}}>
+        <video autoPlay muted loop playsInline className="videoLoop">
+          <source
+            src={doorstats}
+            type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
       </p>
     </FaqItem>
 
-    <FaqItem title="Is the tape removable?">
+    <FaqItem title="What if my room has multiple entrances?">
       <p>
-        Yup! Gaffer tape is specifically designed for use on movie sets and stage productions, so it can be very easily applied and removed
-        without any risk of damage to your walls or mouldings. The sensor uses standard double-sided 3M tape to attach to your door frame,
-        which is also easily removed and replaceable.
+        No problem! Just place a Hiome Door sensor on each doorway, and Hiome will sync them together so you only see one occupancy
+        count for the room.
       </p>
     </FaqItem>
 
-    <FaqItem title="What if my wall isn't white?">
+    <FaqItem title="Can Hiome control anything other than lights?">
       <p>
-        Hiome Door uses standard parts as much as possible, so it's easy to replace the microUSB power cable or gaffer tape with another color!
+        Absolutely! Hiome gives you each room's occupancy state in HomeKit. You can build any automation you can think of, whether you want to
+        control lights, blinds, or the coffee machine. For more advanced users, you can use Hiome's MQTT stream to build automations depending
+        on the number of people in the room, such as a party mode or family time.
       </p>
     </FaqItem>
 
-    <FaqItem title="Can you make Hiome Door battery powered?">
+    <FaqItem title="How does Hiome show up in HomeKit?">
       <p>
-        It seems counterintuitive but a hard-wired sensor actually provides the best user experience. Our first generation sensor was in fact
-        battery-powered, but it was bulky, slower, more expensive, and needed recharging every month. You'll be amazed how invisible the
-        power cable is after applying the included gaffer tape.
+        You'll see one tile per room for occupancy, and one tile per door with magnet sensor for door open/close state.
+        In this example, the first 2 tiles are added by Hiome.
+      </p>
+      <p style={{textAlign: `center`, marginBottom: `40px`}}>
+        <video autoPlay muted loop playsInline className="videoLoop">
+          <source
+            src={homekitscreen}
+            type="video/mp4" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </p>
+    </FaqItem>
+
+    <FaqItem title="How do I install Hiome Door?">
+      <p>
+        Hiome Door is easy to install! Just stick the sensor to the bottom of your door frame and plug it in.
+        You'll be surprised how invisible everything is. Alternatively, you can embed a recessed sensor into your door frame by cutting a
+        39mm x 28mm x 11mm hole and wiring the sensor directly to a 3.6-12v power supply for a completely invisible setup.
       </p>
     </FaqItem>
 
@@ -66,8 +93,7 @@ const FaqPage = () => (
 
     <FaqItem title="How does Hiome Core connect to my network?">
       <p>
-        Hiome Core connects directly to your router with the included ethernet cable. We even built a 5 port ethernet
-        switch into Hiome Core, so you can easily connect all of your smart home hubs without running out of ports.
+        Hiome Core connects to your router with the included ethernet cable. Just plug it in and go!
       </p>
     </FaqItem>
 
@@ -81,13 +107,10 @@ const FaqPage = () => (
 
     <FaqItem title="Will Hiome Door fit on my door?">
       <p>
-        Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep and at most 40" (1 meter)
-        wide. <OutboundLink href="mailto:support@hiome.com?subject=Double%20door%20support">Let us know</OutboundLink> if you have
-        extra-wide or double doors.
-      </p>
-      <p>
-        If you have any questions, feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">send us a picture
-        of your door frame</OutboundLink> and we'll let you know.
+        Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep, at most 80" (2 meters)
+        wide, and between 6-12ft (1.8-3.6 meters) tall. An actual door is not required, just the doorway is important. If you're not sure,
+        feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">email us
+        a picture of your door frame</OutboundLink> and we'll let you know!
       </p>
     </FaqItem>
 

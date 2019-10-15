@@ -32,6 +32,7 @@ import Battery2Img from '../components/images/Battery2Img'
 import doorsummary from '../media/doorsummary.mp4'
 import dooraccurate from '../media/dooraccurate.mp4'
 import corescreen from '../media/corescreen.mp4'
+import doorstats from '../media/doorstats.mp4'
 
 class IndexPage extends Component {
   state = {
@@ -288,11 +289,19 @@ class IndexPage extends Component {
         </p>
       </FaqItem>
 
-      <FaqItem title="How do you install Hiome Door?">
+      <FaqItem title="How does Hiome Door work?">
         <p>
-          Hiome Door is simple to install! Just stick the sensor to the bottom of your door frame and plug it in. There's no batteries to replace.
-          Instead, we include a 20 foot (6 meter) microUSB cable, slim power adapter, and gaffer tape, the premium cotton mask
-          that Hollywood uses to hide wires on movie sets. You'll be surprised how invisible everything is.
+          Hiome Door is an advanced thermal sensor that sits in your doorway and detects when somebody is entering or leaving the room. It
+          knows what direction you're moving, so it can keep count of how many people are in the room to know if the room is still
+          occupied. Hiome Door cannot see inside your room, so it doesn't matter how big the room is.
+        </p>
+        <p style={{textAlign: `center`, marginBottom: `40px`}}>
+          <video autoPlay muted loop playsInline className="videoLoop">
+            <source
+              src={doorstats}
+              type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
         </p>
       </FaqItem>
 

@@ -11,7 +11,7 @@ import media from '../../media/HiomeDemo.mp4'
 class Video extends Component {
   componentDidMount() {
     const video = document.getElementById('heroVid')
-    const src = 'https://d2gdvz35a3rzzk.cloudfront.net/WelcomeHiome.m3u8'
+    const src = 'https://d2gdvz35a3rzzk.cloudfront.net/WelcomeHiome2.m3u8'
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
       // native HLS support
       video.src = src

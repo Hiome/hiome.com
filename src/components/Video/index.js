@@ -1,12 +1,31 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { StaticQuery, graphql } from 'gatsby'
+import Hls from 'hls.js'
+
+import VideoPosterImg from '../images/VideoPosterImg'
 
 import './styles.css'
 
 import media from '../../media/HiomeDemo.mp4'
 
 class Video extends Component {
+  componentDidMount() {
+    const video = document.getElementById('heroVid')
+    const src = 'https://d2gdvz35a3rzzk.cloudfront.net/WelcomeHiome.m3u8'
+    if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      // native HLS support
+      video.src = src
+    } else if (Hls.isSupported()) {
+      // fallback to hls.js
+      const hls = new Hls();
+      hls.loadSource(src)
+      hls.attachMedia(video)
+    } else {
+      // fallback to downloading whole media file like a chump
+      video.src = media
+    }
+  }
+
   getElementY(element) {
     const el = element.getBoundingClientRect()
     // center video in screen
@@ -45,12 +64,17 @@ class Video extends Component {
   }
 
   play = () => {
-    const vid = document.getElementById("heroVid")
-    vid.play()
-    this.doScrolling(vid, 1000)
+    this.playing()
+    this.doScrolling(document.getElementById("heroVid"), 1000)
   }
 
   playing = () => {
+    const poster = document.getElementById('posterWrapper')
+    const video = document.getElementById('heroVid')
+    poster.style.display = 'none'
+    video.style.display = 'block'
+    video.play()
+
     const watchBtn = document.getElementById('watch')
     watchBtn.style.transition = "background-color 1s ease-in-out, color 1s ease-in-out, border-color 1s ease-in-out"
     watchBtn.classList.add('disabled')
@@ -71,37 +95,18 @@ class Video extends Component {
 
   render() {
     return (
-      <StaticQuery
-        query={graphql`
-          query {
-            placeholderImage: file(relativePath: { eq: "poster.png" }) {
-              childImageSharp {
-                fixed(width: 1920) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        `}
-        render={data => (
-          <>
-            {this.renderButton()}
-            <video controls width="100%" preload="auto" poster={data.placeholderImage.childImageSharp.fixed.src} style={{
-              boxShadow: `2px 2px 15px #ccc`,
-              marginBottom: `2rem`,
-              backgroundColor: `#ccc`,
-            }} id="heroVid" onPlay={this.playing}>
-              <source
-                src="https://d2gdvz35a3rzzk.cloudfront.net/WelcomeHiome.m3u8"
-                type="video/mp4" />
-              <source
-                src={media}
-                type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos. <a href="https://www.youtube.com/watch?v=PLBdi5frOGA">Watch it on YouTube</a>.
-            </video>
-          </>
-        )}
-      />
+      <>
+        {this.renderButton()}
+        <VideoPosterImg onclick={this.playing} />
+        <video controls width="100%" preload="auto" id="heroVid" style={{
+          boxShadow: `2px 2px 15px #ccc`,
+          marginBottom: `2rem`,
+          backgroundColor: `#ccc`,
+          display: `none`
+        }}>
+          Sorry, your browser doesn't support embedded videos. <a href="https://www.youtube.com/watch?v=PLBdi5frOGA">Watch it on YouTube</a>.
+        </video>
+      </>
     )
   }
 }

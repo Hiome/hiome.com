@@ -12,7 +12,7 @@ const Footer = () => (
     <hr style={{marginTop: `1.5rem`}} />
     <footer>
       <div id="FooterLegal">
-        <Link to="/" className="nottext"><LogoMark width="17px" height="28px" /></Link>
+        <Link to="/" className="nottext" aria-label="Hiome logo"><LogoMark width="17px" height="28px" /></Link>
         <br/><br/>
         <p>&copy; {new Date().getFullYear()} Hiome Inc.</p>
         <p style={{

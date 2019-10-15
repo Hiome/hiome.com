@@ -12,7 +12,7 @@ const Header = () => (
       textAlign: `center`
     }}
   >
-    <Link to="/" className="nottext">
+    <Link to="/" className="nottext" aria-label="Hiome">
       <LogoMark /><br/>
       <LogoText style={{marginTop: `1rem`}} />
     </Link>

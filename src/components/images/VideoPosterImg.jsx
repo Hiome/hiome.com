@@ -7,7 +7,7 @@ const VideoPosterImg = ({onclick}) => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "poster.png" }) {
+        placeholderImage: file(relativePath: { eq: "poster.jpg" }) {
           childImageSharp {
             fixed(width: 1920) {
               ...GatsbyImageSharpFixed

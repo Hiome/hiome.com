@@ -6,7 +6,7 @@ const Recessed1Img = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "recessed1.png" }) {
+        placeholderImage: file(relativePath: { eq: "recessed1.jpg" }) {
           childImageSharp {
             fixed(width: 345, height: 233) {
               ...GatsbyImageSharpFixed

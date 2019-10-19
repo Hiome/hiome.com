@@ -15,7 +15,7 @@ const Recessed2Img = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome Door inside a door" />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Recessed Hiome Door next to a quarter" loading="auto" fadeIn={false} />}
   />
 )
 export default Recessed2Img

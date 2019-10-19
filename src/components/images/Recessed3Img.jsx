@@ -15,7 +15,7 @@ const Recessed3Img = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome Door Recessed Schematic" />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Recessed Hiome Door Schematic" loading="auto" fadeIn={false} />}
   />
 )
 export default Recessed3Img

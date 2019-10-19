@@ -15,7 +15,7 @@ const Battery1Img = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome PowerPack on a door" />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome PowerPack on a door" loading="auto" fadeIn={false} />}
   />
 )
 export default Battery1Img

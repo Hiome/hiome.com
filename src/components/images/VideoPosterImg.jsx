@@ -17,13 +17,13 @@ const VideoPosterImg = ({onclick}) => (
       }
     `}
     render={data => (<div id="posterWrapper" onClick={onclick}>
-        <Img fixed={data.placeholderImage.childImageSharp.fixed} style={{
+        <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Welcome Hiome" loading="eager" fadeIn={false} style={{
           width: `100%`,
           height: `auto`,
           paddingBottom: `56.25%`,
           boxShadow: `2px 2px 15px #ccc`,
           backgroundColor: `#ccc`
-        }} alt="Welcome Hiome" />
+        }} />
         <svg fill="#000" style={{
           position: `absolute`,
           top: `40%`,

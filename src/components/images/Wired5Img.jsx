@@ -15,7 +15,7 @@ const Wired5Img = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome Door on a door" />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} alt="Hiome Door on a door" loading="auto" fadeIn={false} />}
   />
 )
 export default Wired5Img

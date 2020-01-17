@@ -79,16 +79,16 @@ class OrderPage extends Component {
   }
 
   batteryPrice(qty) {
-    return qty*39
+    return qty*49
   }
 
   subtotal() {
     const total = this.totalQty()
     let price = 0
-         if (total < 2)  price = 175                    // 1 sensor
-    else if (total < 5)  price = 230 + 79*(total - 2)   // 2-4 sensors
-    else if (total < 10) price = 450 + 79*(total - 5)   // 5-9 sensors
-    else                 price = 799 + 79*(total - 10)  // 10+ sensors
+         if (total < 2)  price = 180                    // 1 sensor
+    else if (total < 5)  price = 250 + 79*(total - 2)   // 2-4 sensors
+    else if (total < 10) price = 475 + 79*(total - 5)   // 5-9 sensors
+    else                 price = 850 + 79*(total - 10)  // 10+ sensors
 
     return price + this.batteryPrice(this.state.battery_qty)            // add any battery packs
   }
@@ -154,25 +154,25 @@ class OrderPage extends Component {
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(1)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 1 Hiome Door sensor</h4>
         <p>Try out Hiome in a small room with a single door.</p>
-        <p><strong>$175</strong></p>
+        <p><strong>$180</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(2)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 2 Hiome Door sensors <Tag color="#f50">Most Popular</Tag></h4>
         <p>Automate a larger room by adding Hiome to all of its doors.</p>
-        <p><strong>$230</strong></p>
+        <p><strong>$250</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(5)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 5 Hiome Door sensors</h4>
         <p>Cover multiple rooms to make your lights follow you from room to room!</p>
-        <p><strong>$450</strong></p>
+        <p><strong>$475</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(10)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 10 Hiome Door sensors</h4>
         <p>Automate your whole home for a truly smart home experience.</p>
-        <p><strong>$799</strong></p>
+        <p><strong>$850</strong></p>
       </Card>
     </>
   }
@@ -194,7 +194,7 @@ class OrderPage extends Component {
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={this.chooseBattery}>
         <h4 style={{lineHeight: `1.4rem`}}>Battery</h4>
         <p>Add {this.state.wired_qty} Hiome PowerPack batteries to power Hiome Door without a power outlet.</p>
-        <p><strong>+${this.batteryPrice(this.state.wired_qty)}, ships in January</strong></p>
+        <p><strong>+${this.batteryPrice(this.state.wired_qty)}</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={this.chooseCustomize}>
@@ -251,7 +251,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
           Hiome PowerPack
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet. <strong>Ships in January.</strong><br/><br/>$39 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet.<br/><br/>$49 each</p>
         <Slider value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
       </div>
 
@@ -313,7 +313,7 @@ class OrderPage extends Component {
           If you don't love it, we'll refund you, no questions asked.
         </FeatureBox>
 
-        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in January</span>}>
+        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in February</span>}>
           Shipping time is based on the number of orders ahead of you.
         </FeatureBox>
       </div>

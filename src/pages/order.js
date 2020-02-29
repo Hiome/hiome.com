@@ -313,7 +313,7 @@ class OrderPage extends Component {
           If you don't love it, we'll refund you, no questions asked.
         </FeatureBox>
 
-        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in February</span>}>
+        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in March</span>}>
           Shipping time is based on the number of orders ahead of you.
         </FeatureBox>
       </div>

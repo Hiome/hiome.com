@@ -22,7 +22,8 @@ class OrderPage extends Component {
     battery_qty: 0,
     stripe: null,
     checkoutLoading: false,
-    customize: false
+    customize: false,
+    destination: 'US'
   }
 
   componentDidMount() {
@@ -62,7 +63,9 @@ class OrderPage extends Component {
       items: items,
       successUrl: 'https://hiome.com/success',
       cancelUrl: 'https://hiome.com/order',
-      billingAddressCollection: 'required'
+      shippingAddressCollection: {
+        allowedCountries: ['US', 'CA', 'MX']
+      }
     }).then(result => {
       if (result.error) {
         message.error(result.error.message, 10)
@@ -98,6 +101,7 @@ class OrderPage extends Component {
   }
 
   shippingLabel() {
+    if (this.state.destination === 'other') return <a href="mailto:support@hiome.com?subject=International%20Shipping">TBD</a>
     const price = this.shippingPrice()
     return price === 0 ? 'FREE' : `$${price}`
   }
@@ -222,6 +226,27 @@ class OrderPage extends Component {
     return `${this.state.battery_qty} Hiome PowerPack batteries,`
   }
 
+  updateDestination = e => {
+    this.setState({destination: e.target.value})
+  }
+
+  renderCheckout() {
+    if (this.state.destination === 'other') {
+      return <div style={{textAlign: `center`}}>
+        <p>We might still be able to ship to you! Please <a href="mailto:support@hiome.com?subject=International%20Shipping">contact us</a> to discuss shipping options.</p>
+      </div>
+    } else {
+      return <div style={{textAlign: `right`}}>
+        <Button type="primary" size="large"
+          onClick={this.redirectToCheckout}
+          loading={this.state.checkoutLoading || this.state.stripe === null}
+          disabled={this.totalQty() < 1}>
+          Checkout <Icon type="arrow-right" />
+        </Button>
+      </div>
+    }
+  }
+
   renderCustomize() {
     return <>
       <p className="subtitle" style={{color: `hsla(0, 0%, 0%, 0.8)`}}>{this.state.customize ? 'Customize your kit for your home.' : 'Review your order.'}</p>
@@ -261,18 +286,18 @@ class OrderPage extends Component {
 
       <Divider />
 
+      <select style={{float: `right`}} onChange={this.updateDestination} value={this.state.destination}>
+        <option value='CA'>Canada</option>
+        <option value='MX'>Mexico</option>
+        <option value='US'>United States</option>
+        <option value='other'>Other</option>
+      </select>
+      <p>Destination</p>
       <p style={{float: `right`}}>{this.shippingLabel()}</p>
       <p>Shipping</p>
       <p style={{float: `right`}}><strong>${this.totalPrice()}</strong></p>
       <p><strong>Total</strong></p>
-      <div style={{textAlign: `right`}}>
-        <Button type="primary" size="large"
-          onClick={this.redirectToCheckout}
-          loading={this.state.checkoutLoading || this.state.stripe === null}
-          disabled={this.totalQty() < 1}>
-          Checkout <Icon type="arrow-right" />
-        </Button>
-      </div>
+      {this.renderCheckout()}
     </>
   }
 
@@ -306,7 +331,7 @@ class OrderPage extends Component {
 
       <div style={{marginTop: `50px`}}>
         <FeatureBox icon={shipping_img} title={<span style={{fontSize: `0.9em`}}>Free Shipping</span>}>
-          Free shipping for orders over $199 within the United States.
+          Free shipping for orders over $199 within North America.
         </FeatureBox>
 
         <FeatureBox icon={guarantee_img} title={<span style={{fontSize: `0.9em`}}>Try for 100 Days</span>}>

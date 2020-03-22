@@ -233,7 +233,7 @@ class OrderPage extends Component {
   renderCheckout() {
     if (this.state.destination === 'other') {
       return <div style={{textAlign: `center`}}>
-        <p>We might still be able to ship to you! Please <a href="mailto:support@hiome.com?subject=International%20Shipping">contact us</a> to discuss shipping options.</p>
+        <p><strong>Please <a href="mailto:support@hiome.com?subject=International%20Shipping">contact us</a> to discuss shipping options.</strong></p>
       </div>
     } else {
       return <div style={{textAlign: `right`}}>

@@ -20,7 +20,7 @@ const Footer = () => (
           marginTop: `-10px`,
         }}>
           All rights reserved. Patents pending.<br/>
-          Designed and assembled in USA.
+          Designed and assembled in Chicago.
         </p>
       </div>
 
@@ -32,6 +32,7 @@ const Footer = () => (
 
       <FooterLinks title="Company">
         <Link to="/about">About</Link><br/>
+        <OutboundLink href="https://blog.hiome.com" rel="noopener noreferrer" target="_blank" title="Read the latest news from Hiome">Blog</OutboundLink><br/>
         <OutboundLink href="mailto:support@hiome.com" title="Say hello!">Support</OutboundLink><br/>
         <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank" title="Follow @hiomeai on Twitter">Twitter</OutboundLink><br/>
       </FooterLinks>

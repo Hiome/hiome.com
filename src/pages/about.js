@@ -46,11 +46,6 @@ const AboutPage = () => (
     </p>
 
     <p>
-    If you're in Chicago, find us at
-    the <OutboundLink href="https://www.meetup.com/Chicago-Home-Automation/" rel="noopener noreferrer" target="_blank">Chicago Home Automation</OutboundLink> meetups!
-    </p>
-
-    <p>
       Want to stay in the loop? Sign up for email updates below
       or <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">follow us on Twitter</OutboundLink>!
     </p>

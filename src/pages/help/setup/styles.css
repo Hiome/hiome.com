@@ -1,0 +1,16 @@
+.setupguide h2 {
+  text-align: left;
+  font-size: 25px;
+  margin: 60px 0 30px 0 !important;
+  padding: 0;
+}
+
+.setupguide h4 {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.setupguide .FaqItem h2:last-child {
+  padding-bottom: 70px;
+  border-bottom: 1px solid #ddd;
+}

@@ -50,6 +50,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `hiome.com`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: `UA-117181574-1`,

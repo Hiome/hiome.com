@@ -1,5 +1,4 @@
 import React from 'react'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
 import FaqItem from '../components/FaqItem'
@@ -124,8 +123,8 @@ const FaqPage = () => (
       <p>
         Hiome Door is designed to fit most standard door frames. Your frame needs to be at least 1" (2.5cm) deep, at most 80" (2 meters)
         wide, and between 6-12ft (1.8-3.6 meters) tall. An actual door is not required, just the doorway is important. If you're not sure,
-        feel free to <OutboundLink href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">email us
-        a picture of your door frame</OutboundLink> and we'll let you know!
+        feel free to <a href="mailto:support@hiome.com?subject=Check%20my%20door%27s%20compatibility">email us
+        a picture of your door frame</a> and we'll let you know!
       </p>
     </FaqItem>
 
@@ -147,7 +146,7 @@ const FaqPage = () => (
       fontWeight: `bold`,
       marginTop: `4rem`,
       fontSize: `1.2rem`,
-    }}>Have more questions? <OutboundLink href="mailto:support@hiome.com">Email us</OutboundLink>!</p>
+    }}>Have more questions? <a href="mailto:support@hiome.com">Email us</a>!</p>
   </Layout>
 )
 

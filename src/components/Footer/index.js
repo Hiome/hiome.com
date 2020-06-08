@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import FooterLinks from './links'
 import LogoMark from '../images/LogoMark'
@@ -32,9 +31,9 @@ const Footer = () => (
 
       <FooterLinks title="Company">
         <Link to="/about">About</Link><br/>
-        <OutboundLink href="https://blog.hiome.com" rel="noopener noreferrer" target="_blank" title="Read the latest news from Hiome">Blog</OutboundLink><br/>
-        <OutboundLink href="mailto:support@hiome.com" title="Say hello!">Support</OutboundLink><br/>
-        <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank" title="Follow @hiomeai on Twitter">Twitter</OutboundLink><br/>
+        <a href="https://blog.hiome.com" rel="noopener noreferrer" target="_blank" title="Read the latest news from Hiome">Blog</a><br/>
+        <a href="mailto:support@hiome.com" title="Say hello!">Support</a><br/>
+        <a href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank" title="Follow @hiomeai on Twitter">Twitter</a><br/>
       </FooterLinks>
 
       <FooterLinks title="Contact">

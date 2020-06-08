@@ -1,5 +1,4 @@
 import React from 'react'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -14,7 +13,7 @@ const SuccessPage = () => (
     <p style={{textAlign: `center`, marginTop: `-30px`}}>
       We can't wait! We'll keep you updated as we work on your order. When we're ready to ship, we'll reach out to
       confirm your mailing address. If you have any questions, feel free to
-      email <OutboundLink href="mailto:support@hiome.com">support@hiome.com</OutboundLink>.</p>
+      email <a href="mailto:support@hiome.com">support@hiome.com</a>.</p>
     <Confetti />
   </Layout>
 )

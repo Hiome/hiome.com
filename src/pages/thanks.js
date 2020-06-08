@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -22,7 +21,7 @@ const ThanksPage = () => (
     </object>
     <h1>We'll be in touch!</h1>
     <p style={{textAlign: `center`, marginTop: `-30px`}}>
-      What's next? <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">Follow us on Twitter</OutboundLink> or <Link to="/order">order your Hiome Starter Kit</Link>.
+      What's next? <a href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">Follow us on Twitter</a> or <Link to="/order">order your Hiome Starter Kit</Link>.
     </p>
   </Layout>
 )

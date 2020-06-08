@@ -1,5 +1,4 @@
 import React from 'react'
-import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import EmailSignup from '../components/EmailSignup'
 import Layout from '../components/layout'
@@ -47,7 +46,7 @@ const AboutPage = () => (
 
     <p>
       Want to stay in the loop? Sign up for email updates below
-      or <OutboundLink href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">follow us on Twitter</OutboundLink>!
+      or <a href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank">follow us on Twitter</a>!
     </p>
 
     <EmailSignup />

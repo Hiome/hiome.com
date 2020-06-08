@@ -55,14 +55,6 @@ module.exports = {
         domain: `hiome.com`,
         customDomain: `analytics.hiome.com`
       },
-    },
-    {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: `UA-117181574-1`,
-        head: false,
-        anonymize: true,
-      },
     }
   ],
 }

@@ -266,8 +266,6 @@ class IndexPage extends Component {
         <Link to="/order" className="primary">Order Now</Link>
       </div>
 
-      <p className="subtitle">Got questions? <a href="mailto:support@hiome.com" title="Send an email to support@hiome.com">Email us</a>!</p>
-
       <h4 style={{marginTop: `5em`, marginBottom: `3em`}}>Frequently Asked Questions</h4>
 
       <FaqItem title="How does Hiome Door differ from motion sensors?">

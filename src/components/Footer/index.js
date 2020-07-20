@@ -40,7 +40,6 @@ const Footer = () => (
         1201 S Prairie Ave<br/>
         Suite 3906<br/>
         Chicago, IL 60605<br/>
-        (312) 624-6245<br/>
       </FooterLinks>
     </footer>
   </>

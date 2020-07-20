@@ -84,7 +84,7 @@ const SetupIndexPage = () => (
       textAlign: `center`,
       marginTop: `4rem`,
       fontSize: `1.2rem`,
-    }}>Have questions? <a href="mailto:support@hiome.com">Email support@hiome.com</a> or <a href="tel:3126246245">text (312) 624-6245</a></p>
+    }}>Have questions? <a href="mailto:support@hiome.com">Email support@hiome.com</a></p>
   </Layout>
 )
 

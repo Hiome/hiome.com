@@ -266,9 +266,7 @@ class IndexPage extends Component {
         <Link to="/order" className="primary">Order Now</Link>
       </div>
 
-      <h2>Got questions? Text us at <a href="sms:3126246245">(312) 624-6245</a></h2>
-
-      <p className="subtitle">You can also <a href="tel:3126246245" title="Call (312) 624-6245">call</a>, <a href="mailto:support@hiome.com" title="Send an email to support@hiome.com">email</a>, or <a href="https://twitter.com/hiomeai" title="Tweet @hiomeai" target="_blank" rel="noopener noreferrer">send a carrier pigeon</a>. We love to hear from you!</p>
+      <p className="subtitle">Got questions? <a href="mailto:support@hiome.com" title="Send an email to support@hiome.com">Email us</a>!</p>
 
       <h4 style={{marginTop: `5em`, marginBottom: `3em`}}>Frequently Asked Questions</h4>
 

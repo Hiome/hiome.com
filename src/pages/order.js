@@ -84,15 +84,19 @@ class OrderPage extends Component {
     return qty*59
   }
 
-  subtotal() {
-    const total = this.totalQty()
-    let price = 0
-         if (total < 2)  price = 101 + 89       // 1 sensor
-    else if (total < 5)  price = 92 + 89*total  // 2-4 sensors
-    else if (total < 10) price = 80 + 89*total  // 5-9 sensors
-    else                 price = 60 + 89*total  // 10+ sensors
+  doorPrice(qty) {
+    return qty*89
+  }
 
-    return price + this.batteryPrice(this.state.battery_qty)            // add any battery packs
+  starterKitPrice(qty) {
+         if (qty < 2)  return 101 + this.doorPrice(qty)  // 1 sensor
+    else if (qty < 5)  return 92 + this.doorPrice(qty)   // 2-4 sensors
+    else if (qty < 10) return 80 + this.doorPrice(qty)   // 5-9 sensors
+    else               return 60 + this.doorPrice(qty)   // 10+ sensors
+  }
+
+  subtotal() {
+    return this.starterKitPrice(this.totalQty()) + this.batteryPrice(this.state.battery_qty)
   }
 
   shippingPrice() {
@@ -157,25 +161,25 @@ class OrderPage extends Component {
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(1)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 1 Hiome Door sensor</h4>
         <p>Try out Hiome in a small room with a single door.</p>
-        <p><strong>$180</strong></p>
+        <p><strong>${this.starterKitPrice(1)}</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(2)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 2 Hiome Door sensors <Tag color="#f50">Most Popular</Tag></h4>
         <p>Automate a larger room by adding Hiome to all of its doors.</p>
-        <p><strong>$250</strong></p>
+        <p><strong>${this.starterKitPrice(2)}</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(5)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 5 Hiome Door sensors</h4>
         <p>Cover multiple rooms to make your lights follow you from room to room!</p>
-        <p><strong>$475</strong></p>
+        <p><strong>${this.starterKitPrice(5)}</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={() => this.chooseKit(10)}>
         <h4 style={{lineHeight: `1.4rem`}}>Hiome Core + 10 Hiome Door sensors</h4>
         <p>Automate your whole home for a truly smart home experience.</p>
-        <p><strong>$850</strong></p>
+        <p><strong>${this.starterKitPrice(10)}</strong></p>
       </Card>
     </>
   }
@@ -259,7 +263,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.wired_qty} min={0} max={50} onChange={this.changeWiredSlider} />
           Hiome Door (Wired)
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>Get true occupancy counting and door open/close sensing on each door with a Hiome Door sensor.<br/><br/>$89 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>Get true occupancy counting and door open/close sensing on each door with a Hiome Door sensor.<br/><br/>${this.doorPrice(1)} each</p>
         <Slider value={this.state.wired_qty} min={0} max={50} onChange={this.changeWiredSlider} />
       </div>
       <div className="orderLineItem" style={{margin: `20px 0`, display: ((this.state.customize || this.state.recessed_qty > 0) ? `block` : `none`)}}>
@@ -267,7 +271,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.recessed_qty} min={0} max={50} onChange={this.changeRecessedSlider} />
           Hiome Door (Recessed)
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>All the benefits of Hiome Door, in a package designed for embedding into your door frame.<br/><br/>$89 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>All the benefits of Hiome Door, in a package designed for embedding into your door frame.<br/><br/>${this.doorPrice(1)} each</p>
         <Slider value={this.state.recessed_qty} min={0} max={50} onChange={this.changeRecessedSlider} />
       </div>
       <div className="orderLineItem" style={{margin: `20px 0`, display: ((this.state.customize || this.state.battery_qty > 0) ? `block` : `none`)}}>
@@ -275,7 +279,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
           Hiome PowerPack
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet.<br/><br/>$59 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet.<br/><br/>${this.batteryPrice(1)} each</p>
         <Slider value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
       </div>
 

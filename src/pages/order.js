@@ -81,22 +81,22 @@ class OrderPage extends Component {
   }
 
   batteryPrice(qty) {
-    return qty*49
+    return qty*59
   }
 
   subtotal() {
     const total = this.totalQty()
     let price = 0
-         if (total < 2)  price = 180                    // 1 sensor
-    else if (total < 5)  price = 250 + 79*(total - 2)   // 2-4 sensors
-    else if (total < 10) price = 475 + 79*(total - 5)   // 5-9 sensors
-    else                 price = 850 + 79*(total - 10)  // 10+ sensors
+         if (total < 2)  price = 101 + 89       // 1 sensor
+    else if (total < 5)  price = 92 + 89*total  // 2-4 sensors
+    else if (total < 10) price = 80 + 89*total  // 5-9 sensors
+    else                 price = 60 + 89*total  // 10+ sensors
 
     return price + this.batteryPrice(this.state.battery_qty)            // add any battery packs
   }
 
   shippingPrice() {
-    return this.subtotal() > 199 ? 0 : 12.99
+    return this.subtotal() > 199 ? 0 : 14.99
   }
 
   shippingLabel() {
@@ -259,7 +259,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.wired_qty} min={0} max={50} onChange={this.changeWiredSlider} />
           Hiome Door (Wired)
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>Get true occupancy counting and door open/close sensing on each door with a Hiome Door sensor.<br/><br/>$79 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>Get true occupancy counting and door open/close sensing on each door with a Hiome Door sensor.<br/><br/>$89 each</p>
         <Slider value={this.state.wired_qty} min={0} max={50} onChange={this.changeWiredSlider} />
       </div>
       <div className="orderLineItem" style={{margin: `20px 0`, display: ((this.state.customize || this.state.recessed_qty > 0) ? `block` : `none`)}}>
@@ -267,7 +267,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.recessed_qty} min={0} max={50} onChange={this.changeRecessedSlider} />
           Hiome Door (Recessed)
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>All the benefits of Hiome Door, in a package designed for embedding into your door frame.<br/><br/>$79 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>All the benefits of Hiome Door, in a package designed for embedding into your door frame.<br/><br/>$89 each</p>
         <Slider value={this.state.recessed_qty} min={0} max={50} onChange={this.changeRecessedSlider} />
       </div>
       <div className="orderLineItem" style={{margin: `20px 0`, display: ((this.state.customize || this.state.battery_qty > 0) ? `block` : `none`)}}>
@@ -275,7 +275,7 @@ class OrderPage extends Component {
           <InputNumber size="large" style={{width: `60px`, marginRight: `10px`}} value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
           Hiome PowerPack
         </h4>
-        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet.<br/><br/>$49 each</p>
+        <p style={{marginLeft: `75px`, fontSize: `0.9em`}}>A rechargeable battery pack to power your Hiome Door sensor for over 1 month without a nearby power outlet.<br/><br/>$59 each</p>
         <Slider value={this.state.battery_qty} min={0} max={50} onChange={this.changeBatterySlider} />
       </div>
 
@@ -337,7 +337,7 @@ class OrderPage extends Component {
           If you don't love it, we'll refund you, no questions asked.
         </FeatureBox>
 
-        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in October</span>}>
+        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in November</span>}>
           Shipping time is based on the number of orders ahead of you.
         </FeatureBox>
       </div>

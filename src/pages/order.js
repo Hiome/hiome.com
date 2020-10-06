@@ -201,7 +201,7 @@ class OrderPage extends Component {
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={this.chooseBattery}>
         <h4 style={{lineHeight: `1.4rem`}}>Battery</h4>
         <p>Add {this.state.wired_qty} Hiome PowerPack batteries to power Hiome Door without a power outlet.</p>
-        <p><strong>+${this.batteryPrice(this.state.wired_qty)}</strong></p>
+        <p><strong>+${this.batteryPrice(1)}</strong></p>
       </Card>
 
       <Card style={{width: `100%`, margin: `20px auto`}} hoverable={true} onClick={this.chooseCustomize}>

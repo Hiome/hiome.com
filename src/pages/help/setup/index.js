@@ -40,7 +40,7 @@ const SetupIndexPage = () => (
       <SetupMagnetImg />
 
       <h2>5. Plug in Hiome Door with a microUSB cable and power adapter.</h2>
-      <p>You can use the gaffer tape or nails to hold the wire in place. Stand at least 5 feet (2 meters) away while the sensor calibrates.</p>
+      <p>Stand at least 5 feet (2 meters) away while the sensor calibrates.</p>
 
       <h2>6. Go to <a href="http://hiome.local">http://hiome.local</a> on your phone to finish setup!</h2>
     </FaqItem>

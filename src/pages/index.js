@@ -94,7 +94,7 @@ class IndexPage extends Component {
         <ul>
           <li>Easily install on most doors in minutes.</li>
           <li>Power with a standard microUSB cable.</li>
-          <li>Includes 16ft (5m) flat white cable, power supply, gaffer tape, and magnet for optional door open/close sensing.</li>
+          <li>Includes 16ft (5m) flat white cable, power supply, and magnet for optional door open/close sensing.</li>
         </ul>
       </div>
     </div>

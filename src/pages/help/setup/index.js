@@ -33,6 +33,7 @@ const SetupIndexPage = () => (
       <SetupBracketImg />
 
       <h2>3. Stick Hiome Door to the bottom of your door frame.</h2>
+      <p>You can cut the bracket with scissors if necessary to make it fit on your frame, and then apply 1-2 command strips to mount the bracket to the frame as shown.</p>
       <SetupFrameImg />
 
       <h2>4. Stick magnet to the back of your door (if applicable) for door open/close state.</h2>
@@ -62,6 +63,7 @@ const SetupIndexPage = () => (
       <SetupBracketImg />
 
       <h2>3. Stick Hiome Door to the bottom of your door frame.</h2>
+      <p>You can cut the bracket with scissors if necessary to make it fit on your frame, and then apply 1-2 command strips to mount the bracket to the frame as shown.</p>
       <SetupFrameImg />
 
       <h2>4. Stick magnet to the back of your door (if applicable) for door open/close state.</h2>

@@ -307,8 +307,8 @@ class OrderPage extends Component {
       <p style={{float: `right`}}><strong>${this.totalPrice()}</strong></p>
       <p><strong>Total</strong></p>
       {this.renderCheckout()}
-      <div style={{textAlign: `center`}}>
-        <p><strong>Sorry, we are currently sold out. Please check back soon when we have more inventory.</strong></p>
+      <div style={{textAlign: `center`, marginTop: `20px`}}>
+        <p><strong>Sorry, we are currently sold out.</strong><br/>Please check back soon when we have more inventory.</p>
       </div>
     </>
   }

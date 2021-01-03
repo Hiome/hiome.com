@@ -63,7 +63,7 @@ class OrderPage extends Component {
       successUrl: 'https://hiome.com/success',
       cancelUrl: 'https://hiome.com/order',
       shippingAddressCollection: {
-        allowedCountries: ['US', 'CA', 'MX']
+        allowedCountries: ['US']
       }
     }).then(result => {
       if (result.error) {
@@ -331,7 +331,7 @@ class OrderPage extends Component {
     return <Layout>
       <SEO title="Order Hiome" />
 
-      <h1 style={{lineHeight: `2em`}}>Hiome Starter Kit <span className="blackLabel">Pre-Order</span></h1>
+      <h1 style={{lineHeight: `2em`}}>Hiome Starter Kit</h1>
       <Steps size="small" current={this.state.currentStep} style={{marginTop: `-30px`, marginBottom: `100px`}} labelPlacement="vertical"
             onChange={this.changeStep} id="stepsNav">
         <Step title="Size" />
@@ -343,15 +343,15 @@ class OrderPage extends Component {
 
       <div style={{marginTop: `50px`}}>
         <FeatureBox icon={shipping_img} title={<span style={{fontSize: `0.9em`}}>Free Shipping</span>}>
-          Free shipping for orders over $199 within North America.
+          Free shipping for orders over $199 within the United States.
         </FeatureBox>
 
         <FeatureBox icon={guarantee_img} title={<span style={{fontSize: `0.9em`}}>Try for 100 Days</span>}>
           If you don't love it, we'll refund you, no questions asked.
         </FeatureBox>
 
-        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Ships in January</span>}>
-          Shipping time is based on the number of orders ahead of you.
+        <FeatureBox icon={calendar_img} title={<span style={{fontSize: `0.9em`}}>Built to Order</span>}>
+          Your order is custom built just for you and ships within a few weeks.
         </FeatureBox>
       </div>
 
@@ -375,7 +375,7 @@ class OrderPage extends Component {
 
       <FaqItem title="Can I buy more Hiome Door sensors later?">
         <p>
-          Of course! Once we have fulfilled all pre-orders, we'll open up orders for additional sensors without the Starter Kit.
+          Of course! For now, just <a href="mailto:support@hiome.com">send us an email</a> to order additional sensors without the Starter Kit.
         </p>
       </FaqItem>
 

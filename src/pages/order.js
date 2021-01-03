@@ -234,20 +234,26 @@ class OrderPage extends Component {
   }
 
   renderCheckout() {
-    if (this.state.destination === 'other') {
-      return <div style={{textAlign: `center`}}>
-        <p><strong>Please <a href="mailto:support@hiome.com?subject=International%20Shipping">contact us</a> to discuss shipping options.</strong></p>
-      </div>
-    } else {
-      return <div style={{textAlign: `right`}}>
-        <Button type="primary" size="large"
-          onClick={this.redirectToCheckout}
-          loading={this.state.checkoutLoading || this.state.stripe === null}
-          disabled={this.totalQty() < 1}>
-          Checkout <Icon type="arrow-right" />
-        </Button>
-      </div>
-    }
+    return <div style={{textAlign: `right`}}>
+      <Button type="primary" size="large" disabled={true}>
+        Checkout <Icon type="arrow-right" />
+      </Button>
+    </div>
+
+    // if (this.state.destination === 'other') {
+    //   return <div style={{textAlign: `center`}}>
+    //     <p><strong>Please <a href="mailto:support@hiome.com?subject=International%20Shipping">contact us</a> to discuss shipping options.</strong></p>
+    //   </div>
+    // } else {
+    //   return <div style={{textAlign: `right`}}>
+    //     <Button type="primary" size="large"
+    //       onClick={this.redirectToCheckout}
+    //       loading={this.state.checkoutLoading || this.state.stripe === null}
+    //       disabled={this.totalQty() < 1}>
+    //       Checkout <Icon type="arrow-right" />
+    //     </Button>
+    //   </div>
+    // }
   }
 
   renderCustomize() {
@@ -301,6 +307,9 @@ class OrderPage extends Component {
       <p style={{float: `right`}}><strong>${this.totalPrice()}</strong></p>
       <p><strong>Total</strong></p>
       {this.renderCheckout()}
+      <div style={{textAlign: `center`}}>
+        <p><strong>Sorry, we are currently sold out. Please check back soon when we have more inventory.</strong></p>
+      </div>
     </>
   }
 

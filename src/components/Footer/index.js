@@ -35,12 +35,6 @@ const Footer = () => (
         <a href="mailto:support@hiome.com" title="Say hello!">Support</a><br/>
         <a href="https://twitter.com/hiomeai" rel="noopener noreferrer" target="_blank" title="Follow @hiomeai on Twitter">Twitter</a><br/>
       </FooterLinks>
-
-      <FooterLinks title="Contact">
-        1201 S Prairie Ave<br/>
-        Suite 3906<br/>
-        Chicago, IL 60605<br/>
-      </FooterLinks>
     </footer>
   </>
 )

@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/hls/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"

@@ -331,6 +331,10 @@ class OrderPage extends Component {
     return <Layout>
       <SEO title="Order Hiome" />
 
+      <div style={{backgroundColor: '#fffaeb', border: '1px solid #fff3cf', borderRadius: '5px', padding: '10px'}}>
+        Unfortunately Hiome is no longer available. Please <a href="https://blog.hiome.com/status_update/">read our status update</a> to learn more.
+      </div>
+
       <h1 style={{lineHeight: `2em`}}>Hiome Starter Kit</h1>
       <Steps size="small" current={this.state.currentStep} style={{marginTop: `-30px`, marginBottom: `100px`}} labelPlacement="vertical"
             onChange={this.changeStep} id="stepsNav">

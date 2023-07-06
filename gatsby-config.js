@@ -52,8 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-plausible`,
       options: {
-        domain: `hiome.com`,
-        customDomain: `analytics.hiome.com`
+        domain: `hiome.com`
       },
     }
   ],
